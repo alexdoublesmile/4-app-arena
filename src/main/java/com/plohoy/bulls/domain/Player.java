@@ -2,21 +2,21 @@ package com.plohoy.bulls.domain;
 
 import javax.persistence.*;
 
-@Table(name="player")
+@Table(name="a_player")
 @Entity
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
+    @Column(name = "player_id")
     private Long id;
-    @Column
+    @Column(name = "player_first_name")
     private String firstName;
-    @Column
+    @Column(name = "player_last_name")
     private String lastName;
-    @Column
+    @Column(name = "player_login")
     private String login;
-    @Column
+    @Column(name = "player_password")
     private String password;
-    @Column
+    @Column(name = "player_score")
     private String score;
 }
