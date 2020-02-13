@@ -1,23 +1,29 @@
 package com.plohoy.bulls.dao;
 
 import com.plohoy.bulls.domain.Player;
-import org.hibernate.SessionFactory;
+import com.plohoy.bulls.exception.DaoException;
 
 import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.util.List;
 
 public class PlayerDaoImpl implements PlayerDao {
 
-    private EntityManager em;
+    private EntityManager em = Persistence.createEntityManagerFactory("persistence")
+            .createEntityManager();
 
     @Override
-    public void createPlayer() {
+    public void registerPlayer() throws DaoException {
 
     }
 
     @Override
-    public Player getPlayer() {
+    public Player getPlayer() throws DaoException {
+        return null;
+    }
+
+    @Override
+    public List<Player> getAllPlayers() throws DaoException {
         return null;
     }
 }

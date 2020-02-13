@@ -1,6 +1,7 @@
 package com.plohoy.bulls.service;
 
 import com.plohoy.bulls.domain.Player;
+import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -8,6 +9,8 @@ import org.slf4j.LoggerFactory;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class PlayerServiceTest {
 
@@ -22,6 +25,13 @@ public class PlayerServiceTest {
     }
 
     @Test
+    public void checkDBConnect() {
+        em = emf.createEntityManager();
+        List playersList = em.createQuery("from Player").getResultList();
+        Assert.assertFalse(playersList == null);
+    }
+
+    @Test
     public void checkPersistData() {
         try {
             em = emf.createEntityManager();
@@ -29,7 +39,7 @@ public class PlayerServiceTest {
 
             Player p = getPlayer();
             LOGGER.info(p.toString());
-            
+
             em.persist(p);
             em.flush();
 
@@ -39,6 +49,12 @@ public class PlayerServiceTest {
             em.getTransaction().rollback();
             LOGGER.error(e.getMessage(), e);
         }
+
+        em = emf.createEntityManager();
+        List playersList = em.createQuery("FROM Player").getResultList();
+        playersList.forEach(p -> LOGGER.info(p.toString()));
+        Assert.assertTrue(playersList.size() > 0);
+
     }
 
     private Player getPlayer() {
