@@ -28,7 +28,7 @@
                     <version>2.3</version>
                     <configuration>
                         <failOnMissingWebXml>false</failOnMissingWebXml>
-                        <outputDirectory></outputDirectory>
+                        <outputDirectory>../../tomcat/webapps</outputDirectory>
                     </configuration>
                 </plugin>
             </plugins>
@@ -53,6 +53,7 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit-version}</version>
+            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -72,9 +73,26 @@
         </dependency>
 
         <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
         </dependency>
     </dependencies>
 

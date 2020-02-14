@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,19 +26,13 @@ public class PlayerServiceTest {
     }
 
     @Test
-    public void checkDBConnect() {
-        em = emf.createEntityManager();
-        List playersList = em.createQuery("from Player").getResultList();
-        Assert.assertFalse(playersList == null);
-    }
-
-    @Test
     public void checkPersistData() {
         try {
             em = emf.createEntityManager();
             em.getTransaction().begin();
 
             Player p = getPlayer();
+
             LOGGER.info(p.toString());
 
             em.persist(p);
@@ -51,14 +46,16 @@ public class PlayerServiceTest {
         }
 
         em = emf.createEntityManager();
-        List playersList = em.createQuery("FROM Player").getResultList();
-        playersList.forEach(p -> LOGGER.info(p.toString()));
+        List playersList = em.createQuery("from Player ").getResultList();
+        Collections.reverse(playersList);
+        LOGGER.info(playersList.get(0).toString());
         Assert.assertTrue(playersList.size() > 0);
 
     }
 
     private Player getPlayer() {
         Player player = new Player();
+
         player.setFirstName("Иван");
         player.setLastName("Тестовый");
         player.setLogin("Vano21");
