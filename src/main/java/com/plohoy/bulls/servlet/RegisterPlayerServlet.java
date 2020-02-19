@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "RegisterServlet", urlPatterns = {"/register"})
 public class RegisterPlayerServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RegisterPlayerServlet.class);

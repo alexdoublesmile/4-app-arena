@@ -23,8 +23,8 @@ public class PlayerDaoImpl implements PlayerDao {
         Player player = new Player();
         player.setFirstName(req.getParameter("firstName"));
         player.setLastName(req.getParameter("lastName"));
-        player.setLogin(req.getParameter("login"));
-        player.setPassword(req.getParameter("password"));
+//        player.setLogin(req.getParameter("login"));
+//        player.setPassword(req.getParameter("password"));
 //        player.setScore(Integer.parseInt(req.getParameter("score")));
         try {
             em.getTransaction().begin();
