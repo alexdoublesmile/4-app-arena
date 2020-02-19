@@ -22,9 +22,9 @@ public class PlayerServiceTest {
 
     private static final String PLAYER_TEST_FIRSTNAME = "Иван";
     private static final String PLAYER_TEST_LASTNAME = "Тестовый";
-    private static final String PLAYER_TEST_LOGIN = "Vano21";
-    private static final String PLAYER_TEST_PASSWORD = "qwerty";
-    private static final int PLAYER_TEST_SCORE = 12;
+    private static final String PLAYER_TEST_LOGIN = "IDEAcreated";
+    private static final String PLAYER_TEST_PASSWORD = "test";
+    private static final int PLAYER_TEST_SCORE = 0;
 
 
     @BeforeClass
@@ -36,20 +36,28 @@ public class PlayerServiceTest {
     public void checkDBConnection() {
         Player p = getTestPlayer();
         try {
-
             em = emf.createEntityManager();
+            List<Player> playersList = em.createQuery("from Player ").getResultList();
+            if (playersList.size() > 0) {
+                Collections.reverse(playersList);
+                LOGGER.info("---> Now last player in the Table is {}", playersList.get(0).toString());
+
+            } else {
+                LOGGER.info("---> Now Players Table is empty.");
+            }
             em.getTransaction().begin();
 
             em.persist(p);
             em.flush();
-            LOGGER.info("---> player {} is creating...", p.getId());
+            LOGGER.info("player {} is adding to DB...", p.getId());
 
-            List playersList = em.createQuery("from Player ").getResultList();
+            playersList = em.createQuery("from Player ").getResultList();
             Collections.reverse(playersList);
             LOGGER.info("Now last player in the Table is {}", playersList.get(0).toString());
 
+            em.merge(p);
             em.remove(p);
-            LOGGER.info("player {} is removing...", p.getId());
+            LOGGER.info("player {} is removing from DB...", p.getId());
 
             em.getTransaction().commit();
             em.close();
@@ -62,10 +70,16 @@ public class PlayerServiceTest {
         em = emf.createEntityManager();
         List playersList = em.createQuery("from Player ").getResultList();
         Collections.reverse(playersList);
-        LOGGER.info("And now last player in the table is {}", playersList.get(0).toString());
         em.close();
 
-        Assert.assertTrue(((Player) playersList.get(0)).getId() < p.getId());
+        if (playersList.size() > 0) {
+            LOGGER.info("And now last player in the Table is {}", playersList.get(0).toString());
+            Assert.assertTrue(((Player) playersList.get(0)).getId() < p.getId());
+
+        } else {
+            LOGGER.info("And now Players Table is empty again.");
+        }
+
     }
 
     private Player getTestPlayer() {
