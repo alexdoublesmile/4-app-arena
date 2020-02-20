@@ -8,7 +8,9 @@ import java.util.List;
 
 public interface PlayerDao {
 
-    void registerPlayer(HttpServletRequest req) throws DaoException;
+
+    Long registerPlayer(Player player) throws DaoException;
+
     Player getPlayer() throws DaoException;
     List<Player> getAllPlayers() throws DaoException;
 }
