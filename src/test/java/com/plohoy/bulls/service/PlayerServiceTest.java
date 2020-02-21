@@ -1,6 +1,7 @@
 package com.plohoy.bulls.service;
 
 import com.plohoy.bulls.domain.Player;
+import com.plohoy.bulls.exception.DaoException;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -81,6 +82,31 @@ public class PlayerServiceTest {
         }
 
     }
+
+    @Test
+    public void registerPlayer() {
+        Player p = getTestPlayer();
+        PlayerService service = new PlayerService();
+        try {
+            LOGGER.info("---->>> New player for Hibernate is {}", service.registerPlayer(p));
+
+
+        } catch (DaoException e) {
+            LOGGER.error(e.getMessage(), e);
+            throw new RuntimeException();
+        }
+        em = emf.createEntityManager();
+        List playersList = em.createQuery("from Player ").getResultList();
+        Collections.reverse(playersList);
+        em.close();
+        Assert.assertTrue(((Player) playersList.get(0)).getId() == p.getId());
+
+    }
+
+    @Test
+    public void getAllPlayers() {
+    }
+
 
     private Player getTestPlayer() {
         Player player = new Player();

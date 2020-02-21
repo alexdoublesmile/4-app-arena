@@ -30,28 +30,46 @@ public class RegisterPlayerServlet extends HttpServlet {
         player = new Player();
     }
 
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        resp.setCharacterEncoding("UTF-8");
-//        resp.setContentType("text/html");
-//        resp.getWriter().write("<h1>Сервлеты ё! :)</h1>");
-//    }
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+
+        String name = req.getParameter("name");
+        if(name != null && !name.trim().isEmpty()) {
+            resp.getWriter().write(String.format("<h1>Сервлеты, которые создал %s! :)</h1>", name));
+
+        } else {
+            resp.getWriter().write("<h1>Сервлеты ё! :)</h1>");
+
+        }
+    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html");
+
         player.setFirstName(req.getParameter("firstName"));
         player.setLastName(req.getParameter("lastName"));
         player.setLogin(req.getParameter("login"));
         player.setPassword(req.getParameter("password"));
-        LOGGER.info("!!!Player was created -->> {}", player.toString());
+
+//        LOGGER.info("!!!Player was created -->> {}", player.toString());
         try {
             Long id = service.registerPlayer(player);
-            System.out.println(String.format("------->>>>>> Player %s was successfully added to DB..", id));
+            resp.getWriter().write(String.format("------->>>>>> Player %s was successfully added to DB..", id));
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
+            resp.getWriter().write("------->>>>>> Player was NOT successfully added to DB..");
+
             throw new RuntimeException();
+
         }
+
+        resp.getWriter().write(String.format("player name is %s %s", player.getLastName(), player.getFirstName()));
+
     }
 }
