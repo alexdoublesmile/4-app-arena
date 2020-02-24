@@ -23,7 +23,7 @@
               </ul>
             </li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="/bulls-and-cows-1.0/records">Рекорды</a></li>
           </ul>
         </nav>
         <div class="search">
@@ -55,10 +55,16 @@
           <input type="submit" value="Жду звонка">
           <br>
           <form action="register" method="post">
-            <input type="text" name="firstName"/>
-            <input type="text" name="lastName"/><br/>
-            <input type="text" name="login"/>
-            <input type="text" name="password"/>
+            <label for="firstName">Имя</label>
+            <label for="lastName">Фамилия</label>
+            <label for="login">Логин</label>
+            <label for="password">Пароль</label>
+            <label for="score">Очки</label>
+            <input type="text" name="firstName" id="firstName"/>
+            <input type="text" name="lastName" id="lastName"/><br/>
+            <input type="text" name="login" id="login"/>
+            <input type="text" name="password" id="password"/>
+            <input type="text" name="score" id="score"/>
             <button type="submit">Register</button>
           </form>
           <!--<button onclick="location.href='/bulls-and-cows-1.0/register'">Register</button>-->

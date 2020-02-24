@@ -12,5 +12,5 @@ public interface PlayerDao {
     Long registerPlayer(Player player) throws DaoException;
 
     Player getPlayer() throws DaoException;
-    List<Player> getAllPlayers() throws DaoException;
+    List<Player> findAllPlayers() throws DaoException;
 }

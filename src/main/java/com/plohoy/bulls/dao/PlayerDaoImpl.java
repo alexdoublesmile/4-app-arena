@@ -9,35 +9,37 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.servlet.http.HttpServletRequest;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 
 public class PlayerDaoImpl implements PlayerDao {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RegisterPlayerServlet.class);
 
-    private EntityManager em;
+    private EntityManager entityManager;
 
-    private EntityManager getEm() {
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("persistence");
-        EntityManager em = emf.createEntityManager();
-
-        return em;
+    public PlayerDaoImpl() {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("persistence");
+        entityManager = factory.createEntityManager();
     }
 
     @Override
     public Long registerPlayer(Player player) throws DaoException {
         try {
-            em = getEm();
-            em.getTransaction().begin();
-            em.persist(player);
+            entityManager.getTransaction().begin();
+            entityManager.persist(player);
 
-            em.getTransaction().commit();
-            em.close();
+            entityManager.getTransaction().commit();
+            entityManager.close();
         } catch (Exception ex) {
 
             LOGGER.error(ex.getMessage(), ex);
-            em.getTransaction().rollback();
+            entityManager.getTransaction().rollback();
             throw new DaoException();
         }
 
@@ -50,7 +52,7 @@ public class PlayerDaoImpl implements PlayerDao {
     }
 
     @Override
-    public List<Player> getAllPlayers() throws DaoException {
-        return null;
+    public List<Player> findAllPlayers() throws DaoException {
+        return entityManager.createQuery("SELECT p FROM Player p").getResultList();
     }
 }

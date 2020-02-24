@@ -4,6 +4,13 @@ import javax.persistence.*;
 
 @Table(name="a_player")
 @Entity
+@NamedQueries({
+        @NamedQuery(
+                name = "RemoveAllTestData",
+                query = "select p from Player p " +
+                        "where p.login like :login"
+)
+})
 public class Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -70,7 +77,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "Player{" +
+        return "this Player:{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
