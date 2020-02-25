@@ -51,12 +51,13 @@ public class RegisterPlayerServlet extends HttpServlet {
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html");
 
-
+        PlayerService service = new PlayerService();
+        Player player = new Player();
+        Long id;
 
 //        LOGGER.info("!!!Player was created -->> {}", player.toString());
         try {
-            PlayerService service = new PlayerService();
-            Player player = new Player();
+
 
 
             player.setFirstName(req.getParameter("firstName"));
@@ -64,9 +65,9 @@ public class RegisterPlayerServlet extends HttpServlet {
             player.setLogin(req.getParameter("login"));
             player.setPassword(req.getParameter("password"));
             player.setScore(Integer.parseInt(req.getParameter("score")));
-            Long id = service.registerPlayer(player);
-            resp.getWriter().write(String.format("<h1>Player %s was successfully added to DB..</h1>", id));
-            resp.getWriter().write(String.format("<p align=\"center\">his name is %s %s</p>", player.getLastName(), player.getFirstName()));
+            id = service.registerPlayer(player);
+
+
 
 
         } catch (Exception e) {
@@ -76,6 +77,9 @@ public class RegisterPlayerServlet extends HttpServlet {
             throw new RuntimeException();
 
         }
+
+        req.setAttribute("message", "<script>alert('Регистрация в базе прошла успешно!')</script>");
+        getServletContext().getRequestDispatcher("/view/profile.jsp").forward(req, resp);
 
 
     }

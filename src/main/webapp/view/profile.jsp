@@ -12,6 +12,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
 </head>
 <body>
+<p>${message}</p>
 <div class="wrapper">
     <header class="clearfix">
         <nav class="main-nav">
@@ -32,38 +33,25 @@
     <div class="main-img">
         <div class="main-img-1">
             <div class="info">
-                <h2>Регистрация</h2>
-                <%--<h3>Компания с многолетней историей</h3>--%>
-                <%--<a href="#">Получить консультацию прямо сейчас</a>--%>
+                <h2>Это твой профиль</h2>
+                <!--<h3>Компания с многолетней историей</h3>-->
+                <%--<a href="#">Блеснуть интеллектом</a>--%>
             </div>
         </div>
         <div class="main-img-2">
             <div class="info">
-                <%--<h2>Семейное право</h2>--%>
-                <%--<h3>Компания с многолетней историей</h3>--%>
-                <%--<a href="static/main-2.html">Получить консультацию прямо сейчас</a>--%>
+                <%--<h2>Действительно есть же...</h2>--%>
+                <!--<h3>Компания с многолетней историей</h3>-->
+                <%--<a href="static/main-2.html">Блеснуть интеллектом</a>--%>
             </div>
         </div>
     </div>
     <div class="callback">
         <div class="info">
-            <form action="../register" method="post">
-                <label for="firstName">Имя</label>
-                <input type="text" name="firstName" id="firstName"/>
-
-                <label for="lastName">Фамилия</label>
-                <input type="text" name="lastName" id="lastName"/><br/>
-
-                <label for="login">Логин</label>
-                <input type="text" name="login" id="login"/>
-
-                <label for="password">Пароль</label>
-                <input type="text" name="password" id="password"/>
-
-                <label for="score">Очки</label>
-                <input type="text" name="score" id="score"/>
-                <input type="submit">Register</input>
-            </form>
+            <p>Нет времени читать? Засекайте время!<br>
+                Мы перезвоним Вам за 10 секунд. <span class="uppercase">Бесплатно.</span></p>
+            <input type="text" value="+7">
+            <input type="submit" value="Жду звонка">
         </div>
     </div>
     <footer>

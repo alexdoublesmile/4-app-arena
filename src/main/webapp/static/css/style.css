@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: PTSans;
-  src: url(../fonts/PTSans.eot);
+  src: url(../../fonts/PTSans.eot);
   src: 
     local('=#ed'),
-    url(../fonts/PTSans.woff) format('woff'),
-    url(../fonts/PTSans.ttf) format('truetype'),
+    url(../../fonts/PTSans.woff) format('woff'),
+    url(../../fonts/PTSans.ttf) format('truetype'),
     url(../fonts/PTSans.svg) format('svg');
   font-weight: normal;
   font-style: normal;
@@ -300,6 +300,7 @@ nav>ul>li:first-child:hover .sub-menu {
   width: 100%;
   height: 700px;
   background: url("../images/main-1.jpg") no-repeat;
+  background-size: cover;
 }
 
 .main-img-2 {
@@ -309,6 +310,7 @@ nav>ul>li:first-child:hover .sub-menu {
   width: 100%;
   height: 700px;
   background: url("../images/main-2.jpg") no-repeat;
+  background-size: cover;
   opacity: 0;
   -webkit-transition: opacity 1s .3s;
   -moz-transition: opacity 1s .3s;
