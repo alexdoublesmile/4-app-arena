@@ -12,7 +12,6 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
 </head>
 <body>
-<p>${message}</p>
 <div class="wrapper">
     <header class="clearfix">
         <nav class="main-nav">
@@ -85,5 +84,6 @@
         </div>
     </footer>
 </div>
+<p>${message}</p>
 </body>
 </html>

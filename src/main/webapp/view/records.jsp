@@ -10,7 +10,7 @@
             <h2 align="center">DataBase is empty now.</h2>
         </c:if>
         <c:forEach var="player" items="${playerList}">
-            <h2 align="center">${player.firstName} - ${player.score} очков</h2>
+            <h2 align="center">${player.firstName} ${player.login} - ${player.score} очков</h2>
         </c:forEach>
     </body>
 </html>

@@ -1,6 +1,7 @@
 package com.plohoy.bulls.domain;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Table(name="a_player")
 @Entity
@@ -73,6 +74,24 @@ public class Player {
 
     public void setScore(int score) {
         this.score = score;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Player)) return false;
+        Player player = (Player) o;
+        return score == player.score &&
+                Objects.equals(id, player.id) &&
+                Objects.equals(firstName, player.firstName) &&
+                Objects.equals(lastName, player.lastName) &&
+                Objects.equals(login, player.login) &&
+                Objects.equals(password, player.password);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, login, password, score);
     }
 
     @Override

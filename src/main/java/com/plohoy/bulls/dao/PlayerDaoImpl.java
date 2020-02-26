@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import javax.persistence.PersistenceContext;
 import java.util.List;
 
 public class PlayerDaoImpl implements PlayerDao {
@@ -44,11 +43,6 @@ public class PlayerDaoImpl implements PlayerDao {
         }
 
         return player.getId();
-    }
-
-    @Override
-    public Player getPlayer() throws DaoException {
-        return null;
     }
 
     @Override

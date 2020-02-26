@@ -13,8 +13,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebServlet(name = "recordsServlet", urlPatterns = {"/records"})
@@ -26,7 +24,7 @@ public class RecordsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         PlayerService service = new PlayerService();
-        List<Player> playerList = new ArrayList<>();
+        List<Player> playerList;
 
         try {
             playerList = service.findAllPlayers();
