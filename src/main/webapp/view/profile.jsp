@@ -7,7 +7,7 @@
     <meta name="keywords" content=""/>
     <meta charset="utf-8"/>
     <title>Mind Arena</title>
-    <link href="../static/css/style.css" rel="stylesheet"/>
+    <link href="../../../../../bulls-and-cows-1.0/static/css/style.css" rel="stylesheet"/>
     <!--<script src="script.js"></script>-->
     <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
 </head>
@@ -16,7 +16,7 @@
     <header class="clearfix">
         <nav class="main-nav">
             <ul>
-                <li class="li"><a href="/bulls-and-cows-1.0/index.html">Главная</a>
+                <li class="li"><a href="/bulls-and-cows-1.0">Главная</a>
                     <ul class="sub-menu">
                         <li><a href="#">Игры</a></li>
                         <li><a href="#">Профиль</a></li>

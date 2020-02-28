@@ -11,12 +11,20 @@ public class PlayerService {
 
     private PlayerDao dao = new PlayerDaoImpl();
 
-    public Long registerPlayer(Player player) throws DaoException {
-        return dao.registerPlayer(player);
+    public Long create(Player player) throws DaoException {
+        return dao.create(player);
     }
 
-    public List<Player> findAllPlayers() throws DaoException {
-        return dao.findAllPlayers();
+    public Player findById(Long id) throws DaoException {
+        return dao.findById(id);
+    }
+
+    public Player findPlayer(String login, String password) throws DaoException {
+        return dao.findPlayer(login, password);
+    }
+
+    public List<Player> findAll() throws DaoException {
+        return dao.findAll();
     }
 
 }

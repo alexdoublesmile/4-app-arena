@@ -17,13 +17,14 @@ public class RegisterPlayerServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RegisterPlayerServlet.class);
 
+    private PlayerService service = new PlayerService();
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html");
 
-        PlayerService service = new PlayerService();
         Player player = new Player();
         Long id;
 
@@ -33,7 +34,7 @@ public class RegisterPlayerServlet extends HttpServlet {
             player.setLogin(req.getParameter("login"));
             player.setPassword(req.getParameter("password"));
             player.setScore(Integer.parseInt(req.getParameter("score")));
-            id = service.registerPlayer(player);
+            id = service.create(player);
 
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
@@ -44,7 +45,10 @@ public class RegisterPlayerServlet extends HttpServlet {
         }
 
         req.setAttribute("message", "<script>alert('Регистрация в базе прошла успешно!')</script>");
+        req.setAttribute("user", req.getSession().getAttribute("user"));
         getServletContext().getRequestDispatcher("/view/profile.jsp").forward(req, resp);
 
     }
+
+
 }

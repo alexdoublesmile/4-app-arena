@@ -20,14 +20,15 @@ public class RecordsServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RecordsServlet.class);
 
+    private PlayerService service = new PlayerService();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        PlayerService service = new PlayerService();
         List<Player> playerList;
 
         try {
-            playerList = service.findAllPlayers();
+            playerList = service.findAll();
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);

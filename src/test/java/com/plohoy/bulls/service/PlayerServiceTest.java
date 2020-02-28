@@ -38,25 +38,29 @@ public class PlayerServiceTest {
     public static void close() {
         em = emf.createEntityManager();
         em.getTransaction().begin();
-        em.createNamedQuery("RemoveAllTestData")
+        em.createNamedQuery("SelectAllByLogin")
                 .setParameter("login",PLAYER_TEST_LOGIN)
                 .getResultList()
                 .forEach(p -> {
                     em.remove(p);
                 });
+
+        LOGGER.info("All testData is removed from DB..");
         em.getTransaction().commit();
         em.close();
         emf.close();
     }
 
     @Test
-    public void checkRegisterService() {
+    public void checkCreateService() {
         PlayerService service = new PlayerService();
         Player p = getTestPlayer();
 
         try {
-            Long newPlayerId = service.registerPlayer(p);
-            LOGGER.info("---> New testPlayer {} was added to DB by PlayerService(he'll be removed at the end of Test) - {}", newPlayerId, p.toString());
+            Long newPlayerId = service.create(p);
+            LOGGER.info(
+                    "---> New testPlayer {} was added to DB by PlayerService(he'll be removed at the end of Test) - {}",
+                    newPlayerId, p.toString());
             Assert.assertTrue(newPlayerId != null);
 
         } catch (DaoException e) {
@@ -66,11 +70,48 @@ public class PlayerServiceTest {
     }
 
     @Test
-    public void checkFindService() {
+    public void checkFindByIdService() {
         PlayerService service = new PlayerService();
-        List<Player> playerList;
+
         try {
-            playerList = service.findAllPlayers();
+            Long newId = service.create(getTestPlayer());
+            Player foundedPlayer = service.findById(newId);
+
+            LOGGER.info("Player {} was found by id from DB - {}", newId, foundedPlayer.toString());
+            Assert.assertTrue(foundedPlayer.getId() == newId);
+
+        } catch (DaoException e) {
+            LOGGER.error(e.getMessage(), e);
+            throw new RuntimeException();        }
+    }
+
+    @Test
+    public  void checkFindByLoginService() {
+        PlayerService service = new PlayerService();
+
+        try {
+            Long newId = service.create(getTestPlayer());
+            Player player = service.findPlayer(PLAYER_TEST_LOGIN, PLAYER_TEST_PASSWORD);
+            Assert.assertTrue(player.getFirstName().equals(PLAYER_TEST_FIRSTNAME)
+                    && player.getLastName().equals(PLAYER_TEST_LASTNAME)
+                    && player.getLogin().equals(PLAYER_TEST_LOGIN)
+                    && player.getPassword().equals(PLAYER_TEST_PASSWORD)
+                    && player.getScore() == PLAYER_TEST_SCORE
+                    && player.getId() == newId);
+
+        } catch (DaoException e) {
+            LOGGER.error(e.getMessage(), e);
+            throw new RuntimeException();        }
+    }
+
+
+    @Test
+    public void checkFindAllService() {
+        PlayerService service = new PlayerService();
+        List<Player> playerList = null;
+
+        try {
+            playerList = service.findAll();
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
@@ -79,13 +120,14 @@ public class PlayerServiceTest {
 
         if (playerList.size() > 0) {
             playerList.forEach(p -> {
-                System.out.println(p.getId() + " - " + p.getFirstName());
-                LOGGER.info("{} - {} {}(login: {}, password: {})", p.getId(), p.getLastName(), p.getFirstName(), p.getLogin(), p.getPassword());
-
+                LOGGER.info(
+                        "{} - {} {}(login: {}, password: {})",
+                        p.getId(), p.getLastName(), p.getFirstName(), p.getLogin(), p.getPassword());
             });
         } else {
-            System.out.println("There are no players in DB");
+            LOGGER.info("There are no players in DB");
         }
+
         Assert.assertTrue(playerList != null);
     }
 
@@ -115,17 +157,16 @@ public class PlayerServiceTest {
             } else {
                 LOGGER.info("---->>> Now DB is empty.");
             }
-            em.getTransaction().begin();
 
+            em.getTransaction().begin();
             em.persist(p);
             em.flush();
             LOGGER.info("player {} is added to DB...", p.getId());
 
-            playersList = em.createQuery("from Player ").getResultList();
+            playersList = em.createQuery("from Player").getResultList();
             Collections.reverse(playersList);
             LOGGER.info("now Last in DB is {}", playersList.get(0).toString());
 
-//            em.merge(p);
             em.remove(p);
             LOGGER.info("player {} is removed from DB...", p.getId());
 

@@ -15,6 +15,7 @@ public class PlayerDaoImpl implements PlayerDao {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RegisterPlayerServlet.class);
 
+    private EntityManagerFactory factory;
     private EntityManager entityManager;
 
     public PlayerDaoImpl() {
@@ -23,12 +24,12 @@ public class PlayerDaoImpl implements PlayerDao {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("persistence");
+        factory = Persistence.createEntityManagerFactory("persistence");
         entityManager = factory.createEntityManager();
     }
 
     @Override
-    public Long registerPlayer(Player player) throws DaoException {
+    public Long create(Player player) throws DaoException {
         try {
             entityManager.getTransaction().begin();
             entityManager.persist(player);
@@ -46,7 +47,38 @@ public class PlayerDaoImpl implements PlayerDao {
     }
 
     @Override
-    public List<Player> findAllPlayers() throws DaoException {
-        return entityManager.createQuery("SELECT p FROM Player p").getResultList();
+    public Player findById(Long id) throws DaoException {
+
+        entityManager = factory.createEntityManager();
+        Player player = entityManager.createQuery("FROM Player WHERE id =:id", Player.class)
+                .setParameter("id", id)
+                .getSingleResult();
+
+        entityManager.close();
+        return player;
+    }
+
+    @Override
+    public Player findPlayer(String login, String password) throws DaoException {
+
+        entityManager = factory.createEntityManager();
+        Player player = entityManager.createQuery("FROM Player WHERE login =:login AND password =:password", Player.class)
+                .setParameter("login", login)
+                .setParameter("password", password)
+                .getSingleResult();
+
+        entityManager.close();
+        return player;
+    }
+
+    @Override
+    public List<Player> findAll() throws DaoException {
+
+        entityManager = factory.createEntityManager();
+        List<Player> playerList = entityManager.createQuery("FROM Player")
+                .getResultList();
+
+        entityManager.close();
+        return playerList;
     }
 }

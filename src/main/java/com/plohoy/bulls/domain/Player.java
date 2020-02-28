@@ -7,7 +7,7 @@ import java.util.Objects;
 @Entity
 @NamedQueries({
         @NamedQuery(
-                name = "RemoveAllTestData",
+                name = "SelectAllByLogin",
                 query = "select p from Player p " +
                         "where p.login like :login"
 )
