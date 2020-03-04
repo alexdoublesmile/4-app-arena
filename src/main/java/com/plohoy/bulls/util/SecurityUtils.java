@@ -9,7 +9,7 @@ import java.util.Set;
 public class SecurityUtils {
 
     // Проверить требует ли данный 'request' входа в систему или нет.
-    public static boolean iSecurityPage(HttpServletRequest req) {
+    public static boolean isSecurityPage(HttpServletRequest req) {
         String urlPattern = UrlPatternUtils.getUrlPattern(req);
 
         Set<String> roles = SecurityConfig.getAllAppRoles();

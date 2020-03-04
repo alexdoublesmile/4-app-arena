@@ -1,11 +1,12 @@
 package com.plohoy.bulls.domain;
 
 import javax.persistence.*;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
-@Table(name="web_user")
 @Entity
+@Table(name="web_user")
 @NamedQueries({
         @NamedQuery(
                 name = "SelectAllByLogin",
@@ -28,8 +29,11 @@ public class User {
     private String password;
     @Column(name = "user_score")
     private int score;
-    @Column(name = "user_admin")
-    private boolean admin;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JoinTable(name = "user_role",
+        joinColumns = @JoinColumn(name = "user_id"),
+        inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Collection<Role> roles;
 
     public Long getId() {
         return id;
@@ -79,12 +83,12 @@ public class User {
         this.score = score;
     }
 
-    public boolean isAdmin() {
-        return admin;
+    public Collection<Role> getRoles() {
+        return roles;
     }
 
-    public void setAdmin(boolean admin) {
-        this.admin = admin;
+    public void setRoles(Collection<Role> roles) {
+        this.roles = roles;
     }
 
     @Override

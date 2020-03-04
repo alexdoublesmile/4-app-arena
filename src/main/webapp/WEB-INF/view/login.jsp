@@ -19,8 +19,8 @@
                 <h3>Login Page</h3>
                 <br>
                 <form action="${pageContext.request.contextPath}/login" method="post">
-                    <%--<input type="hidden" name="redirectId" value="${param.redirectId}"/>--%>
-                    <input type="hidden" name="redirectId" value="2"/>
+                    <input type="hidden" name="redirectId" value="${param.redirectId}"/>
+                    <%--<input type="hidden" name="redirectId" value="2"/>--%>
                     <label for="login">Login</label>
                     <input type="text" name="login" id="login" value="${user.login}"/>
                     <br>

@@ -1,5 +1,6 @@
 package com.plohoy.bulls.filter;
 
+import com.plohoy.bulls.domain.Role;
 import com.plohoy.bulls.domain.User;
 import com.plohoy.bulls.request.UserRoleRequestWrapper;
 import com.plohoy.bulls.util.AppUtils;
@@ -10,7 +11,6 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @WebFilter(urlPatterns = {"/*"})
@@ -43,13 +43,12 @@ public class SecurityFilter implements Filter {
         if (loginedUser != null) {
             String userLogin = loginedUser.getLogin();
 
-//            List<String> roles = loginedUser.getRoles();
-            List<String> roles = new ArrayList<>();
+            List<Role> roles = (List<Role>) loginedUser.getRoles();
 
             wrapRequest = new UserRoleRequestWrapper(userLogin, roles, req);
         }
 
-        if (SecurityUtils.iSecurityPage(req)) {
+        if (SecurityUtils.isSecurityPage(req)) {
 
             if (loginedUser == null) {
                 String requestUri = req.getRequestURI();

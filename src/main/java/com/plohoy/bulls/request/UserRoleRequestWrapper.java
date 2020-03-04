@@ -1,5 +1,7 @@
 package com.plohoy.bulls.request;
 
+import com.plohoy.bulls.domain.Role;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 import java.security.Principal;
@@ -8,10 +10,10 @@ import java.util.List;
 public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
 
     private String userLogin;
-    private List<String> userRoles;
+    private List<Role> userRoles;
     private HttpServletRequest realRequest;
 
-    public UserRoleRequestWrapper(String userLogin, List<String> userRoles, HttpServletRequest request) {
+    public UserRoleRequestWrapper(String userLogin, List<Role> userRoles, HttpServletRequest request) {
         super(request);
         this.userLogin = userLogin;
         this.userRoles = userRoles;
@@ -24,7 +26,12 @@ public class UserRoleRequestWrapper extends HttpServletRequestWrapper {
             return realRequest.isUserInRole(role);
         }
 
-        return userRoles.contains(role);
+        for (Role oneRole : userRoles) {
+            if (oneRole.getName().equals(role)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override

@@ -28,6 +28,12 @@ public class UrlPatternUtils {
         String pathInfo = req.getPathInfo();
 
         String urlPattern = null;
+        if (pathInfo != null) {
+            urlPattern = servletPath + "/*";
+            return urlPattern;
+        }
+        urlPattern = servletPath;
+
         boolean has = hasUrlPattern(servletContext, urlPattern);
 
         if(has) {
