@@ -1,32 +1,35 @@
 package com.plohoy.bulls.domain;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.Objects;
 
-@Table(name="a_player")
+@Table(name="web_user")
 @Entity
 @NamedQueries({
         @NamedQuery(
                 name = "SelectAllByLogin",
-                query = "select p from Player p " +
+                query = "select p from User p " +
                         "where p.login like :login"
 )
 })
-public class Player {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "player_id")
+    @Column(name = "user_id")
     private Long id;
-    @Column(name = "player_first_name")
+    @Column(name = "user_first_name")
     private String firstName;
-    @Column(name = "player_last_name")
+    @Column(name = "user_last_name")
     private String lastName;
-    @Column(name = "player_login")
+    @Column(name = "user_login")
     private String login;
-    @Column(name = "player_password")
+    @Column(name = "user_password")
     private String password;
-    @Column(name = "player_score")
+    @Column(name = "user_score")
     private int score;
+    @Column(name = "user_admin")
+    private boolean admin;
 
     public Long getId() {
         return id;
@@ -76,17 +79,25 @@ public class Player {
         this.score = score;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Player)) return false;
-        Player player = (Player) o;
-        return score == player.score &&
-                Objects.equals(id, player.id) &&
-                Objects.equals(firstName, player.firstName) &&
-                Objects.equals(lastName, player.lastName) &&
-                Objects.equals(login, player.login) &&
-                Objects.equals(password, player.password);
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return score == user.score &&
+                Objects.equals(id, user.id) &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(login, user.login) &&
+                Objects.equals(password, user.password);
     }
 
     @Override
@@ -96,7 +107,7 @@ public class Player {
 
     @Override
     public String toString() {
-        return "this Player:{" +
+        return "this User:{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +

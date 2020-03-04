@@ -1,24 +1,24 @@
 package com.plohoy.bulls.dao;
 
-import com.plohoy.bulls.domain.Player;
+import com.plohoy.bulls.domain.User;
 import com.plohoy.bulls.exception.DaoException;
-import com.plohoy.bulls.servlet.RegisterPlayerServlet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class PlayerDaoImpl implements PlayerDao {
+public class UserDaoImpl implements UserDao {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(RegisterPlayerServlet.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserDaoImpl.class);
 
     private EntityManagerFactory factory;
     private EntityManager entityManager;
 
-    public PlayerDaoImpl() {
+    public UserDaoImpl() {
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
@@ -29,10 +29,10 @@ public class PlayerDaoImpl implements PlayerDao {
     }
 
     @Override
-    public Long create(Player player) throws DaoException {
+    public Long create(User user) throws DaoException {
         try {
             entityManager.getTransaction().begin();
-            entityManager.persist(player);
+            entityManager.persist(user);
 
             entityManager.getTransaction().commit();
             entityManager.close();
@@ -43,42 +43,47 @@ public class PlayerDaoImpl implements PlayerDao {
             throw new DaoException();
         }
 
-        return player.getId();
+        return user.getId();
     }
 
     @Override
-    public Player findById(Long id) throws DaoException {
+    public User findById(Long id) throws DaoException {
 
         entityManager = factory.createEntityManager();
-        Player player = entityManager.createQuery("FROM Player WHERE id =:id", Player.class)
+        User user = entityManager.createQuery("FROM User WHERE id =:id", User.class)
                 .setParameter("id", id)
                 .getSingleResult();
 
         entityManager.close();
-        return player;
+        return user;
     }
 
     @Override
-    public Player findPlayer(String login, String password) throws DaoException {
+    public User findUser(String login, String password) throws DaoException {
+        User user = null;
 
         entityManager = factory.createEntityManager();
-        Player player = entityManager.createQuery("FROM Player WHERE login =:login AND password =:password", Player.class)
+        TypedQuery<User> userTypedQuery = entityManager.createQuery("FROM User WHERE login =:login AND password =:password", User.class)
                 .setParameter("login", login)
-                .setParameter("password", password)
-                .getSingleResult();
+                .setParameter("password", password);
+
+        if (userTypedQuery.getResultList().size() > 0) {
+            user = userTypedQuery.getSingleResult();
+        }
 
         entityManager.close();
-        return player;
+
+        return user;
     }
 
     @Override
-    public List<Player> findAll() throws DaoException {
+    public List<User> findAllUsers() throws DaoException {
 
         entityManager = factory.createEntityManager();
-        List<Player> playerList = entityManager.createQuery("FROM Player")
+        List<User> userList = entityManager.createQuery("FROM User")
                 .getResultList();
 
         entityManager.close();
-        return playerList;
+        return userList;
     }
 }

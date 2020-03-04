@@ -1,3 +1,9 @@
-INSERT INTO a_player(player_first_name, player_last_name, player_login, player_password, player_score)
+INSERT INTO web_user(user_first_name, user_last_name, user_login, user_password, user_score)
 VALUES
-('Иван', 'Тестовый', 'PGcreated', 'test', 0);
+('Иван', 'Тестовый', 'PGcreated', 'test', 0),
+('Денис', 'Тестовый', 'PGcreated', 'test', 0);
+
+INSERT INTO web_role(role_id, role_name)
+VALUES
+('1', 'ADMIN'),
+('2', 'USER');
