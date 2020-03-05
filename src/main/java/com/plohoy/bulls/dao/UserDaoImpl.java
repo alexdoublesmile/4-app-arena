@@ -17,14 +17,14 @@ public class UserDaoImpl implements UserDao {
 
     private EntityManagerFactory factory;
     private EntityManager entityManager;
-    private static final String ADD_ROLE = "INSERT INTO user_role(user_id, role_id)" +
+    private static final String ADD_USER_ROLE = "INSERT INTO user_role(user_id, role_id)" +
             "VALUES (? , '3')";
 
     public UserDaoImpl() {
         try {
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+            LOGGER.error(e.getMessage(), e);
         }
         factory = Persistence.createEntityManagerFactory("persistence");
 
@@ -36,12 +36,12 @@ public class UserDaoImpl implements UserDao {
             entityManager = factory.createEntityManager();
             entityManager.getTransaction().begin();
             entityManager.persist(user);
-            addRoleToUser(user);
+            addSimpleRole(user);
 
             entityManager.getTransaction().commit();
             entityManager.close();
-        } catch (Exception ex) {
 
+        } catch (Exception ex) {
             LOGGER.error(ex.getMessage(), ex);
             entityManager.getTransaction().rollback();
             throw new DaoException();
@@ -52,11 +52,15 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User findById(Long id) throws DaoException {
+        User user = null;
 
         entityManager = factory.createEntityManager();
-        User user = entityManager.createQuery("FROM User WHERE id =:id", User.class)
-                .setParameter("id", id)
-                .getSingleResult();
+        TypedQuery<User> userTypedQuery = entityManager.createQuery("FROM User WHERE id =:id", User.class)
+                .setParameter("id", id);
+
+        if (userTypedQuery.getResultList().size() > 0) {
+            user = userTypedQuery.getSingleResult();
+        }
 
         entityManager.close();
         return user;
@@ -76,7 +80,6 @@ public class UserDaoImpl implements UserDao {
         }
 
         entityManager.close();
-
         return user;
     }
 
@@ -93,7 +96,6 @@ public class UserDaoImpl implements UserDao {
         }
 
         entityManager.close();
-
         return user;
     }
 
@@ -108,8 +110,8 @@ public class UserDaoImpl implements UserDao {
         return userList;
     }
 
-    private void addRoleToUser(User user) {
-        entityManager.createNativeQuery(ADD_ROLE)
+    private void addSimpleRole(User user) {
+        entityManager.createNativeQuery(ADD_USER_ROLE)
                 .setParameter(1, user.getId())
                 .executeUpdate();
 

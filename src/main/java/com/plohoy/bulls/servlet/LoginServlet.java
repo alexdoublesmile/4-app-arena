@@ -18,6 +18,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginServlet.class);
+    public static final String INVALID_LOGIN_MESSAGE = "Unknown user or invalid password, please try again";
 
     private UserService service = new UserService();
 
@@ -48,24 +49,26 @@ public class LoginServlet extends HttpServlet {
         }
 
         if (user == null) {
-            req.setAttribute("errorString", "Unknown user or invalid password, please try again");
+            req.setAttribute("errorString", INVALID_LOGIN_MESSAGE);
             getServletContext().getRequestDispatcher("/WEB-INF/view/login.jsp")
                     .forward(req, resp);
-
             return;
         }
 
         AppUtils.storeLoginedUser(req.getSession(), user);
+        redirectLoginedUser(req, resp);
+    }
 
-        int redirectId = 0;
+    private void redirectLoginedUser(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        int redirectId = -1;
         try {
             redirectId = Integer.parseInt(req.getParameter("redirectId"));
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
-            throw new RuntimeException();
         }
-        String requestUri = AppUtils.getRedirectAfterLoginUrl(req.getSession(), redirectId);
-        if(requestUri != null) {
+
+        if (redirectId != -1) {
+            String requestUri = AppUtils.getRedirectAfterLoginUrl(req.getSession(), redirectId);
             resp.sendRedirect(requestUri);
         } else {
             resp.sendRedirect(req.getContextPath() + "/userInfo");

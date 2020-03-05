@@ -17,7 +17,7 @@
                     </li>
                 </c:when>
                 <c:otherwise>
-                    <li><a style="color: navajowhite" href="${pageContext.request.contextPath}/login?redirectId=0">Войти</a></li>
+                    <li><a style="color: navajowhite" href="${pageContext.request.contextPath}/login">Войти</a></li>
                 </c:otherwise>
             </c:choose>
 

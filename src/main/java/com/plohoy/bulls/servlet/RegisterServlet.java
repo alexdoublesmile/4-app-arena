@@ -16,16 +16,20 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RegisterServlet.class);
+    public static final String LOGIN_IS_BUSY = "This Login is busy. Choose another login, please.";
 
     private UserService service = new UserService();
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getServletContext().getRequestDispatcher("/WEB-INF/view/register.jsp").forward(req, resp);
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
+        req.getServletContext().getRequestDispatcher("/WEB-INF/view/register.jsp")
+                .forward(req, resp);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp)
+            throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
         resp.setContentType("text/html");
@@ -35,7 +39,7 @@ public class RegisterServlet extends HttpServlet {
             if (user == null) {
                 Long id = service.create(getNewUser(req));
             } else {
-                req.setAttribute("errorString", "This Login is busy. Choose another login, please.");
+                req.setAttribute("errorString", LOGIN_IS_BUSY);
                 getServletContext().getRequestDispatcher("/WEB-INF/view/register.jsp")
                         .forward(req, resp);
             }
@@ -43,13 +47,10 @@ public class RegisterServlet extends HttpServlet {
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
             resp.getWriter().write("<h1 align=\"center\">Something wrong was happened - User was NOT added to DB.. Call to Alex and tell him about it</h1>");
-
             throw new RuntimeException();
-
         }
 
         resp.sendRedirect(getServletContext().getContextPath() + "/registerSuccess");
-
     }
 
     private User getNewUser(HttpServletRequest req) {

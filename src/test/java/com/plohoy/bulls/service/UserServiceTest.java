@@ -152,7 +152,6 @@ public class UserServiceTest {
 
         testUser.setFirstName(USER_TEST_FIRSTNAME);
         testUser.setLastName(USER_TEST_LASTNAME);
-        testUser.setLogin(USER_TEST_LOGIN);
         testUser.setPassword(USER_TEST_PASSWORD);
         testUser.setScore(USER_TEST_SCORE);
 
