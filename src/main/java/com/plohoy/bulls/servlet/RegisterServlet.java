@@ -31,18 +31,24 @@ public class RegisterServlet extends HttpServlet {
         resp.setContentType("text/html");
 
         try {
-            Long id = service.create(getNewUser(req));
+            User user = service.findByLogin(req.getParameter("login"));
+            if (user == null) {
+                Long id = service.create(getNewUser(req));
+            } else {
+                req.setAttribute("errorString", "This Login is busy. Choose another login, please.");
+                getServletContext().getRequestDispatcher("/WEB-INF/view/register.jsp")
+                        .forward(req, resp);
+            }
 
         } catch (Exception e) {
             LOGGER.error(e.getMessage(), e);
-            resp.getWriter().write("<h1 align=\"center\">------->>>>>> User was NOT added to DB..</h1>");
+            resp.getWriter().write("<h1 align=\"center\">Something wrong was happened - User was NOT added to DB.. Call to Alex and tell him about it</h1>");
 
             throw new RuntimeException();
 
         }
 
-        req.setAttribute("message", "<script>alert('Регистрация в базе прошла успешно. Можете войти в систему.')</script>");
-        resp.sendRedirect(getServletContext().getContextPath() + "/login");
+        resp.sendRedirect(getServletContext().getContextPath() + "/registerSuccess");
 
     }
 
@@ -53,7 +59,6 @@ public class RegisterServlet extends HttpServlet {
         user.setLastName(req.getParameter("lastName"));
         user.setLogin(req.getParameter("login"));
         user.setPassword(req.getParameter("password"));
-        user.setScore(Integer.parseInt(req.getParameter("score")));
 
         return user;
     }

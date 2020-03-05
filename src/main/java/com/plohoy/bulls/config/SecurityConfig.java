@@ -6,6 +6,7 @@ public class SecurityConfig {
 
     public static final String ROLE_USER = "USER";
     public static final String ROLE_ADMIN = "ADMIN";
+    public static final String ROLE_MODER = "MODER";
 
     private static final Map<String, List<String>> mapConfig = new HashMap<>();
 
@@ -21,9 +22,16 @@ public class SecurityConfig {
 
         List<String> urlPatterns2 = new ArrayList<>();
         urlPatterns2.add("/userInfo");
-        urlPatterns2.add("/admin");
+        urlPatterns2.add("/moder");
 
-        mapConfig.put(ROLE_ADMIN, urlPatterns2);
+        mapConfig.put(ROLE_MODER, urlPatterns2);
+
+        List<String> urlPatterns3 = new ArrayList<>();
+        urlPatterns3.add("/userInfo");
+        urlPatterns3.add("/admin");
+        urlPatterns3.add("/moder");
+
+        mapConfig.put(ROLE_ADMIN, urlPatterns3);
 
 
     }

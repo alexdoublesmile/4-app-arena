@@ -8,8 +8,7 @@ CREATE TABLE web_user (
   user_last_name varchar not null,
   user_login varchar not null UNIQUE,
   user_password varchar not null,
-  user_score integer,
-  user_admin boolean default false
+  user_score integer
 );
 
 CREATE TABLE web_role (

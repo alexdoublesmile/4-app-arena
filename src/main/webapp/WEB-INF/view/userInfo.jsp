@@ -43,6 +43,5 @@
     <jsp:include page="footer.jsp"></jsp:include>
 
 </div>
-<p>${message}</p>
 </body>
 </html>

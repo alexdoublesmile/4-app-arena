@@ -6,10 +6,17 @@
         <ul>
             <li class="li"><a href=${pageContext.request.contextPath}>Главная</a></li>
             <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
-            <li><a href="${pageContext.request.contextPath}/login">Войти</a></li>
-            <li><a href="${pageContext.request.contextPath}/logout">Выйти</a></li>
-            <li><a style="color:red" href="${pageContext.request.contextPath}/userInfo">[${loginedUser.login}]</a>
-            <li><a href="${pageContext.request.contextPath}/admin">admin</a>
+
+            <%--<c:choose>--%>
+                <%--<c:when test="${loginedUser.equals('no')}">--%>
+                    <%--<li><a style="color: limegreen" href="${pageContext.request.contextPath}/login?redirectId=0">Войти</a></li>--%>
+
+                <%--</c:when>--%>
+                <%--<c:otherwise>--%>
+                    <%--<li><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a></li>--%>
+                <%--</c:otherwise>--%>
+            <%--</c:choose>--%>
+            <li><a href="${pageContext.request.contextPath}/admin">admin panel</a>
         </ul>
     </div>
     <div class="foot-services">

@@ -31,5 +31,6 @@
 
         <jsp:include page="footer.jsp"></jsp:include>
     </div>
+    ${message}
 </body>
 </html>

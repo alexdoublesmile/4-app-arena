@@ -2,7 +2,6 @@ package com.plohoy.bulls.domain;
 
 import javax.persistence.*;
 import java.util.Collection;
-import java.util.List;
 
 @Entity
 @Table(name = "web_role")

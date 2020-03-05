@@ -4,17 +4,23 @@
 <header class="clearfix">
     <nav class="main-nav">
         <ul>
-            <li class="li"><a href=${pageContext.request.contextPath}>Главная</a></li>
+            <li><a href=${pageContext.request.contextPath}>Главная</a></li>
             <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
-            <li><a href="${pageContext.request.contextPath}/login">Войти</a></li>
-            <li><a href="${pageContext.request.contextPath}/logout">Выйти</a></li>
-            <li><a style="color:red" href="${pageContext.request.contextPath}/userInfo">[${loginedUser.login}]</a>
-            <li><a href="${pageContext.request.contextPath}/admin">admin</a>
-                <%--<ul class="sub-menu">--%>
-                    <%--<li><a href="static/main-2.html">Игры</a></li>--%>
-                    <%--<li><a href="http://localhost:8080/bulls-and-cows-1.0/view/profile.jsp">Профиль</a></li>--%>
-                <%--</ul>--%>
-            </li>
+            <li><a href="${pageContext.request.contextPath}/admin">admin panel</a></li>
+            <c:choose>
+                <c:when test="${not empty loginedUser.login}">
+                    <li class="sub-li"><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a>
+                        <ul class="sub-menu">
+                            <li><a href="${pageContext.request.contextPath}/userInfo">Профиль</a></li>
+                            <li><a href="${pageContext.request.contextPath}/logout">Выйти</a></li>
+                        </ul>
+                    </li>
+                </c:when>
+                <c:otherwise>
+                    <li><a style="color: navajowhite" href="${pageContext.request.contextPath}/login?redirectId=0">Войти</a></li>
+                </c:otherwise>
+            </c:choose>
+
         </ul>
     </nav>
     <div class="search">

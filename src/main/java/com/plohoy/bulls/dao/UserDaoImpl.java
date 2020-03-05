@@ -17,6 +17,8 @@ public class UserDaoImpl implements UserDao {
 
     private EntityManagerFactory factory;
     private EntityManager entityManager;
+    private static final String ADD_ROLE = "INSERT INTO user_role(user_id, role_id)" +
+            "VALUES (? , '3')";
 
     public UserDaoImpl() {
         try {
@@ -25,14 +27,16 @@ public class UserDaoImpl implements UserDao {
             e.printStackTrace();
         }
         factory = Persistence.createEntityManagerFactory("persistence");
-        entityManager = factory.createEntityManager();
+
     }
 
     @Override
     public Long create(User user) throws DaoException {
         try {
+            entityManager = factory.createEntityManager();
             entityManager.getTransaction().begin();
             entityManager.persist(user);
+            addRoleToUser(user);
 
             entityManager.getTransaction().commit();
             entityManager.close();
@@ -77,6 +81,23 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    public User findByLogin(String login) throws DaoException {
+        User user = null;
+
+        entityManager = factory.createEntityManager();
+        TypedQuery<User> userTypedQuery = entityManager.createQuery("FROM User WHERE login =:login", User.class)
+                .setParameter("login", login);
+
+        if (userTypedQuery.getResultList().size() > 0) {
+            user = userTypedQuery.getSingleResult();
+        }
+
+        entityManager.close();
+
+        return user;
+    }
+
+    @Override
     public List<User> findAllUsers() throws DaoException {
 
         entityManager = factory.createEntityManager();
@@ -85,5 +106,12 @@ public class UserDaoImpl implements UserDao {
 
         entityManager.close();
         return userList;
+    }
+
+    private void addRoleToUser(User user) {
+        entityManager.createNativeQuery(ADD_ROLE)
+                .setParameter(1, user.getId())
+                .executeUpdate();
+
     }
 }

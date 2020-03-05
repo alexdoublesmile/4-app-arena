@@ -46,9 +46,10 @@
                 <label for="password">Пароль</label>
                 <input type="text" name="password" id="password"/>
 
-                <label for="score">Очки</label>
-                <input type="text" name="score" id="score"/>
-                <input type="submit">Register</input>
+                <%--<label for="score">Очки</label>--%>
+                <%--<input type="text" name="score" id="score"/>--%>
+                <input type="submit">Register</input><br>
+                <span>${errorString}</span>
             </form>
         </div>
     </div>

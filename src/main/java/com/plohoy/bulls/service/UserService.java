@@ -19,6 +19,10 @@ public class UserService {
         return dao.findById(id);
     }
 
+    public User findByLogin(String login) throws DaoException {
+        return dao.findByLogin(login);
+    }
+
     public User findUser(String login, String password) throws DaoException {
         return dao.findUser(login, password);
     }
