@@ -17,14 +17,14 @@
                 <div class="info">
                     <h2>Как настроение?</h2>
                     <h3>Добро пожаловать на Арену</h3>
-                    <a href="#">Хочу сыграть</a>
+                    <a href="${pageContext.request.contextPath}/games">Хочу сыграть</a>
                 </div>
             </div>
             <div class="main-img-2">
                 <div class="info">
                     <h2>Поразмыслим..?</h2>
                     <h3>Добро пожаловать на Арену</h3>
-                    <a href="static/main-2.html">Хочу сыграть</a>
+                    <a href="${pageContext.request.contextPath}/games">Хочу сыграть</a>
                 </div>
             </div>
         </div>

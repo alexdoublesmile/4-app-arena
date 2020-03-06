@@ -15,23 +15,26 @@ public class SecurityConfig {
     }
 
     private static void init() {
-        List<String> urlPatterns1 = new ArrayList<>();
-        urlPatterns1.add("/userInfo");
+        List<String> urlPatternsForUser = new ArrayList<>();
+        urlPatternsForUser.add("/userInfo");
+        urlPatternsForUser.add("/games");
 
-        mapConfig.put(ROLE_USER, urlPatterns1);
+        mapConfig.put(ROLE_USER, urlPatternsForUser);
 
-        List<String> urlPatterns2 = new ArrayList<>();
-        urlPatterns2.add("/userInfo");
-        urlPatterns2.add("/moder");
+        List<String> urlPatternsForModer = new ArrayList<>();
+        urlPatternsForModer.add("/userInfo");
+        urlPatternsForModer.add("/games");
+        urlPatternsForModer.add("/moder");
 
-        mapConfig.put(ROLE_MODER, urlPatterns2);
+        mapConfig.put(ROLE_MODER, urlPatternsForModer);
 
-        List<String> urlPatterns3 = new ArrayList<>();
-        urlPatterns3.add("/userInfo");
-        urlPatterns3.add("/admin");
-        urlPatterns3.add("/moder");
+        List<String> urlPatternsForAdmin = new ArrayList<>();
+        urlPatternsForAdmin.add("/userInfo");
+        urlPatternsForAdmin.add("/games");
+        urlPatternsForAdmin.add("/admin");
+        urlPatternsForAdmin.add("/moder");
 
-        mapConfig.put(ROLE_ADMIN, urlPatterns3);
+        mapConfig.put(ROLE_ADMIN, urlPatternsForAdmin);
 
 
     }

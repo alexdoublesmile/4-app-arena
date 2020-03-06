@@ -8,7 +8,7 @@
     <meta charset="utf-8"/>
     <title>Profile</title>
     <link href="${pageContext.request.contextPath}/static/css/style.css" rel="stylesheet"/>
-    <!--<script src="script.js"></script>-->
+    <!--<script src="checkRegistration.js"></script>-->
     <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> -->
 </head>
 <body>

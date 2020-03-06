@@ -5,6 +5,7 @@
     <nav class="main-nav">
         <ul>
             <li><a href=${pageContext.request.contextPath}>Главная</a></li>
+            <li><a href="${pageContext.request.contextPath}/games">Игры</a></li>
             <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
             <li><a href="${pageContext.request.contextPath}/admin">admin panel</a></li>
             <c:choose>

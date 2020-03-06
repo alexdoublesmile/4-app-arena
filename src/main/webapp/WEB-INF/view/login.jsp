@@ -20,12 +20,11 @@
                 <br>
                 <form action="${pageContext.request.contextPath}/login" method="post">
                     <input type="hidden" name="redirectId" value="${param.redirectId}"/>
-                    <%--<input type="hidden" name="redirectId" value="2"/>--%>
                     <label for="login">Login</label>
-                    <input type="text" name="login" id="login" value="${user.login}"/>
+                    <input type="text" name="login" id="login" value="${user.login}" required/>
                     <br>
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password" value="${user.password}"/>
+                    <input type="text" name="password" id="password" value="${user.password}" required/>
                     <br>
                     <input type="submit" value="Login"/>
                     <br>
