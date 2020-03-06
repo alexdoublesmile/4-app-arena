@@ -68,7 +68,7 @@ public class LoginServlet extends HttpServlet {
         }
 
         if (redirectId != -1) {
-            String requestUri = AppUtils.getRedirectAfterLoginUrl(req.getSession(), redirectId);
+            String requestUri = AppUtils.getRedirectAfterLoginUrl(redirectId);
             resp.sendRedirect(requestUri);
         } else {
             resp.sendRedirect(req.getContextPath() + "/userInfo");

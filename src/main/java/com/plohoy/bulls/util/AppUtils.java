@@ -23,7 +23,7 @@ public class AppUtils {
         return loginedUser;
     }
 
-    public static int storeRedirectAfterLoginUrl(HttpSession session, String requestUri) {
+    public static int storeRedirectAfterLoginUrl(String requestUri) {
         Integer id = URI_ID_MAP.get(requestUri);
 
         if (id == null) {
@@ -37,7 +37,7 @@ public class AppUtils {
         return id;
     }
 
-    public static String getRedirectAfterLoginUrl(HttpSession session, int redirectId) {
+    public static String getRedirectAfterLoginUrl(int redirectId) {
         String url = ID_URI_MAP.get(redirectId);
         if (url != null) {
             return url;

@@ -22,6 +22,7 @@ public class UserServiceTest {
     private static EntityManagerFactory emf;
     private static EntityManager em;
 
+    private static int USER_TEST_LOGIN_INDEX = 1;
     private static final String USER_TEST_FIRSTNAME = "Дениска";
     private static final String USER_TEST_LASTNAME = "Тестовый";
     private static final String USER_TEST_LOGIN = "createdByIdeaTest";
@@ -40,7 +41,7 @@ public class UserServiceTest {
         em = emf.createEntityManager();
         em.getTransaction().begin();
         em.createNamedQuery("SelectAllByLogin")
-                .setParameter("login",USER_TEST_LOGIN)
+                .setParameter("login",USER_TEST_LOGIN + '%')
                 .getResultList()
                 .forEach(p -> {
                     em.remove(p);
@@ -60,7 +61,7 @@ public class UserServiceTest {
         try {
             Long newUserId = service.create(testUser);
             LOGGER.info(
-                    "---> New testUSER {} was added to DB by UserService(he'll be removed at the end of Test) - {}",
+                    "---> New testUser {} was added to DB by UserService(he'll be removed at the end of Test) - {}",
                     newUserId, testUser.toString());
             Assert.assertTrue(newUserId != null);
 
@@ -78,7 +79,7 @@ public class UserServiceTest {
             Long newId = service.create(getTestUser());
             User foundedUser = service.findById(newId);
 
-            LOGGER.info("User {} was found by id from DB - {}", newId, foundedUser.toString());
+            LOGGER.info("User {} was found by ID from DB - {}", newId, foundedUser.toString());
             Assert.assertTrue(foundedUser.getId() == newId);
 
         } catch (DaoException e) {
@@ -106,13 +107,9 @@ public class UserServiceTest {
 
         try {
             Long newId = service.create(getTestUser());
-            User foundedUser = service.findUser(USER_TEST_LOGIN, USER_TEST_PASSWORD);
-            Assert.assertTrue(foundedUser.getFirstName().equals(USER_TEST_FIRSTNAME)
-                    && foundedUser.getLastName().equals(USER_TEST_LASTNAME)
-                    && foundedUser.getLogin().equals(USER_TEST_LOGIN)
-                    && foundedUser.getPassword().equals(USER_TEST_PASSWORD)
-                    && foundedUser.getScore() == USER_TEST_SCORE
-                    && foundedUser.getId() == newId);
+            User foundedUser = service.findUser(USER_TEST_LOGIN + USER_TEST_LOGIN_INDEX, USER_TEST_PASSWORD);
+            User foundedByLoginUser = service.findByLogin(USER_TEST_LOGIN + USER_TEST_LOGIN_INDEX);
+            Assert.assertTrue(foundedUser.equals(foundedByLoginUser));
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
@@ -152,10 +149,30 @@ public class UserServiceTest {
 
         testUser.setFirstName(USER_TEST_FIRSTNAME);
         testUser.setLastName(USER_TEST_LASTNAME);
+        testUser.setLogin(getUserTestLogin());
         testUser.setPassword(USER_TEST_PASSWORD);
         testUser.setScore(USER_TEST_SCORE);
 
         return testUser;
+    }
+
+    private String getUserTestLogin() {
+        em = emf.createEntityManager();
+        List<User> userList = em.createQuery("from User")
+                .getResultList();
+        while (true) {
+            int initialIndex = USER_TEST_LOGIN_INDEX;
+
+            for (User user : userList) {
+                if (user.getLogin().equals(USER_TEST_LOGIN + USER_TEST_LOGIN_INDEX)) {
+                    USER_TEST_LOGIN_INDEX++;
+                }
+            }
+            if (USER_TEST_LOGIN_INDEX == initialIndex) {
+                break;
+            }
+        }
+        return USER_TEST_LOGIN + USER_TEST_LOGIN_INDEX;
     }
 
     @Test
@@ -175,14 +192,14 @@ public class UserServiceTest {
             em.getTransaction().begin();
             em.persist(testUser);
             em.flush();
-            LOGGER.info("USER {} is added to DB...", testUser.getId());
+            LOGGER.info("User {} is added to DB...", testUser.getId());
 
             userList = em.createQuery("from User").getResultList();
             Collections.reverse(userList);
             LOGGER.info("now Last in DB is {}", userList.get(0).toString());
 
             em.remove(testUser);
-            LOGGER.info("USER {} is removed from DB...", testUser.getId());
+            LOGGER.info("User {} is removed from DB...", testUser.getId());
 
             em.getTransaction().commit();
             em.close();

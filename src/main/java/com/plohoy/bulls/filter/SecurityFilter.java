@@ -16,8 +16,7 @@ import java.util.List;
 @WebFilter(urlPatterns = {"/*"})
 public class SecurityFilter implements Filter {
 
-    public SecurityFilter() {
-    }
+    public SecurityFilter() {}
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {}
@@ -51,13 +50,13 @@ public class SecurityFilter implements Filter {
             if (loginedUser == null) {
                 String requestUri = req.getRequestURI();
 
-                int redirectId = AppUtils.storeRedirectAfterLoginUrl(req.getSession(), requestUri);
+                int redirectId = AppUtils.storeRedirectAfterLoginUrl(requestUri);
                 resp.sendRedirect(wrapRequest.getContextPath() + "/login?redirectId=" + redirectId);
                 return;
             }
 
-            boolean hasPermission = SecurityUtils.hasPermission(wrapRequest);
-            if (!hasPermission) {
+            boolean hasUserPermission = SecurityUtils.hasUserPermission(wrapRequest);
+            if (!hasUserPermission) {
                 req.getServletContext().getRequestDispatcher("/WEB-INF/view/accessDenied.jsp")
                         .forward(req, resp);
                 return;

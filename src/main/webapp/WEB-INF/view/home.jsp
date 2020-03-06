@@ -12,7 +12,7 @@
     <div class="wrapper">
         <jsp:include page="header.jsp"></jsp:include>
 
-        <div class="main-img">
+        <div class="content">
             <div class="main-img-1">
                 <div class="info">
                     <h2>Как настроение?</h2>

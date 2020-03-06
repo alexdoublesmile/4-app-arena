@@ -17,13 +17,13 @@
                     <%--<li><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a></li>--%>
                 <%--</c:otherwise>--%>
             <%--</c:choose>--%>
-            <li><a href="${pageContext.request.contextPath}/admin">admin panel</a>
+            <li><a href="${pageContext.request.contextPath}/admin">Admin Panel</a>
         </ul>
     </div>
     <div class="foot-services">
         <p>Услуги</p>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/userInfo">профиль</a></li>
+            <li><a href="${pageContext.request.contextPath}/userInfo">Профиль</a></li>
         </ul>
     </div>
     <div class="foot-blog">

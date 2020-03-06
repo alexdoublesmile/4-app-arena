@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class UrlPatternUtils {
 
-    private static boolean hasUrlPattern(ServletContext ctx, String urlPattern) {
+    private static boolean hasUrlPatternInContext(ServletContext ctx, String urlPattern) {
         Map<String, ? extends ServletRegistration> map = ctx.getServletRegistrations();
 
         for (String servletName : map.keySet()) {
@@ -34,19 +34,19 @@ public class UrlPatternUtils {
         }
         urlPattern = servletPath;
 
-        boolean has = hasUrlPattern(servletContext, urlPattern);
+        boolean hasUrlMapping = hasUrlPatternInContext(servletContext, urlPattern);
 
-        if(has) {
+        if(hasUrlMapping) {
             return urlPattern;
         }
 
-        int i = servletPath.lastIndexOf('.');
-        if(i != -1) {
-            String ext = servletPath.substring(i + 1);
-            urlPattern = "*." + ext;
-            has = hasUrlPattern(servletContext, urlPattern);
+        int extensionIndex = servletPath.lastIndexOf('.');
+        if(extensionIndex != -1) {
+            String extension = servletPath.substring(extensionIndex + 1);
+            urlPattern = "*." + extension;
+            hasUrlMapping = hasUrlPatternInContext(servletContext, urlPattern);
 
-            if(has) {
+            if(hasUrlMapping) {
                 return urlPattern;
             }
         }
