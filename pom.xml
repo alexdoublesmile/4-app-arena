@@ -23,6 +23,24 @@
                 </plugin>
 
                 <!--<plugin>-->
+                    <!--<artifactId>maven-war-plugin</artifactId>-->
+                    <!--<version>2.6</version>-->
+                    <!--<configuration>-->
+                        <!--<warName>arena</warName>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
+                    <!--<groupId>org.eclipse.jetty</groupId>-->
+                    <!--<artifactId>jetty-maven-plugin</artifactId>-->
+                    <!--<version>9.4.27-SNAPSHOT</version>-->
+                    <!--<configuration>-->
+                        <!--<scanIntervalSeconds>10</scanIntervalSeconds>-->
+                        <!--<webApp>-->
+                            <!--<contextPath>/arena</contextPath>-->
+                        <!--</webApp>-->
+                    <!--</configuration>-->
+                <!--</plugin>-->
+                <!--<plugin>-->
                     <!--<groupId>org.apache.maven.plugins</groupId>-->
                     <!--<artifactId>maven-war-plugin</artifactId>-->
                     <!--<version>2.3</version>-->
