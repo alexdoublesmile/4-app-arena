@@ -5,26 +5,20 @@
 <html>
 <head>
     <title>Moder</title>
-    <link href="${pageContext.request.contextPath}/static/css/style.css" rel="stylesheet"/>
+    <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>
 <div class="wrapper">
     <jsp:include page="header.jsp"></jsp:include>
-    <div style=
-                 "font-size: 20px;
-                          padding-top: 120px;
-                          color: #ffffff">
-
-        <p>YOU HAVE BEEN REGISTERED!</p>
-        <br>
-        <p style="
-        color:green;
-        white-space: pre-wrap">
-            Регистрация прошла успешно! Можете войти в систему, используя свои логин и пароль.</p>
-
+    <div class="content">
+        <div class="registrationSuccess-img">
+            <div class="info">
+                <h2>YOU HAVE BEEN REGISTERED!</h2>
+                <h3>Регистрация прошла успешно! Можете войти в систему, используя свои логин и пароль.</h3>
+                <a></a>
+            </div>
+        </div>
     </div>
-
-
 
     <jsp:include page="footer.jsp"></jsp:include>
 

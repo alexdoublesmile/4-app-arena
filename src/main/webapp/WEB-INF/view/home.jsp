@@ -3,10 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Home</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <title>Home</title>
-    <link href="${pageContext.request.contextPath}/static/css/style.css" rel="stylesheet"/>
+    <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>
     <div class="wrapper">
@@ -17,7 +17,7 @@
                 <div class="info">
                     <h2>Как настроение?</h2>
                     <h3>Добро пожаловать на Арену</h3>
-                    <a href="${pageContext.request.contextPath}/games">Хочу сыграть</a>
+                    <%--<a href="${pageContext.request.contextPath}/games">Хочу сыграть</a>--%>
                 </div>
             </div>
             <div class="main-img-2">

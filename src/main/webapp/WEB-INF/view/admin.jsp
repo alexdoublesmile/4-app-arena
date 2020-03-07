@@ -5,20 +5,19 @@
 <html>
 <head>
     <title>Hall Of Fame</title>
-    <link href="${pageContext.request.contextPath}/static/css/style.css" rel="stylesheet"/>
+    <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>
 <div class="wrapper">
     <jsp:include page="header.jsp"></jsp:include>
-    <div style=
-                 "font-size: 20px;
-                          padding-top: 120px;
-                          color: #ffffff">
-
-        <p>ADMIN PANEL</p>
-        <br>
-        <p style="color:green">Access is allowed</p>
-
+    <div class="content">
+        <div class="admin-img">
+            <div class="info">
+                <h2>Admin Panel</h2>
+                <h3></h3>
+                <a></a>
+            </div>
+        </div>
     </div>
 
 

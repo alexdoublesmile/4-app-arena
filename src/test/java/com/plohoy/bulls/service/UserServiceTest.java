@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -143,6 +144,61 @@ public class UserServiceTest {
         Assert.assertTrue(usersList != null);
     }
 
+    @Test
+    public void checkSortByScoreService() {
+        UserService service = new UserService();
+        List<User> randomFiveUsers = createFiveRandomUsers();
+
+        LOGGER.info("Five Users were created with random score: {}, {}, {}, {}, {}",
+                randomFiveUsers.get(0).getScore(),
+                randomFiveUsers.get(1).getScore(),
+                randomFiveUsers.get(2).getScore(),
+                randomFiveUsers.get(3).getScore(),
+                randomFiveUsers.get(4).getScore());
+
+        service.sortByScore(randomFiveUsers);
+
+        LOGGER.info("Five Users were sorted by Service: {}, {}, {}, {}, {}",
+                randomFiveUsers.get(0).getScore(),
+                randomFiveUsers.get(1).getScore(),
+                randomFiveUsers.get(2).getScore(),
+                randomFiveUsers.get(3).getScore(),
+                randomFiveUsers.get(4).getScore());
+
+        Assert.assertTrue(
+                randomFiveUsers.get(0).getScore() > randomFiveUsers.get(1).getScore()
+                && randomFiveUsers.get(1).getScore() > randomFiveUsers.get(2).getScore()
+                && randomFiveUsers.get(2).getScore() > randomFiveUsers.get(3).getScore()
+                && randomFiveUsers.get(3).getScore() > randomFiveUsers.get(4).getScore()
+        );
+    }
+
+    private List<User> createFiveRandomUsers() {
+        List<User> usersList = new ArrayList<>();
+        User firstUser = getTestUser();
+        User secondUser = getTestUser();
+        User thirdUser = getTestUser();
+        User fourthUser = getTestUser();
+        User fifthUser = getTestUser();
+        firstUser.setScore(getRandomInt(1000));
+        secondUser.setScore(getRandomInt(1000));
+        thirdUser.setScore(getRandomInt(1000));
+        fourthUser.setScore(getRandomInt(1000));
+        fifthUser.setScore(getRandomInt(1000));
+
+        usersList.add(firstUser);
+        usersList.add(secondUser);
+        usersList.add(thirdUser);
+        usersList.add(fourthUser);
+        usersList.add(fifthUser);
+
+        return usersList;
+    }
+
+    private int getRandomInt(int index) {
+        int casted = (int) (Math.random() * index);
+        return casted;
+    }
 
     private User getTestUser() {
         User testUser = new User();

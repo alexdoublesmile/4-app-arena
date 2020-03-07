@@ -26,16 +26,18 @@ public class UsersListServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         List<User> usersList;
+        List<User> sortedUsers;
 
         try {
             usersList = service.findAllUsers();
+            sortedUsers = service.sortByScore(usersList);
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
             throw new RuntimeException();
         }
 
-        req.setAttribute("usersList", usersList);
+        req.setAttribute("usersList", sortedUsers);
         getServletContext().getRequestDispatcher("/WEB-INF/view/usersList.jsp")
                 .forward(req, resp);
 
