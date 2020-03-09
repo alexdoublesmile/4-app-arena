@@ -2,6 +2,7 @@ package com.plohoy.bulls.service;
 
 import com.plohoy.bulls.dao.UserDao;
 import com.plohoy.bulls.dao.UserDaoImpl;
+import com.plohoy.bulls.domain.Dictums;
 import com.plohoy.bulls.domain.User;
 import com.plohoy.bulls.exception.DaoException;
 import org.hibernate.mapping.Collection;
@@ -40,5 +41,11 @@ public class UserService {
         Collections.reverse(usersList);
 
         return usersList;
+    }
+
+    public String getRandomDictum() {
+        int randomIndex = (int) (Math.random() * Dictums.getDictums().size());
+
+        return Dictums.getDictums().get(randomIndex);
     }
 }

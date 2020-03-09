@@ -17,21 +17,23 @@
                     <%--<li><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a></li>--%>
                 <%--</c:otherwise>--%>
             <%--</c:choose>--%>
-            <li><a href="${pageContext.request.contextPath}/admin">Admin Panel</a>
         </ul>
     </div>
     <div class="foot-services">
-        <p>Услуги</p>
+        <p>Действия</p>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/userInfo">Профиль</a></li>
+            <li><a href="${pageContext.request.contextPath}/userInfo">Изменить профиль</a></li>
+            <li><a href="${pageContext.request.contextPath}/logout">Выйти из профиля</a></li>
+            <li><a href="${pageContext.request.contextPath}/admin">Открыть Admin Panel</a>
+
         </ul>
     </div>
     <div class="foot-blog">
-        <p>Мы в соц сетях</p>
+        <p>Соц сети</p>
         <ul>
-            <li><a href="#"><img src="static/images/icons/vk.png" alt="picture"/></a></li>
-            <li><a href="#"><img src="static/images/icons/fb.png" alt="picture"/></a></li>
-            <li><a href="#"><img src="static/images/icons/ok.png" alt="picture"/></a></li>
+            <li><a href="https://vk.com/feed"><img src="static/images/icons/vk.png" alt="picture"/></a></li>
+            <li><a href="https://www.facebook.com/"><img src="static/images/icons/fb.png" alt="picture"/></a></li>
+            <li><a href="https://ok.ru/"><img src="static/images/icons/ok.png" alt="picture"/></a></li>
         </ul>
     </div>
 </footer>

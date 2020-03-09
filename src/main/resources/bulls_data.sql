@@ -14,3 +14,8 @@ INSERT INTO user_role(user_id, role_id)
 VALUES
 ('1', '1'),
 ('2', '3');
+
+INSERT INTO time(time_id, time_point_name, time_value)
+VALUES
+('1', 'mainPoint', '1583756263503');
+

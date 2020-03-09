@@ -18,7 +18,7 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(LoginServlet.class);
-    public static final String INVALID_LOGIN_MESSAGE = "Unknown user or invalid password, please try again";
+    public static final String INVALID_LOGIN_MESSAGE = "Такого пользователя нет, попробуйте снова";
 
     private UserService service = new UserService();
 

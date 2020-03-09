@@ -16,7 +16,7 @@ import java.io.IOException;
 public class RegisterServlet extends HttpServlet {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RegisterServlet.class);
-    public static final String LOGIN_IS_BUSY = "This Login is busy. Choose another login, please.";
+    public static final String LOGIN_IS_BUSY = "Логин уже занят. Выберите иной, пожалуйста";
 
     private UserService service = new UserService();
 

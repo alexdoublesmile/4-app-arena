@@ -11,10 +11,10 @@
 <div class="wrapper">
     <jsp:include page="header.jsp"></jsp:include>
     <div class="content">
-        <div class="accessDenied1-img">
+        <div class="accessDenied-img">
             <div class="info">
-                <h2>Доступ ограничен</h2>
-                <h3></h3>
+                <h2></h2>
+                <h3>Доступ к этой странице ограничен. У вас нет соответствующих прав</h3>
                 <a></a>
             </div>
         </div>

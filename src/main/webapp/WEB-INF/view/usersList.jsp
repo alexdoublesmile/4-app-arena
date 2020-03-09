@@ -11,26 +11,48 @@
         <div class="wrapper">
             <jsp:include page="header.jsp"></jsp:include>
             <div class="content">
-                <div class="champions1-img">
+                <div class="champions-img-1">
                     <div class="info">
                         <h2></h2>
                         <h3></h3>
                         <a></a>
                     </div>
                 </div>
-                <div class="champions2-img">
+                <div class="champions-img-2">
                     <div class="info">
-                        <c:if test="${usersList.size() == 0}">
-                            <h3 align="center">DataBase is empty now.</h3>
-                        </c:if>
-                        <c:forEach var="user" items="${usersList}">
-                            <h3 align="center">${user.firstName} ${user.login} - ${user.score}</h3>
-                        </c:forEach>
+                        <div class="dictum">
+                            <h3>${randomDictum}</h3>
+                        </div>
+                        <div class="usersList">
+                            <c:if test="${usersList.size() == 0}">
+                                <h2>DataBase is empty now.</h2>
+                            </c:if>
+                            <c:forEach var="user" items="${usersList}">
+                                <h3>${user.firstName} ${user.login} - ${user.score}</h3>
+                            </c:forEach>
+                        </div>
                     </div>
+
                 </div>
             </div>
 
             <jsp:include page="footer.jsp"></jsp:include>
+
+            <%--
+
+
+
+
+Есть две вещи, которые ты можешь делать: смотреть и видеть
+
+
+
+
+
+
+
+
+--%>
 
         </div>
     </body>

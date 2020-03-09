@@ -12,8 +12,10 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class UserServiceTest {
@@ -173,6 +175,17 @@ public class UserServiceTest {
         );
     }
 
+    @Test
+    public void getRandomDictum() {
+        UserService service = new UserService();
+        String firstRandomDictum = service.getRandomDictum();
+        String secondRandomDictum = service.getRandomDictum();
+
+        LOGGER.info("1st random Dictum is: {}", firstRandomDictum);
+        LOGGER.info("2nd random Dictum is: {}", secondRandomDictum);
+        Assert.assertTrue(!firstRandomDictum.equals(secondRandomDictum));
+    }
+
     private List<User> createFiveRandomUsers() {
         List<User> usersList = new ArrayList<>();
         User firstUser = getTestUser();
@@ -278,5 +291,9 @@ public class UserServiceTest {
             LOGGER.info("And now DB is empty again.");
         }
 
+    }
+
+    @Test
+    public void anyTest() {
     }
 }

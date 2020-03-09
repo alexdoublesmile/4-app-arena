@@ -14,7 +14,7 @@
 <div class="wrapper">
     <jsp:include page="header.jsp"></jsp:include>
     <div class="content">
-        <div class="profile-img">
+        <div class="userInfo-img">
             <div class="info">
                 <h3>Имя - ${loginedUser.lastName} ${loginedUser.firstName}</h3>
                 <br>

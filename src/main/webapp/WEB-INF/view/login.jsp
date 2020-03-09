@@ -22,11 +22,9 @@
                             <label for="password">Password</label>
                             <input type="text" name="password" id="password" value="${user.password}" required/>
                             <br>
-                            <input type="submit" value="Login"/>
-                            <br>
-                            <span class="error">${errorString}</span>
-                            <br>
+                            <input type="submit" value="Войти"/>
                         </form>
+                        <span class="error">${errorString}</span><br>
                         <a href="${pageContext.request.contextPath}/register">Зарегистрироваться</a>
                     </div>
                 </div>

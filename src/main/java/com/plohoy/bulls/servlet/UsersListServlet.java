@@ -27,10 +27,11 @@ public class UsersListServlet extends HttpServlet {
             throws ServletException, IOException {
         List<User> usersList;
         List<User> sortedUsers;
+        String randomDictum;
 
         try {
-            usersList = service.findAllUsers();
-            sortedUsers = service.sortByScore(usersList);
+            sortedUsers = service.sortByScore(service.findAllUsers());
+            randomDictum = service.getRandomDictum();
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
@@ -38,6 +39,7 @@ public class UsersListServlet extends HttpServlet {
         }
 
         req.setAttribute("usersList", sortedUsers);
+        req.setAttribute("randomDictum", randomDictum);
         getServletContext().getRequestDispatcher("/WEB-INF/view/usersList.jsp")
                 .forward(req, resp);
 

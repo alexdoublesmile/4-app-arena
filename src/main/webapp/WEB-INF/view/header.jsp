@@ -7,7 +7,7 @@
             <li><a href=${pageContext.request.contextPath}>Главная</a></li>
             <li><a href="${pageContext.request.contextPath}/games">Игры</a></li>
             <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
-            <li><a href="${pageContext.request.contextPath}/admin">admin panel</a></li>
+            <%--<li><a href="${pageContext.request.contextPath}/admin">admin panel</a></li>--%>
             <c:choose>
                 <c:when test="${not empty loginedUser.login}">
                     <li class="sub-li"><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a>

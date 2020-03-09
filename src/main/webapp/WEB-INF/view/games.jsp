@@ -11,16 +11,16 @@
     <jsp:include page="header.jsp"></jsp:include>
 
     <div class="content">
-        <div class="games-img">
+        <div class="games-img-1">
             <div class="info">
                 <h2>Интеллектуальные Игры</h2>
             </div>
         </div>
-        <%--<div class="main-img-2">--%>
-            <%--<div class="info">--%>
-                <%--<h2>Интеллектуальные Игры</h2>--%>
-            <%--</div>--%>
-        <%--</div>--%>
+        <div class="games-img-2">
+            <div class="info">
+                <h2>Интеллектуальные Игры</h2>
+            </div>
+        </div>
     </div>
     <div class="articles">
         <div class="bg-article">

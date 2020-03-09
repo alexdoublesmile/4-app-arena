@@ -13,7 +13,6 @@
     <div class="content">
         <div class="registrationSuccess-img">
             <div class="info">
-                <h2>YOU HAVE BEEN REGISTERED!</h2>
                 <h3>Регистрация прошла успешно! Можете войти в систему, используя свои логин и пароль.</h3>
                 <a></a>
             </div>
