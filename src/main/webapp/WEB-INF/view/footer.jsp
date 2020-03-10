@@ -31,9 +31,9 @@
     <div class="foot-blog">
         <p>Соц сети</p>
         <ul>
-            <li><a href="https://vk.com/feed"><img src="static/images/icons/vk.png" alt="picture"/></a></li>
-            <li><a href="https://www.facebook.com/"><img src="static/images/icons/fb.png" alt="picture"/></a></li>
-            <li><a href="https://ok.ru/"><img src="static/images/icons/ok.png" alt="picture"/></a></li>
+            <li><a href="https://vk.com/feed" target="_blank"><img src="static/images/icons/vk.png" alt="picture"/></a></li>
+            <li><a href="https://www.facebook.com/" target="_blank"><img src="static/images/icons/fb.png" alt="picture"/></a></li>
+            <li><a href="https://ok.ru/" target="_blank"><img src="static/images/icons/ok.png" alt="picture"/></a></li>
         </ul>
     </div>
 </footer>

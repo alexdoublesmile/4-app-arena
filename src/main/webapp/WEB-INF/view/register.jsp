@@ -49,9 +49,9 @@
                         <label for="passwordRepeat">Пароль ещё раз</label>
                         <input type="text" name="passwordRepeat" id="passwordRepeat" class="reg" value="" size="10" minlength="1" placeholder="Повторите пароль.." required/>
                         <br/>
-                        <label for="score">Очки</label>
-                        <input type="text" name="score" id="score" class="reg" value="" size="10" minlength="1" placeholder="" required/>
-                        <br/>
+                        <%--<label for="score">Очки</label>--%>
+                        <%--<input type="text" name="score" id="score" class="reg" value="" size="10" minlength="1" placeholder="" required/>--%>
+                        <%--<br/>--%>
                         <%--<div class="passwordCheck">--%>
                         <%--<h3>Пароль должен как минимум:</h3>--%>
                         <%--<p id="letter" class="invalid">иметь один строчный символ</p>--%>

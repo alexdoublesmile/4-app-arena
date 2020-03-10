@@ -16,10 +16,10 @@
                         <br>
                         <form action="${pageContext.request.contextPath}/login" method="post">
                             <input type="hidden" name="redirectId" value="${param.redirectId}"/>
-                            <label for="login">Login</label>
+                            <label for="login">Логин</label>
                             <input type="text" name="login" id="login" value="${user.login}" required/>
                             <br>
-                            <label for="password">Password</label>
+                            <label for="password">Пароль</label>
                             <input type="text" name="password" id="password" value="${user.password}" required/>
                             <br>
                             <input type="submit" value="Войти"/>

@@ -60,7 +60,7 @@ public class RegisterServlet extends HttpServlet {
         user.setLastName(req.getParameter("lastName"));
         user.setLogin(req.getParameter("login"));
         user.setPassword(req.getParameter("password"));
-        user.setScore(Integer.parseInt(req.getParameter("score")));
+//        user.setScore(Integer.parseInt(req.getParameter("score")));
 
         return user;
     }
