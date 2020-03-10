@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Login</title>
+    <title>Games</title>
     <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hall Of Fame</title>
+    <title>Administration</title>
     <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>

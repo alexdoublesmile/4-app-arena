@@ -22,7 +22,7 @@
     <div class="foot-services">
         <p>Действия</p>
         <ul>
-            <li><a href="${pageContext.request.contextPath}/userInfo">Изменить профиль</a></li>
+            <li><a href="${pageContext.request.contextPath}/userInfo">Открыть профиль</a></li>
             <li><a href="${pageContext.request.contextPath}/logout">Выйти из профиля</a></li>
             <li><a href="${pageContext.request.contextPath}/admin">Открыть Admin Panel</a>
 

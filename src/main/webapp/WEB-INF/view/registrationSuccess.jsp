@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Moder</title>
+    <title>Registration</title>
     <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>

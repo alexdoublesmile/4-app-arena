@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hall Of Fame</title>
+    <title>Restricted Area</title>
     <jsp:include page="meta.jsp"></jsp:include>
 </head>
 <body>
