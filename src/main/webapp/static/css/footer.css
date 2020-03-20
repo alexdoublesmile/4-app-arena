@@ -1,0 +1,74 @@
+footer {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 100px;
+    padding-top: 15px;
+    background: linear-gradient(#6f6f6f, #ddb358, #252525);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:
+            -10px -20px 30px white,
+            inset 0px 10px 20px white;
+}
+
+footer div {
+    float: left;
+    margin-right: 100px;
+    font-size: 24px;
+    color: #eef0f1;
+}
+
+.foot-menu a, .foot-services a {
+    font-size: 18px;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+    -o-text-shadow: none;
+    text-shadow: none;
+    color: #151718;
+    opacity: .6;
+}
+
+.foot-menu li a:hover, .foot-services li a:hover {
+    color: #eef0f1;
+    opacity: 1;
+    -webkit-text-shadow: inherit;
+    -moz-text-shadow: inherit;
+    -ms-text-shadow: inherit;
+    -o-text-shadow: inherit;
+    text-shadow: inherit;
+}
+
+.foot-blog {
+    float:right;
+    margin-right: 0px;
+}
+
+.foot-blog p {
+    text-align: center;
+}
+
+.foot-blog ul {
+    margin-left: 20px;
+}
+
+.foot-blog ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    opacity: .4;
+}
+
+.foot-blog ul li:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.foot-blog ul li:first-child {
+    margin-right: 20px;
+}

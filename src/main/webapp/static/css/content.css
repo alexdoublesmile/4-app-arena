@@ -1,0 +1,116 @@
+
+.content {
+    flex: 1 0 auto;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    /*box-shadow:*/
+    /*0px 10px 20px white,*/
+    /*inset 0px -20px 30px white;*/
+}
+
+.content>div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow:
+            0px 7px 20px white,
+            inset -10px -20px 30px white;
+}
+
+.content .info {
+    position: absolute;
+    z-index: 2;
+    top: 85%;
+    left: 35%;
+    /*font-size: 48px;*/
+    color: #eef0f1;
+    text-transform: uppercase;
+}
+
+.content .info h2 {
+    position: absolute;
+    top: -60px;
+    width: 150%;
+}
+
+.content input {
+    width: 185px;
+    min-height: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding-left: 10px;
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+    color: #ede8e8;
+    background: transparent;
+    border: 1px solid #fff;
+    -webkit-box-shadow:
+            5px 5px 5px #21222B;
+    -moz-box-shadow:
+            5px 5px 5px #21222B,
+            inset -2px -2px 5px #21222B;
+    -ms-box-shadow:
+            5px 5px 5px #21222B,
+            inset -2px -2px 5px #21222B;
+    -o-box-shadow:
+            5px 5px 5px #21222B,
+            inset -2px -2px 5px #21222B;
+    box-shadow:
+            5px 5px 5px #21222B,
+            inset -2px -2px 5px #21222B;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.content input::placeholder {
+    color: limegreen;
+}
+
+.content input:focus, .content input:last-of-type:active {
+    background-color: #2CBE6A;
+    color: #FBF3AF;
+    -webkit-box-shadow: 0px 0px 5px #21222B;
+    -moz-box-shadow: 0px 0px 5px #21222B;
+    -ms-box-shadow: 0px 0px 5px #21222B;
+    -o-box-shadow: 0px 0px 5px #21222B;
+    box-shadow: 0px 0px 5px #21222B;
+}
+
+.content input:visited {
+    background: white;
+}
+
+.content input:last-of-type {
+    width: 155px;
+    color: #ede8e8;
+    background: linear-gradient(350deg, #08356c, transparent);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.content input:last-of-type:hover {
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    background: linear-gradient(350deg, #2CBE6A, transparent);
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}

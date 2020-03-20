@@ -1,0 +1,166 @@
+
+header {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(41, 49, 54, .4);
+    background-repeat: no-repeat;
+}
+
+.main-nav {
+    float: left;
+    position: relative;
+}
+
+.main-nav>ul>li{
+    display: inline-block;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.main-nav>ul>li:last-child {
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+.main-nav ul li a{
+    color: #eef0f1;
+    -webkit-text-shadow:
+            11px 11px 4px #21222B,
+            0px 1px 0px #232A6C;
+    -moz-text-shadow:
+            11px 11px 4px #21222B,
+            0px 1px 0px #232A6C;
+    -ms-text-shadow:
+            11px 11px 4px #21222B,
+            0px 1px 0px #232A6C;
+    -o-text-shadow:
+            11px 11px 4px #21222B,
+            0px 1px 0px #232A6C;
+    text-shadow:
+            11px 11px 4px #21222B,
+            0px 1px 0px #232A6C;
+    -webkit-transition: color .4s;
+    -moz-transition: color .4s;
+    -ms-transition: color .4s;
+    -o-transition: color .4s;
+    transition: color .4s;
+    -webkit-transition: text-shadow .4s;
+    -moz-transition: text-shadow .4s;
+    -ms-transition: text-shadow .4s;
+    -o-transition: text-shadow .4s;
+    transition: text-shadow .4s;
+}
+
+.main-nav ul li a:hover {
+    color: goldenrod;
+    -webkit-text-shadow:
+            1px 1px 0px #21222B,
+            0px 1px 1px #C6C5C5;
+    -moz-text-shadow:
+            1px 1px 0px #21222B,
+            0px 1px 1px #C6C5C5;
+    -ms-text-shadow:
+            1px 1px 0px #21222B,
+            0px 1px 1px #C6C5C5;
+    -o-text-shadow:
+            1px 1px 0px #21222B,
+            0px 1px 1px #C6C5C5;
+    text-shadow:
+            1px 1px 0px #21222B,
+            0px 1px 1px #C6C5C5;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+}
+
+.sub-li::after {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-bottom: 7px;
+    margin-left: 2px;
+    border: 1px solid limegreen;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: rotate(-345deg);
+    -moz-transform: rotate(-345deg);
+    -ms-transform: rotate(-345deg);
+    -o-transform: rotate(-345deg);
+    transform: rotate(-345deg);
+    -webkit-transition: all .5s .4s;
+    -moz-transition: all .5s .4s;
+    -ms-transition: all .5s .4s;
+    -o-transition: all .5s .4s;
+    transition: all .5s .4s;
+}
+
+.sub-li:hover::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-menu {
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    left: 560px;
+    opacity: 0;
+    visibility: hidden;
+    margin: 0;
+    padding: 10px 15px;
+    text-transform: none;
+    font-size: 22px;
+    line-height: 1.5em;
+    background-color: rgba(41, 49, 54, .4);
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 5px #21222B;
+    -moz-box-shadow: 5px 5px 5px #21222B;
+    -ms-box-shadow: 5px 5px 5px #21222B;
+    -o-box-shadow: 5px 5px 5px #21222B;
+    box-shadow: 5px 5px 5px #21222B;
+    -webkit-transition: all .4s .4s ease-in-out;
+    -moz-transition: all .4s .4s ease-in-out;
+    -o-transition: all .4s .4s ease-in-out;
+    transition: all .4s .4s ease-in-out;
+}
+
+.sub-menu::after {
+    content: "";
+    display: block;
+    position:absolute;
+    top: -10px;
+    left: 45%;
+    border: 10px solid rgba(41, 49, 54, .4);
+    border-top: 0px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+nav .sub-menu li a {
+    -webkit-text-shadow: 0px 1px 0px #232A6C;
+    -moz-text-shadow: 0px 1px 0px #232A6C;
+    -ms-text-shadow: 0px 1px 0px #232A6C;
+    -o-text-shadow: 0px 1px 0px #232A6C;
+    text-shadow: 0px 1px 0px #232A6C;
+}
+nav>ul>li:last-child:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .4s .5s ease-in-out;
+    -moz-transition: all .4s .5s ease-in-out;
+    -o-transition: all .4s .5s ease-in-out;
+    transition: all .4s .5s ease-in-out;
+}

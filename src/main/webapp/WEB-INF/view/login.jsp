@@ -1,14 +1,14 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!doctype html>
-<html lang="en">
-    <head>
-        <title>Login</title>
-        <jsp:include page="meta.jsp"></jsp:include>
-    </head>
+<html>
+    <c:set var="title" value="Login" scope="request"/>
+    <jsp:include page="meta.jsp"></jsp:include>
     <body>
         <div class="wrapper">
             <jsp:include page="header.jsp"></jsp:include>
+
             <div class="content">
                 <div class="login-img">
                     <div class="info">
@@ -16,11 +16,15 @@
                         <br>
                         <form action="${pageContext.request.contextPath}/login" method="post">
                             <input type="hidden" name="redirectId" value="${param.redirectId}"/>
-                            <label for="login">Логин</label>
-                            <input type="text" name="login" id="login" value="${user.login}" required/>
+                            <div class="form_group">
+                                <label for="login">Логин</label>
+                                <input type="text" name="login" id="login" value="${user.login}" required/>
+                            </div>
                             <br>
-                            <label for="password">Пароль</label>
-                            <input type="text" name="password" id="password" value="${user.password}" required/>
+                            <div class="form_group">
+                                <label for="password">Пароль</label>
+                                <input type="text" name="password" id="password" value="${user.password}" required/>
+                            </div>
                             <br>
                             <input type="submit" value="Войти"/>
                         </form>
@@ -31,7 +35,6 @@
             </div>
 
             <jsp:include page="footer.jsp"></jsp:include>
-
         </div>
     </body>
 </html>

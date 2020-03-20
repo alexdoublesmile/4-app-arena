@@ -1,0 +1,81 @@
+
+.main-nav ul li a:hover {
+    color: red;
+}
+
+
+.content .login-img {
+    background-image: url("../../static/images/login2.jpg");
+    background-position: top;
+}
+
+.login-img .info {
+    width: auto;
+    height: auto;
+    top: 15%;
+    left: 50%;
+    color: black;
+    font-size: 24px;
+    text-align: right;
+    padding: 0;
+    padding-right: 30px;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    line-height: 22px;
+    opacity: 0.7;
+}
+
+.login-img .info h3 {
+    font-size: 24px;
+    padding-top: 10px;
+    display: block;
+}
+
+.login-img .info form {
+    margin-right: 30px;
+    text-align: right;
+    line-height: 30px;
+    text-transform: none;
+}
+
+.wrapper .login-img .info a {
+    color: darkgrey;
+    font-size: 18px;
+    -webkit-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -moz-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -ms-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -o-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.login-img .info a:hover {
+    color: chartreuse;
+    font-size: 20px;
+}
+
+.login-img .info a:after {
+    color: chartreuse;
+}
+
+.login-img .info span {
+    color: red;
+    text-transform: none;
+    font-size: 20px;
+}
+

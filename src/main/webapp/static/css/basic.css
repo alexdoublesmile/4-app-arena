@@ -1,0 +1,37 @@
+
+body {
+    font-family: PTSans, Arial, sans-serif;
+    font-weight: normal;
+    opacity: 1;
+    -webkit-text-shadow:
+            5px 5px 6px #21222B,
+            0px 1px 5px #C6C5C5;
+    -moz-text-shadow:
+            5px 5px 6px #21222B,
+            0px 1px 5px #C6C5C5;
+    -ms-text-shadow:
+            5px 5px 6px #21222B,
+            0px 1px 5px #C6C5C5;
+    -o-text-shadow:
+            5px 5px 6px #21222B,
+            0px 1px 5px #C6C5C5;
+    text-shadow:
+            5px 5px 6px #21222B,
+            0px 1px 5px #C6C5C5;
+}
+
+a, li, input {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}

@@ -28,6 +28,7 @@ public class UsersListServlet extends HttpServlet {
         List<User> usersList;
         List<User> sortedUsers;
         String randomDictum;
+        randomDictum.equals()
 
         try {
             sortedUsers = service.sortByScore(service.findAllUsers());

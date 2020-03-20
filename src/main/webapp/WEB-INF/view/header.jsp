@@ -1,35 +1,47 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <header class="clearfix">
+    <script>
+        function checkTheme() {
+            var themeButton = document.getElementsByName('satisfaction'),
+                newLink = document.createElement('link'),
+                head = document.getElementById('head');
+            for (var i = 0; i < themeButton.length; i++) {
+                if (themeButton[1].checked) {
+                    newLink.href = "${pageContext.request.contextPath}/static/css/fun.css";
+                    newLink.rel = "stylesheet";
+                    newLink.id = "link";
+                    head.insertBefore(newLink, null);
+
+                } else {
+                    link.remove(newLink);
+
+                }
+            }
+        }
+    </script>
     <nav class="main-nav">
         <ul>
             <li><a href=${pageContext.request.contextPath}>Главная</a></li>
             <li><a href="${pageContext.request.contextPath}/games">Игры</a></li>
             <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
             <li>
-                <div class="normal-container">
-                    <div class="smile-rating-container">
-                        <div class="smile-rating-toggle-container">
-                            <form class="submit-rating">
-                                <input id="meh"  name="satisfaction" type="radio" />
-                                <input id="fun" name="satisfaction" type="radio" />
-                                <label for="meh" class="rating-label rating-label-meh">Bad</label>
-                                <div class="smile-rating-toggle"></div>
+                <form class="theme-form">
+                    <input id="bad" name="satisfaction" type="radio" value="bad" onclick="checkTheme()" checked/>
+                    <input id="fun" name="satisfaction" type="radio" value="fun" onclick="checkTheme()"/>
 
-                                <div class="rating-eye rating-eye-left"></div>
-                                <div class="rating-eye rating-eye-right"></div>
+                    <label for="bad" class="theme-label bad-theme-label">Bad</label>
 
-                                <div class="mouth rating-eye-bad-mouth"></div>
+                    <div class="theme-head"></div>
+                    <div class="theme-eye theme-left-eye"></div>
+                    <div class="theme-eye theme-right-eye"></div>
+                    <div class="theme-mouth"></div>
 
-                                <div class="toggle-rating-pill"></div>
-                                <label for="fun" class="rating-label rating-label-fun">Fun</label>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                    <div class="theme-pill"></div>
+                    <label for="fun" class="theme-label fun-theme-label">Fun</label>
+                </form>
             </li>
-            <%--<li><a href="${pageContext.request.contextPath}/admin">admin panel</a></li>--%>
             <c:choose>
                 <c:when test="${not empty loginedUser.login}">
                     <li class="sub-li"><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a>
