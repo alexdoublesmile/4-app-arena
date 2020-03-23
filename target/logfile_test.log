@@ -1,16 +1,16 @@
-2020-03-23 21:13:33 INFO  UserServiceTest - --------------------------------
-2020-03-23 21:13:33 INFO  UserServiceTest - Five Users were created with random score: 864, 896, 603, 610, 298
-2020-03-23 21:13:33 INFO  UserServiceTest - Five Users were sorted by Service: 896, 864, 610, 603, 298
-2020-03-23 21:13:33 INFO  UserServiceTest - ---->>> Now Last in DB is this User:{id=58, firstName='Денис', lastName='Гапеев', login='Den', password='test', score=0}
-2020-03-23 21:13:33 INFO  UserServiceTest - User 89 is added to DB...
-2020-03-23 21:13:33 INFO  UserServiceTest - now Last in DB is this User:{id=89, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest1', password='test', score=10}
-2020-03-23 21:13:33 INFO  UserServiceTest - User 89 is removed from DB...
-2020-03-23 21:13:33 INFO  UserServiceTest - And now again Last in DB is this User:{id=58, firstName='Денис', lastName='Гапеев', login='Den', password='test', score=0}
-2020-03-23 21:13:33 INFO  UserServiceTest - 1 - Плохой Александр(login: admin, password: test)
-2020-03-23 21:13:33 INFO  UserServiceTest - 2 - Тестовый Иван(login: moder, password: test)
-2020-03-23 21:13:33 INFO  UserServiceTest - 58 - Гапеев Денис(login: Den, password: test)
-2020-03-23 21:13:34 INFO  UserServiceTest - ---> New testUser 91 was added to DB by UserService(he'll be removed at the end of Test) - this User:{id=91, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest2', password='test', score=10}
-2020-03-23 21:13:34 INFO  UserServiceTest - 1st random Dictum is: Дух победы над одним противником тот же, что и над тысячей десятков тысяч врагов
-2020-03-23 21:13:34 INFO  UserServiceTest - 2nd random Dictum is: Истинный Путь воина прям и честен. Ты должен вести противника и подчинить его своему духу
-2020-03-23 21:13:34 INFO  UserServiceTest - User 93 was found by ID from DB - this User:{id=93, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest4', password='test', score=10}
-2020-03-23 21:13:34 INFO  UserServiceTest - All testData is removed from DB..
+2020-03-23 22:38:57 INFO  UserServiceTest - --------------------------------
+2020-03-23 22:38:57 INFO  UserServiceTest - Five Users were created with random score: 791, 614, 268, 78, 98
+2020-03-23 22:38:57 INFO  UserServiceTest - Five Users were sorted by Service: 791, 614, 268, 98, 78
+2020-03-23 22:38:57 INFO  UserServiceTest - ---->>> Now Last in DB is this User:{id=58, firstName='Денис', lastName='Гапеев', login='Den', password='test', score=0}
+2020-03-23 22:38:57 INFO  UserServiceTest - User 99 is added to DB...
+2020-03-23 22:38:57 INFO  UserServiceTest - now Last in DB is this User:{id=99, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest1', password='test', score=10}
+2020-03-23 22:38:57 INFO  UserServiceTest - User 99 is removed from DB...
+2020-03-23 22:38:57 INFO  UserServiceTest - And now again Last in DB is this User:{id=58, firstName='Денис', lastName='Гапеев', login='Den', password='test', score=0}
+2020-03-23 22:38:57 INFO  UserServiceTest - 1 - Плохой Александр(login: admin, password: test)
+2020-03-23 22:38:57 INFO  UserServiceTest - 2 - Тестовый Иван(login: moder, password: test)
+2020-03-23 22:38:57 INFO  UserServiceTest - 58 - Гапеев Денис(login: Den, password: test)
+2020-03-23 22:38:58 INFO  UserServiceTest - ---> New testUser 101 was added to DB by UserService(he'll be removed at the end of Test) - this User:{id=101, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest2', password='test', score=10}
+2020-03-23 22:38:58 INFO  UserServiceTest - 1st random Dictum is: Истинный Путь воина прям и честен. Ты должен вести противника и подчинить его своему духу
+2020-03-23 22:38:58 INFO  UserServiceTest - 2nd random Dictum is: Голос обладает жизнью. C помощью голоса мы можем управлять огнем, ветром и волнами. Голос передает энергию
+2020-03-23 22:38:58 INFO  UserServiceTest - User 103 was found by ID from DB - this User:{id=103, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest4', password='test', score=10}
+2020-03-23 22:38:58 INFO  UserServiceTest - All testData is removed from DB..

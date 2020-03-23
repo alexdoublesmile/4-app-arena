@@ -3,6 +3,7 @@ com\plohoy\bulls\util\AppUtils.class
 com\plohoy\bulls\dao\UserDaoImpl.class
 com\plohoy\bulls\servlet\RegisterServlet.class
 com\plohoy\bulls\exception\DaoException.class
+com\plohoy\bulls\servlet\StatisticServlet.class
 com\plohoy\bulls\config\SecurityConfig.class
 com\plohoy\bulls\servlet\GamesServlet.class
 com\plohoy\bulls\servlet\UsersListServlet.class

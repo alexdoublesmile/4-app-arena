@@ -19,6 +19,7 @@ public class SecurityConfig {
         urlPatternsForUser.add("/userInfo");
         urlPatternsForUser.add("/usersList");
         urlPatternsForUser.add("/games");
+        urlPatternsForUser.add("/statistic");
 
         mapConfig.put(ROLE_USER, urlPatternsForUser);
 
@@ -26,6 +27,7 @@ public class SecurityConfig {
         urlPatternsForModer.add("/userInfo");
         urlPatternsForModer.add("/usersList");
         urlPatternsForModer.add("/games");
+        urlPatternsForModer.add("/statistic");
         urlPatternsForModer.add("/moder");
 
         mapConfig.put(ROLE_MODER, urlPatternsForModer);
@@ -34,6 +36,7 @@ public class SecurityConfig {
         urlPatternsForAdmin.add("/userInfo");
         urlPatternsForAdmin.add("/usersList");
         urlPatternsForAdmin.add("/games");
+        urlPatternsForAdmin.add("/statistic");
         urlPatternsForAdmin.add("/admin");
         urlPatternsForAdmin.add("/moder");
 

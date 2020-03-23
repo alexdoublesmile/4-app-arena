@@ -1,0 +1,9 @@
+
+.statistic-img {
+    background-image: url("../../../static/images/statistic.jpg");
+}
+
+.content .statistic-img .info {
+    top: 50%;
+    left: 55%;
+}

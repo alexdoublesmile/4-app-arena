@@ -54,7 +54,7 @@
                     <li class="sub-li" id="sub-li"><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a>
                         <ul class="sub-menu">
                             <li><a href="${pageContext.request.contextPath}/userInfo">Профиль</a></li>
-                            <li><a href="${pageContext.request.contextPath}/userInfo">Статистика</a></li>
+                            <li><a href="${pageContext.request.contextPath}/statistic">Статистика</a></li>
                             <li><a href="${pageContext.request.contextPath}/logout">Выйти</a></li>
                         </ul>
                     </li>

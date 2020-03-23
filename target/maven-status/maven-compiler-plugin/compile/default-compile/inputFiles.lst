@@ -9,6 +9,7 @@ D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\domain\Dictu
 D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\util\AppUtils.java
 D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\filter\SecurityFilter.java
 D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\servlet\GamesServlet.java
+D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\servlet\StatisticServlet.java
 D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\util\UrlPatternUtils.java
 D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\dao\UserDaoImpl.java
 D:\Work\java\projects\bulls-and-cows\src\main\java\com\plohoy\bulls\config\SecurityConfig.java
