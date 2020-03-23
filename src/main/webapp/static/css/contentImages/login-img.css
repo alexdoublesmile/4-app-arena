@@ -1,0 +1,271 @@
+
+.content .login-img {
+    background-color: #111111;
+}
+
+.content .login-img .info {
+    width: 500px;
+    height: 300px;
+    margin-top: 10px;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 250px);
+    /*color: black;*/
+    font-size: 18px;
+    /*text-align: right;*/
+    padding: 15px 32px;
+    border-radius: 35px;
+    background-color: #1a1e20;
+
+    -webkit-box-shadow:
+            10px 10px 15px #302C2C,
+            inset -2px -2px 10px #21222B;
+    -moz-box-shadow:
+            10px 10px 15px #302C2C,
+            inset -2px -2px 10px #21222B;
+    -ms-box-shadow:
+            10px 10px 15px #302C2C,
+            inset -2px -2px 10px #21222B;
+    -o-box-shadow:
+            10px 10px 15px #302C2C,
+            inset -2px -2px 10px #21222B;
+    box-shadow:
+            10px 10px 15px #302C2C,
+            inset -2px -2px 10px #21222B;
+    /*line-height: 22px;*/
+    /*opacity: 0.7;*/
+}
+
+
+.content .login-img .info h3 {
+    /*font-size: 24px;*/
+    /*padding-top: 10px;*/
+    display: none;
+}
+
+.content .login-img .info h4 {
+    text-transform: none;
+    text-align: center;
+    font-size: 36px;
+    font-family: monospace;
+    margin-bottom: 15px;
+    color: transparent;
+    -webkit-text-shadow:
+            0px 0px 4px #ecedb3,
+            6px 6px 7px #212121;
+    -moz-text-shadow:
+            0px 0px 4px #ecedb3,
+            6px 6px 7px #212121;
+    -ms-text-shadow:
+            0px 0px 4px #ecedb3,
+            6px 6px 7px #212121;
+    -o-text-shadow:
+            0px 0px 4px #ecedb3,
+            6px 6px 7px #212121;
+    text-shadow:
+            0px 0px 4px #ecedb3,
+            6px 6px 7px #212121;
+
+    -webkit-transition: all 8s ease-in-out;
+    -moz-transition: all 8s ease-in-out;
+    -ms-transition: all 8s ease-in-out;
+    -o-transition: all 8s ease-in-out;
+    transition: all 8s ease-in-out;
+}
+
+.content .login-img:hover h4 {
+    color: #dbe291;
+    font-size: 36px;
+
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.content .login-img .info form {
+    margin-bottom: 25px;
+    text-align: right;
+    line-height: 25px;
+    text-transform: none;
+    opacity: 0;
+    -webkit-transition: all 8s ease-in-out;
+    -moz-transition: all 8s ease-in-out;
+    -ms-transition: all 8s ease-in-out;
+    -o-transition: all 8s ease-in-out;
+    transition: all 8s ease-in-out;
+}
+
+
+.content .login-img:hover form {
+    opacity: 1;
+
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+.content .login-img .info form label {
+    font-size: 18px;
+    vertical-align: middle;
+    color: antiquewhite;
+}
+
+.content .login-img .info form input {
+    background: transparent;
+    margin-left: 20px;
+    border: none;
+    border-bottom: 1px solid #d2d2d2;
+    outline: none;
+}
+
+@-webkit-keyframes autofill {
+    to {
+        color: inherit;
+        background: transparent;
+    }
+}
+
+
+
+
+.content .login-img .info .form-group input,
+.content .login-img .info .form-group input:focus,
+.content .login-img .info .form-group input:active {
+    color: #eef0f1;
+    font-family: PT Sans, sans-serif;
+    font-size: 18px;
+
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+
+.content .login-img .info .form-group input:focus,
+.content .login-img .info .form-group input:active {
+    border: none;
+}
+
+.content .login-img .info .login-submit input {
+    color: antiquewhite;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    max-width: 160px;
+    margin: 0 auto 0;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+
+}
+
+
+
+.content .login-img .info .login-submit input:hover {
+
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2), 3px 3px 3px black;;
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+}
+
+
+.content .login-img .info .login-submit input:active {
+
+    box-shadow: inset 1px 1px 2px black, 0 0 40px rgba(255, 255, 255, 0.2);
+    outline-offset: -15px;
+    outline-color: rgba(255, 255, 255, 0);
+    text-shadow: 5px 5px 3px black;
+    transition: all .2s ease-in-out;
+}
+
+.content  .login-img .info a {
+    display: block;
+    text-align: end;
+    color: #7e7e7e;
+    font-size: 16px;
+    line-height: 5px;
+    -webkit-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -moz-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -ms-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    -o-text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+    text-shadow:
+            3px 3px 5px #21222B,
+            0px 1px 5px #C6C5C5;
+
+    opacity: .2;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+/*.content .login-img:hover .info a {*/
+    /*opacity: 1;*/
+
+    /*-webkit-transition: opacity 3s ease-in-out;*/
+    /*-moz-transition: opacity 3s ease-in-out;*/
+    /*-ms-transition: opacity 3s ease-in-out;*/
+    /*-o-transition: opacity 3s ease-in-out;*/
+    /*transition: opacity 3s ease-in-out;*/
+/*}*/
+
+.content .login-img .info a:hover {
+    color: #69ad00;
+    font-size: 17px;
+    opacity: 1;
+
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.content .login-img .info a:after {
+    color: #6aac00;
+    vertical-align: -2px;
+}
+
+.content .login-img .info span {
+    display: block;
+    text-align: center;
+    margin-bottom: -10px;
+    color: #9c0000;
+    text-transform: none;
+    font-size: 20px;
+
+    -webkit-text-shadow:
+            1px 1px 11px red;
+    -moz-text-shadow:
+            1px 1px 11px red;
+    -ms-text-shadow:
+            1px 1px 11px red;
+    -o-text-shadow:
+            1px 1px 11px red;
+    text-shadow:
+            1px 1px 11px red;
+}

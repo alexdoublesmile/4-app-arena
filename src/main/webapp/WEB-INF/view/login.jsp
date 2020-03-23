@@ -13,20 +13,38 @@
                 <div class="login-img">
                     <div class="info">
                         <h3>Не будь бомжом - залогинься!</h3>
-                        <br>
+                        <h4>Вход на Арену</h4>
                         <form action="${pageContext.request.contextPath}/login" method="post">
                             <input type="hidden" name="redirectId" value="${param.redirectId}"/>
-                            <div class="form_group">
+                            <div class="form-group">
                                 <label for="login">Логин</label>
-                                <input type="text" name="login" id="login" value="${user.login}" required/>
+                                <input type="text" name="login" id="login" value="${user.login}" required
+                                       onclick="
+                                            this.style.border='none'"
+                                       onblur="
+                                            if (this.value !='') {
+                                                this.style.border='none';
+                                                this.style.textAlign='center';
+                                            }"
+                                />
                             </div>
                             <br>
-                            <div class="form_group">
+                            <div class="form-group">
                                 <label for="password">Пароль</label>
-                                <input type="text" name="password" id="password" value="${user.password}" required/>
+                                <input type="text" name="password" id="password" value="${user.password}" required
+                                       onclick="
+                                            this.style.border='none'"
+                                       onBlur="
+                                            if (this.value !='') {
+                                                this.style.border='none';
+                                                this.style.textAlign='center';
+                                            }"
+                                />
                             </div>
                             <br>
-                            <input type="submit" value="Войти"/>
+                            <div class="login-submit">
+                                <input type="submit" value="Войти"/>
+                            </div>
                         </form>
                         <span class="error">${errorString}</span><br>
                         <a href="${pageContext.request.contextPath}/register">Зарегистрироваться</a>

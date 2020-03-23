@@ -17,12 +17,14 @@ public class SecurityConfig {
     private static void init() {
         List<String> urlPatternsForUser = new ArrayList<>();
         urlPatternsForUser.add("/userInfo");
+        urlPatternsForUser.add("/usersList");
         urlPatternsForUser.add("/games");
 
         mapConfig.put(ROLE_USER, urlPatternsForUser);
 
         List<String> urlPatternsForModer = new ArrayList<>();
         urlPatternsForModer.add("/userInfo");
+        urlPatternsForModer.add("/usersList");
         urlPatternsForModer.add("/games");
         urlPatternsForModer.add("/moder");
 
@@ -30,6 +32,7 @@ public class SecurityConfig {
 
         List<String> urlPatternsForAdmin = new ArrayList<>();
         urlPatternsForAdmin.add("/userInfo");
+        urlPatternsForAdmin.add("/usersList");
         urlPatternsForAdmin.add("/games");
         urlPatternsForAdmin.add("/admin");
         urlPatternsForAdmin.add("/moder");

@@ -27,7 +27,9 @@
                                 <h2>DataBase is empty now.</h2>
                             </c:if>
                             <c:forEach var="user" items="${usersList}">
-                                <h3>${user.firstName} ${user.login} - ${user.score}</h3>
+                                <c:if test="${(user.login!='admin') && (user.login!='moder')}">
+                                        <h3>${user.firstName} ${user.login} - ${user.score}</h3>
+                                </c:if>
                             </c:forEach>
                         </div>
                     </div>

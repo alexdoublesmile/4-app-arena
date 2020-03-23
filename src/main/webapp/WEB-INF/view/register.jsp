@@ -12,7 +12,7 @@
             <div class="content">
                 <div class="register-img">
                     <div class="info">
-                        <h2>Регистрация</h2>
+                        <h4>Регистрация</h4>
                         <form class="form" action="${pageContext.request.contextPath}/register" method="post"
                               onsubmit="
                                 var password = document.getElementById('password');
@@ -20,55 +20,73 @@
                                    if(password.value != rePassword.value) {
                                        password.value = '';
                                        rePassword.value = '';
-                                       alert('Пароли не совпадают!')
+                                       alert('Пароли не совпадают! Дай себе еще один шанс :)');
                                    }">
-                            <label for="firstName">Имя</label>
-                            <input type="text" name="firstName" id="firstName" class="reg" value="" size="20" minlength="1" placeholder="Введите имя.." required
-                                   title="Имя не должно содержать цифр и спецсимволов"
-                                   onkeyup="var pattern=/['а-яА-ЯёЁa-zA-Z']/;
-                               if(!pattern.test(this.value)) this.value=''"/>
-                            <br/>
-                            <label for="lastName">Фамилия</label>
-                            <input type="text" name="lastName" id="lastName" class="reg" value="" size="20" minlength="1" placeholder="Введите фамилию.." required
-                                   title="Фамилия не должна содержать цифр и спецсимволов"
-                                   onkeyup="var pattern=/['а-яА-ЯёЁa-zA-Z']/;
-                               if(!pattern.test(this.value)) this.value=''"/>
-                            <br/>
-                            <label for="login">Логин</label>
-                            <input type="text" name="login" id="login" class="reg" value="" size="20" minlength="3" maxlength="15"  placeholder="Придумайте логин.." required
-                                   title="Логин должен быть длиной от 3 до 15 символов"/>
-                            <br/>
-                            <label for="password">Пароль</label>
-                            <input type="text" name="password" id="password" class="reg" value="" size="10" minlength="1" placeholder="Придумайте пароль.." required
-                                   title=""/>
-                            <br/>
-                            <label for="passwordRepeat">Пароль ещё раз</label>
-                            <input type="text" name="passwordRepeat" id="passwordRepeat" class="reg" value="" size="10" minlength="1" placeholder="Повторите пароль.." required/>
-                            <br/>
-                            <%--<label for="score">Очки</label>--%>
-                            <%--<input type="text" name="score" id="score" class="reg" value="" size="10" minlength="1" placeholder="" required/>--%>
-                            <%--<br/>--%>
-                            <input type="submit"/>
-                            <br/>
-                            <span>${errorString}</span>
-                            <script>
-                                window.addEventListener('DOMContentLoaded', function() {
-                                    var form = document.querySelector('.form'),
-                                        pas = form.querySelectorAll('#password, #passwordRepeat');
+                            <div class="form-group">
+                                <label for="firstName">Имя</label>
+                                <input type="text" name="firstName" id="firstName" placeholder="Введите имя.." required
+                                       onkeyup="
+                                            var pattern=/['а-яА-ЯёЁa-zA-Z']/;
+                                            if(!pattern.test(this.value)) {
+                                                this.value=''
+                                            }"
+                                       title="Имя не должно содержать цифр и спецсимволов"
+                                />
+                            </div>
 
-                                    form.addEventListener('submit', function(e) {
-                                        var err = !(pas[0].value && (pas[0].value ==  pas[1].value))
-                                        pas[1].setAttribute("title", err ? 'err' : '');
-                                        err && e.preventDefault();
-                                    }, false);
-                                    pas[1].addEventListener('input', function(e) {
-                                        var err = !(pas[0].value ==  pas[1].value)
-                                        pas[1].setAttribute("title", err ? 'err' : '');
-                                    }, false);
-                                });
-                            </script>
+                            <div class="form-group">
+                                <label for="lastName">Фамилия</label>
+                                <input type="text" name="lastName" id="lastName" placeholder="Введите фамилию.." required
+                                       onkeyup="
+                                            var pattern=/['а-яА-ЯёЁa-zA-Z']/;
+                                            if(!pattern.test(this.value)) {
+                                                this.value=''
+                                            }"
+                                       title="Фамилия не должна содержать цифр и спецсимволов"
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="login">Логин</label>
+                                <input type="text" name="login" id="login" minlength="3" maxlength="15"  placeholder="Придумайте логин.." required
+                                       title="Логин должен быть длиной от 3 до 15 символов"
+                                />
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Пароль</label>
+                                <input type="text" name="password" id="password" placeholder="Придумайте пароль.." required/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="passwordRepeat">Пароль ещё раз</label>
+                                <input type="text" name="passwordRepeat" id="passwordRepeat" placeholder="Повторите пароль.." required/>
+                            </div>
+
+                            <div class="register-submit">
+                                <input type="submit" value="Зарегистрироваться"/>
+                            </div>
+
 
                         </form>
+                        <span>${errorString}</span>
+
+                        <script>
+                            window.addEventListener('DOMContentLoaded', function() {
+                                var form = document.querySelector('.form'),
+                                    pas = form.querySelectorAll('#password, #passwordRepeat');
+
+                                form.addEventListener('submit', function(e) {
+                                    var err = !(pas[0].value && (pas[0].value ==  pas[1].value))
+                                    pas[1].setAttribute("title", err ? 'err' : '');
+                                    err && e.preventDefault();
+                                }, false);
+                                pas[1].addEventListener('input', function(e) {
+                                    var err = !(pas[0].value ==  pas[1].value)
+                                    pas[1].setAttribute("title", err ? 'err' : '');
+                                }, false);
+                            });
+                        </script>
                     </div>
                 </div>
             </div>
