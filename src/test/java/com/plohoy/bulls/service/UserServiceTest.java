@@ -12,9 +12,7 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class UserServiceTest {
 
@@ -33,7 +31,27 @@ public class UserServiceTest {
 
     @BeforeClass
     public static void init() {
-        emf = Persistence.createEntityManagerFactory("persistence");
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            LOGGER.error(e.getMessage(), e);
+        }
+
+        Map<String,String> jdbcUrlSettings = new HashMap<>();
+        String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
+        if (null != jdbcDbUrl) {
+            jdbcUrlSettings.put("javax.persistence.jdbc.url", System.getenv("JDBC_DATABASE_URL"));
+        }
+        String jdbcDbUserName = System.getenv("JDBC_DATABASE_USERNAME");
+        if (null != jdbcDbUserName) {
+            jdbcUrlSettings.put("javax.persistence.jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
+        }
+        String jdbcDbPassword = System.getenv("JDBC_DATABASE_PASSWORD");
+        if (null != jdbcDbPassword) {
+            jdbcUrlSettings.put("javax.persistence.jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
+        }
+
+        emf = Persistence.createEntityManagerFactory("persistence", jdbcUrlSettings);
         LOGGER.info("--------------------------------");
     }
 

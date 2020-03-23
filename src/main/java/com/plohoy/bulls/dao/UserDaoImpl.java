@@ -9,7 +9,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserDaoImpl implements UserDao {
 
@@ -26,7 +28,22 @@ public class UserDaoImpl implements UserDao {
         } catch (ClassNotFoundException e) {
             LOGGER.error(e.getMessage(), e);
         }
-        factory = Persistence.createEntityManagerFactory("persistence");
+
+        Map<String,String> jdbcUrlSettings = new HashMap<>();
+        String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
+        if (null != jdbcDbUrl) {
+            jdbcUrlSettings.put("javax.persistence.jdbc.url", System.getenv("JDBC_DATABASE_URL"));
+        }
+        String jdbcDbUserName = System.getenv("JDBC_DATABASE_USERNAME");
+        if (null != jdbcDbUserName) {
+            jdbcUrlSettings.put("javax.persistence.jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
+        }
+        String jdbcDbPassword = System.getenv("JDBC_DATABASE_PASSWORD");
+        if (null != jdbcDbPassword) {
+            jdbcUrlSettings.put("javax.persistence.jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
+        }
+
+        factory = Persistence.createEntityManagerFactory("persistence", jdbcUrlSettings);
 
     }
 
