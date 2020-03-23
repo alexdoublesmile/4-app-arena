@@ -5,7 +5,7 @@
     <div class="foot-menu">
         <p>Меню</p>
         <ul>
-            <li><a href="${pageContext.request.contextPath}">Главная</a></li>
+            <li><a href="${pageContext.request.contextPath}/home">Главная</a></li>
             <li><a href="${pageContext.request.contextPath}/games">Игры</a></li>
             <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
         </ul>

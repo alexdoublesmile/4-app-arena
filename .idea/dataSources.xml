@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="herokuDB" uuid="09a4928e-f45a-4b48-b7e0-c17785ee8b60">
+    <data-source source="LOCAL" name="herokuDB" uuid="d9bb1e0c-72a7-4673-9ae7-edb97898d235">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ec2-52-207-93-32.compute-1.amazonaws.com:5432/d1iaoesfudnafv</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-75-246-118.eu-west-1.compute.amazonaws.com:5432/d481n6kojosd1a</jdbc-url>
     </data-source>
   </component>
 </project>
