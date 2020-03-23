@@ -1,0 +1,17 @@
+
+.admin-img {
+    background-image: url("../../../static/images/admin.jpg");
+}
+
+.accessDenied-img {
+    background-image: url("../../../static/images/accessDenied.jpg");
+}
+
+.content .accessDenied-img .info {
+    top: 80%;
+    left: 0;
+    color: #e33030;
+    text-transform: none;
+    width: inherit;
+    text-align: center;
+}

@@ -1,1 +1,0 @@
-web: java -war target/arena.war

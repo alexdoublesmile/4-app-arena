@@ -1,0 +1,18 @@
+
+.userInfo-img {
+    background-image: url("../../../static/images/userInfo.jpg");
+}
+
+.content .userInfo-img .info {
+    top: 100px;
+    left: 10%;
+    padding-right: 30px;
+    text-align: left;
+    line-height: 20px;
+
+}
+
+.userInfo-img .info h3 {
+    font-size: 24px;
+    line-height: 30px;
+}

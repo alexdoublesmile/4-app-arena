@@ -2,6 +2,12 @@ package com.plohoy.bulls.service;
 
 import com.plohoy.bulls.domain.User;
 import com.plohoy.bulls.exception.DaoException;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.Metadata;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -18,8 +24,11 @@ public class UserServiceTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceTest.class);
 
-    private static EntityManagerFactory emf;
-    private static EntityManager em;
+//    private static EntityManagerFactory emf;
+//    private static EntityManager em;
+
+    private static SessionFactory factory;
+    private static Session session;
 
     private static int USER_TEST_LOGIN_INDEX = 1;
     private static final String USER_TEST_FIRSTNAME = "Дениска";
@@ -29,6 +38,24 @@ public class UserServiceTest {
     private static final String USER_TEST_FAKE_PASSWORD = "-1";
     private static final int USER_TEST_SCORE = 10;
 
+
+    private static final Map<String,String> jdbcUrlSettings = new HashMap<>();
+
+    static {
+        String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
+        if (null != jdbcDbUrl) {
+            jdbcUrlSettings.put("hibernate.connection.url", System.getenv("JDBC_DATABASE_URL"));
+        }
+        String jdbcDbUserName = System.getenv("JDBC_DATABASE_USERNAME");
+        if (null != jdbcDbUserName) {
+            jdbcUrlSettings.put("hibernate.connection.username", System.getenv("JDBC_DATABASE_USERNAME"));
+        }
+        String jdbcDbPassword = System.getenv("JDBC_DATABASE_PASSWORD");
+        if (null != jdbcDbPassword) {
+            jdbcUrlSettings.put("hibernate.connection.password", System.getenv("JDBC_DATABASE_PASSWORD"));
+        }
+    }
+
     @BeforeClass
     public static void init() {
         try {
@@ -37,39 +64,41 @@ public class UserServiceTest {
             LOGGER.error(e.getMessage(), e);
         }
 
-        Map<String,String> jdbcUrlSettings = new HashMap<>();
-        String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
-        if (null != jdbcDbUrl) {
-            jdbcUrlSettings.put("javax.persistence.jdbc.url", System.getenv("JDBC_DATABASE_URL"));
-        }
-        String jdbcDbUserName = System.getenv("JDBC_DATABASE_USERNAME");
-        if (null != jdbcDbUserName) {
-            jdbcUrlSettings.put("javax.persistence.jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
-        }
-        String jdbcDbPassword = System.getenv("JDBC_DATABASE_PASSWORD");
-        if (null != jdbcDbPassword) {
-            jdbcUrlSettings.put("javax.persistence.jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
-        }
+        factory = buildSessionFactory();
 
-        emf = Persistence.createEntityManagerFactory("persistence", jdbcUrlSettings);
+//        Map<String,String> jdbcUrlSettings = new HashMap<>();
+//        String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
+//        if (null != jdbcDbUrl) {
+//            jdbcUrlSettings.put("javax.persistence.jdbc.url", System.getenv("JDBC_DATABASE_URL"));
+//        }
+//        String jdbcDbUserName = System.getenv("JDBC_DATABASE_USERNAME");
+//        if (null != jdbcDbUserName) {
+//            jdbcUrlSettings.put("javax.persistence.jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
+//        }
+//        String jdbcDbPassword = System.getenv("JDBC_DATABASE_PASSWORD");
+//        if (null != jdbcDbPassword) {
+//            jdbcUrlSettings.put("javax.persistence.jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
+//        }
+//
+//        emf = Persistence.createEntityManagerFactory("persistence", jdbcUrlSettings);
         LOGGER.info("--------------------------------");
     }
 
     @AfterClass
     public static void close() {
-        em = emf.createEntityManager();
-        em.getTransaction().begin();
-        em.createNamedQuery("SelectAllByLogin")
+        session = factory.openSession();
+        session.getTransaction().begin();
+        session.createNamedQuery("SelectAllByLogin")
                 .setParameter("login",USER_TEST_LOGIN + '%')
                 .getResultList()
                 .forEach(p -> {
-                    em.remove(p);
+                    session.remove(p);
                 });
 
         LOGGER.info("All testData is removed from DB..");
-        em.getTransaction().commit();
-        em.close();
-        emf.close();
+        session.getTransaction().commit();
+        session.close();
+        factory.close();
     }
 
     @Test
@@ -242,8 +271,8 @@ public class UserServiceTest {
     }
 
     private String getUserTestLogin() {
-        em = emf.createEntityManager();
-        List<User> userList = em.createQuery("from User")
+        session = factory.openSession();
+        List<User> userList = session.createQuery("from User")
                 .getResultList();
         while (true) {
             int initialIndex = USER_TEST_LOGIN_INDEX;
@@ -264,8 +293,8 @@ public class UserServiceTest {
     public void checkDBConnection() {
         User testUser = getTestUser();
         try {
-            em = emf.createEntityManager();
-            List<User> userList = em.createQuery("from User").getResultList();
+            session = factory.openSession();
+            List<User> userList = session.createQuery("from User").getResultList();
             if (userList.size() > 0) {
                 Collections.reverse(userList);
                 LOGGER.info("---->>> Now Last in DB is {}", userList.get(0).toString());
@@ -274,30 +303,30 @@ public class UserServiceTest {
                 LOGGER.info("---->>> Now DB is empty.");
             }
 
-            em.getTransaction().begin();
-            em.persist(testUser);
-            em.flush();
+            session.getTransaction().begin();
+            session.persist(testUser);
+            session.flush();
             LOGGER.info("User {} is added to DB...", testUser.getId());
 
-            userList = em.createQuery("from User").getResultList();
+            userList = session.createQuery("from User").getResultList();
             Collections.reverse(userList);
             LOGGER.info("now Last in DB is {}", userList.get(0).toString());
 
-            em.remove(testUser);
+            session.remove(testUser);
             LOGGER.info("User {} is removed from DB...", testUser.getId());
 
-            em.getTransaction().commit();
-            em.close();
+            session.getTransaction().commit();
+            session.close();
         } catch (Exception e) {
 
-            em.getTransaction().rollback();
+            session.getTransaction().rollback();
             LOGGER.error(e.getMessage(), e);
         }
 
-        em = emf.createEntityManager();
-        List userList = em.createQuery("from User").getResultList();
+        session = factory.openSession();
+        List userList = session.createQuery("from User").getResultList();
         Collections.reverse(userList);
-        em.close();
+        session.close();
 
         if (userList.size() > 0) {
             LOGGER.info("And now again Last in DB is {}", userList.get(0).toString());
@@ -312,5 +341,22 @@ public class UserServiceTest {
     @Test
     public void anyTest() {
 
+    }
+
+    private static SessionFactory buildSessionFactory() {
+        try {
+            StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
+                    .configure("hibernate.cfg.xml")
+                    .applySettings(jdbcUrlSettings)
+                    .build();
+
+            Metadata metadata = new MetadataSources(serviceRegistry).getMetadataBuilder().build();
+
+            return metadata.getSessionFactoryBuilder().build();
+        } catch (Throwable ex) {
+
+            System.err.println("Initial SessionFactory creation failed." + ex);
+            throw new ExceptionInInitializerError(ex);
+        }
     }
 }
