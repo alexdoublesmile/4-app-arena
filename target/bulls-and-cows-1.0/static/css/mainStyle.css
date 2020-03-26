@@ -41,6 +41,10 @@ h3 {
   font-size: 36px;
 }
 
+h4 {
+  font-size: 32px;
+}
+
 .wrapper {
   display: flex;
   display: -webkit-flex;
@@ -79,5 +83,66 @@ header, footer {
 
   .search:hover input[type="image"] {
     display: none;
+  }
+
+}
+
+@media (max-height: 850px) {
+
+  .content .register-img .info {
+    top: calc(50vh - 36vh);
+  }
+
+  .content .register-img .info h4 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .content .register-img .info form label, .content .register-img .info .form-group input {
+    font-size: 18px;
+  }
+
+  .content .register-img .info .register-submit input{
+    font-size: 20px;
+  }
+
+  .content .register-img .info span {
+    font-size: 26px;
+  }
+
+  .content .login-img .info .register-submit {
+    margin-top: 25px;
+  }
+
+  .content .login-img .info .register-submit input {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .content .login-img .info {
+    width: 600px;
+    height: 300px;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 300px);  }
+
+  .content .login-img .info h4 {
+    font-size: 42px;
+  }
+
+  .content .login-img .info form label {
+    font-size: 24px;
+  }
+  .content .login-img .info .form-group input {
+    font-size: 24px;
+    width: 250px;
+  }
+
+  .content .login-img .info .login-submit input {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .content .login-img .info span {
+    font-size: 26px;
   }
 }

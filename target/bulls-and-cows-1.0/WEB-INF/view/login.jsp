@@ -47,7 +47,9 @@
                             </div>
                         </form>
                         <span class="error">${errorString}</span><br>
-                        <a href="${pageContext.request.contextPath}/register">Зарегистрироваться</a>
+                        <div class="registerRef">
+                            <a href="${pageContext.request.contextPath}/register">Зарегистрироваться</a>
+                        </div>
                     </div>
                 </div>
             </div>

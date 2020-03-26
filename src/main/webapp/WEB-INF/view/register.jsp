@@ -67,9 +67,9 @@
                                 <input type="submit" value="Зарегистрироваться"/>
                             </div>
 
+                            <span>${errorString}</span>
 
                         </form>
-                        <span>${errorString}</span>
 
                         <script>
                             window.addEventListener('DOMContentLoaded', function() {

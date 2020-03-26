@@ -12,10 +12,14 @@
             <div class="content">
                 <div class="userInfo-img">
                     <div class="info">
-                        <h3>Имя - ${loginedUser.lastName} ${loginedUser.firstName}</h3>
+                        <h3>Пользователь - ${loginedUser.lastName} ${loginedUser.firstName}</h3>
                         <br>
                         <h3>Логин - ${loginedUser.login}</h3>
                         <br>
+                        <br>
+                        <c:if test="${loginedUser.login=='Richbankir'}">
+                            <h4>Димасик, выдал тебе роль Админа ;)</h4>
+                        </c:if>
                     </div>
                 </div>
             </div>

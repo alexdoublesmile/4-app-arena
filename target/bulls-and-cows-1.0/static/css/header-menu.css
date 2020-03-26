@@ -24,19 +24,19 @@ header {
 .main-nav ul li a{
     color: #eef0f1;
     -webkit-text-shadow:
-            11px 11px 4px #21222B,
+            6px 4px 8px #21222B,
             0px 1px 0px #232A6C;
     -moz-text-shadow:
-            11px 11px 4px #21222B,
+            6px 4px 8px #21222B,
             0px 1px 0px #232A6C;
     -ms-text-shadow:
-            11px 11px 4px #21222B,
+            6px 4px 8px #21222B,
             0px 1px 0px #232A6C;
     -o-text-shadow:
-            11px 11px 4px #21222B,
+            6px 4px 8px #21222B,
             0px 1px 0px #232A6C;
     text-shadow:
-            11px 11px 4px #21222B,
+            6px 4px 8px #21222B,
             0px 1px 0px #232A6C;
     -webkit-transition: color .4s;
     -moz-transition: color .4s;
@@ -76,12 +76,13 @@ header {
 
 #sub-li {
     margin-left: 150px;
-    margin-right: 0;
+    margin-right: 5px;
 }
 
 nav>ul .sub-li:hover .sub-menu {
     opacity: 1;
     visibility: visible;
+    background-color: #99143a;
     -webkit-transition: all .4s .5s ease-in-out;
     -moz-transition: all .4s .5s ease-in-out;
     -o-transition: all .4s .5s ease-in-out;
@@ -93,18 +94,18 @@ nav>ul .sub-li:hover .sub-menu {
     display: inline-block;
     width: 7px;
     height: 7px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     margin-left: 2px;
     border: 1px solid limegreen;
     border-top: none;
     border-right: none;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transform: rotate(-345deg);
-    -moz-transform: rotate(-345deg);
-    -ms-transform: rotate(-345deg);
-    -o-transform: rotate(-345deg);
-    transform: rotate(-345deg);
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
+    -webkit-transform: rotate(-855deg);
+    -moz-transform: rotate(-855deg);
+    -ms-transform: rotate(-855deg);
+    -o-transform: rotate(-855deg);
+    transform: rotate(-855deg);
     -webkit-transition: all .5s .4s;
     -moz-transition: all .5s .4s;
     -ms-transition: all .5s .4s;
@@ -118,8 +119,8 @@ nav>ul .sub-li:hover .sub-menu {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    opacity: 1;
-    visibility: visible;
+    /*opacity: 1;*/
+    /*visibility: visible;*/
 }
 
 .sub-menu {
@@ -153,7 +154,7 @@ nav>ul .sub-li:hover .sub-menu {
     position:absolute;
     top: -10px;
     left: 45%;
-    border: 10px solid rgba(41, 49, 54, .4);
+    border: 10px solid #99143a;
     border-top: 0px;
     border-left-color: transparent;
     border-right-color: transparent;

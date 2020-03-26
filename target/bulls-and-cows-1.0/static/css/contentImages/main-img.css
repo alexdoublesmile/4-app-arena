@@ -22,7 +22,17 @@
     opacity: 1;
 }
 
+.content .main-img-1 .info, .content .main-img-2 .info {
+    line-height: 50px;
+}
+
+
+.content .main-img-2 .info a {
+    font-size: 38px;
+}
+
 .content .main-img-1 .info h2 {
+    font-size: 54px;
     opacity: 1;
     -webkit-transition: opacity 1s .3s;
     -moz-transition: opacity 1s .3s;
@@ -32,6 +42,7 @@
 }
 
 .content .main-img-2 .info h2 {
+    font-size: 54px;
     opacity: 0;
     -webkit-transition: opacity .3s;
     -moz-transition: opacity .3s;

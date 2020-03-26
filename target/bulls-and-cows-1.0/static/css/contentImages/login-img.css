@@ -4,12 +4,12 @@
 }
 
 .content .login-img .info {
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 400px;
     margin-top: 10px;
-    top: calc(50vh - 150px);
-    left: calc(50vw - 250px);
-    font-size: 18px;
+    top: calc(50vh - 170px);
+    left: calc(50vw - 400px);
+    /*font-size: 18px;*/
     padding: 15px 32px;
     border-radius: 35px;
     background-color: #1a1e20;
@@ -41,7 +41,7 @@
 .content .login-img .info h4 {
     text-transform: none;
     text-align: center;
-    font-size: 36px;
+    font-size: 64px;
     font-family: monospace;
     margin-bottom: 15px;
     color: #dbe291;
@@ -61,11 +61,11 @@
             0px 0px 4px #ecedb3,
             6px 6px 7px #212121;
 
-    -webkit-transition: all 8s ease-in-out;
-    -moz-transition: all 8s ease-in-out;
-    -ms-transition: all 8s ease-in-out;
-    -o-transition: all 8s ease-in-out;
-    transition: all 8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 /*.content .login-img:hover h4 {*/
@@ -80,16 +80,16 @@
 /*}*/
 
 .content .login-img .info form {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     text-align: right;
     line-height: 25px;
     text-transform: none;
     /*opacity: 0;*/
-    -webkit-transition: all 8s ease-in-out;
-    -moz-transition: all 8s ease-in-out;
-    -ms-transition: all 8s ease-in-out;
-    -o-transition: all 8s ease-in-out;
-    transition: all 8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
 }
 
 
@@ -104,7 +104,7 @@
 /*}*/
 
 .content .login-img .info form label {
-    font-size: 18px;
+    font-size: 38px;
     vertical-align: middle;
     color: antiquewhite;
 }
@@ -127,12 +127,10 @@
 
 
 
-.content .login-img .info .form-group input,
-.content .login-img .info .form-group input:focus,
-.content .login-img .info .form-group input:active {
+.content .login-img .info .form-group input {
     color: #eef0f1;
     font-family: PT Sans, sans-serif;
-    font-size: 18px;
+    font-size: 36px;
 
     -webkit-animation-name: autofill;
     -webkit-animation-fill-mode: both;
@@ -147,13 +145,13 @@
     color: antiquewhite;
     cursor: pointer;
     display: block;
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 65px;
     max-width: 160px;
     margin: 0 auto 0;
     position: relative;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     vertical-align: middle;
     width: 100%;
     border: 0 solid;
@@ -188,11 +186,15 @@
     transition: all .2s ease-in-out;
 }
 
+.content .login-img .registerRef {
+    text-align: end;
+}
+
 .content  .login-img .info a {
-    display: block;
+    /*display: block;*/
     text-align: end;
     color: #7e7e7e;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 5px;
     -webkit-text-shadow:
             3px 3px 5px #21222B,
@@ -231,7 +233,7 @@
 
 .content .login-img .info a:hover {
     color: #69ad00;
-    font-size: 17px;
+    font-size: 26px;
     opacity: 1;
 
     -webkit-transition: all 1s ease-in-out;
@@ -252,7 +254,7 @@
     margin-bottom: -10px;
     color: #9c0000;
     text-transform: none;
-    font-size: 20px;
+    font-size: 36px;
 
     -webkit-text-shadow:
             1px 1px 11px red;
