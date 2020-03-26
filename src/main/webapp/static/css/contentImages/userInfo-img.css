@@ -71,3 +71,21 @@
     height: 300px;
     border-radius: inherit;
 }
+
+.content .userInfo-img .info .profile-pictures {
+    display: block;
+    /*width: 200px;*/
+    height: 400px;
+    box-shadow: none;
+}
+
+.content .userInfo-img .info .profile-pictures:hover {
+    box-shadow: none;
+}
+
+.content .userInfo-img .info .profile-pictures img {
+    margin: 0 calc(50vw - 225px);
+    width: 400px;
+    height: 400px;
+    border-radius: inherit;
+}

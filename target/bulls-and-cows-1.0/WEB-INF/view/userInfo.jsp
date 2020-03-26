@@ -25,6 +25,9 @@
                             <c:when test="${loginedUser.login=='Denchik'}">
                                 <h4>Дэнчик, учи Java! ;)</h4>
                                 <br>
+                                <a class="profile-pictures" href="#">
+                                    <img src="static/images/pictures/06.png">
+                                </a>
                                 <a href="https://javarush.ru/groups/posts/2502-java-v-oblakakh-kak-oblachnihe-prilozhenija-zavoevihvajut-mir-i-zachem-im-java" target="_blank">
                                     <img src="static/images/pictures/01.png">
                                 </a>
