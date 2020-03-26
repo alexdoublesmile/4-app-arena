@@ -9,9 +9,7 @@
     margin-top: 10px;
     top: calc(50vh - 150px);
     left: calc(50vw - 250px);
-    /*color: black;*/
     font-size: 18px;
-    /*text-align: right;*/
     padding: 15px 32px;
     border-radius: 35px;
     background-color: #1a1e20;
@@ -37,8 +35,6 @@
 
 
 .content .login-img .info h3 {
-    /*font-size: 24px;*/
-    /*padding-top: 10px;*/
     display: none;
 }
 
@@ -48,7 +44,7 @@
     font-size: 36px;
     font-family: monospace;
     margin-bottom: 15px;
-    color: transparent;
+    color: #dbe291;
     -webkit-text-shadow:
             0px 0px 4px #ecedb3,
             6px 6px 7px #212121;
@@ -72,23 +68,23 @@
     transition: all 8s ease-in-out;
 }
 
-.content .login-img:hover h4 {
-    color: #dbe291;
-    font-size: 36px;
+/*.content .login-img:hover h4 {*/
+    /*color: #dbe291;*/
+    /*font-size: 36px;*/
 
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-}
+    /*-webkit-transition: all .8s ease-in-out;*/
+    /*-moz-transition: all .8s ease-in-out;*/
+    /*-ms-transition: all .8s ease-in-out;*/
+    /*-o-transition: all .8s ease-in-out;*/
+    /*transition: all .8s ease-in-out;*/
+/*}*/
 
 .content .login-img .info form {
     margin-bottom: 25px;
     text-align: right;
     line-height: 25px;
     text-transform: none;
-    opacity: 0;
+    /*opacity: 0;*/
     -webkit-transition: all 8s ease-in-out;
     -moz-transition: all 8s ease-in-out;
     -ms-transition: all 8s ease-in-out;
@@ -97,15 +93,15 @@
 }
 
 
-.content .login-img:hover form {
-    opacity: 1;
+/*.content .login-img:hover form {*/
+    /*opacity: 1;*/
 
-    -webkit-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -ms-transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    transition: all .8s ease-in-out;
-}
+    /*-webkit-transition: all .8s ease-in-out;*/
+    /*-moz-transition: all .8s ease-in-out;*/
+    /*-ms-transition: all .8s ease-in-out;*/
+    /*-o-transition: all .8s ease-in-out;*/
+    /*transition: all .8s ease-in-out;*/
+/*}*/
 
 .content .login-img .info form label {
     font-size: 18px;

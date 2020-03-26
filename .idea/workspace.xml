@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65d8e6da-eaac-4bca-adda-b7f131861fb4" name="Default Changelist" comment="" />
+    <list default="true" id="65d8e6da-eaac-4bca-adda-b7f131861fb4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/09a4928e-f45a-4b48-b7e0-c17785ee8b60.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logfile_test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logfile_test.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/plohoy/bulls/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plohoy/bulls/service/UserServiceTest.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +39,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/content.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="91" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1683">
+              <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="107" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/LoginServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="609">
+              <caret line="377" column="51" lean-forward="true" selection-start-line="377" selection-start-column="51" selection-end-line="377" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/function/BiFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/stream/Stream.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11033">
+              <caret line="695" column="10" selection-start-line="695" selection-start-column="10" selection-end-line="695" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -44,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/mainStyle.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -78,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/header-theme-toggle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/header.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/header-search.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/UsersListServlet.java" />
@@ -107,15 +171,12 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/userInfo-img.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/plohoy/bulls/dao/UserDaoImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/09a4928e-f45a-4b48-b7e0-c17785ee8b60/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/footer.jsp" />
@@ -129,6 +190,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/content.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-statistic.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/statistic-img.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/LoginServlet.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css" />
       </list>
     </option>
   </component>
@@ -163,10 +228,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="816" />
-    <option name="height" value="616" />
+    <option name="x" value="260" />
+    <option name="y" value="40" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -176,8 +241,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +276,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="bulls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bulls-and-cows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bulls-and-cows" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bulls" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bulls-and-cows" type="b2602c69:ProjectViewProjectNode" />
@@ -252,18 +327,38 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bulls-and-cows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bulls-and-cows" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bulls-and-cows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bulls-and-cows" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bulls-and-cows" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bulls-and-cows" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1584992355743" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585163875473" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -472,8 +567,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.anyTest" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.getRandomDictum" />
         <item itemvalue="JUnit.UserServiceTest.getRandomInt" />
         <item itemvalue="JUnit.UserServiceTest.checkSortByScoreService" />
@@ -522,49 +617,52 @@
       <workItem from="1584596160105" duration="5786000" />
       <workItem from="1584607493598" duration="9942000" />
       <workItem from="1584678183731" duration="14730000" />
-      <workItem from="1584805129710" duration="70758000" />
+      <workItem from="1584805129710" duration="87638000" />
+      <workItem from="1585132127738" duration="3431000" />
+      <workItem from="1585197633618" duration="759000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest_anyTest - 2020.03.22 at 15h 48m 49s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 53m 17s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.22 at 15h 58m 07s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 53m 39s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.22 at 17h 07m 01s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 54m 14s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.22 at 17h 49m 28s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 54m 26s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.23 at 17h 55m 00s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 58m 09s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.23 at 17h 58m 30s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 58m 37s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.23 at 18h 00m 30s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 58m 45s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.23 at 18h 00m 47s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 59m 24s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.23 at 21h 03m 04s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 59m 48s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2020.03.23 at 21h 11m 35s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 17h 00m 04s.xml">
+      <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="494379000" />
+    <option name="totallyTimeSpent" value="515449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20682302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -572,10 +670,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42471445" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42471445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,12 +685,13 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32917964" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32917964" />
+      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.49946696" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.12153518" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.12153518" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.20522387" />
@@ -612,27 +710,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="105" column="16" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/AbstractCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="60" column="22" selection-start-line="60" selection-start-column="22" selection-end-line="60" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-theme-toggle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -704,20 +781,6 @@
         <state relative-caret-position="-561" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -739,13 +802,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/HelloServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/HelloServlet.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -798,16 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/09a4928e-f45a-4b48-b7e0-c17785ee8b60/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -815,13 +862,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://09a4928e-f45a-4b48-b7e0-c17785ee8b60/database/d1iaoesfudnafv/schema/public/sequence/web_user_user_id_seq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://09a4928e-f45a-4b48-b7e0-c17785ee8b60/database/d1iaoesfudnafv/schema/public/sequence/web_user_user_id_seq" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/bulls_project.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -897,9 +938,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/statistic.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/statistic.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-register.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -907,13 +946,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="11" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-login.css" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/statistic.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -949,17 +982,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/function/BiFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11033">
+          <caret line="695" column="10" selection-start-line="695" selection-start-column="10" selection-end-line="695" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/mainStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="377" column="51" lean-forward="true" selection-start-line="377" selection-start-column="51" selection-end-line="377" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/content.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="5" column="37" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="99" column="16" selection-start-line="99" selection-start-column="16" selection-end-line="107" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="91" selection-end-column="3" />
         </state>
       </provider>
     </entry>

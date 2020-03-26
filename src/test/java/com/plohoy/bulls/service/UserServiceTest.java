@@ -19,6 +19,10 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.util.*;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class UserServiceTest {
 
@@ -338,8 +342,32 @@ public class UserServiceTest {
 
     }
 
+
+    class Phone{
+
+        private String name;
+        private int price;
+
+        public Phone(String name, int price){
+            this.name=name;
+            this.price=price;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getPrice() {
+            return price;
+        }
+    }
+
     @Test
     public void anyTest() {
+
+            Predicate<String> containsA = t -> t.contains("A");
+            Predicate<String> containsB = t -> t.contains("E");
+            System.out.println(containsA.negate().or(containsB).test("ABCD"));
 
     }
 
