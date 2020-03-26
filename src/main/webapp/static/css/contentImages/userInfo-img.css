@@ -1,22 +1,73 @@
 
-.userInfo-img {
+.content .userInfo-img {
     background-image: url("../../../static/images/userInfo.jpg");
 }
 
 .content .userInfo-img .info {
-    top: 100px;
-    left: 10%;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding-left: 30px;
     padding-right: 30px;
+    padding-top: 120px;
     text-align: left;
     line-height: 20px;
     text-transform: none;
+
+    overflow-y: scroll;
 }
 
-.userInfo-img .info h3 {
+.content .userInfo-img .info h3 {
     /*font-size: 24px;*/
     line-height: 30px;
 }
 
-.userInfo-img .info h4 {
+.content .userInfo-img .info h4 {
     color: chartreuse;
+}
+
+.content .userInfo-img .info a {
+    display: inline-block;
+    width: 410px;
+    height: 300px;
+    margin: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 30px;
+
+    -webkit-box-shadow: 1px 1px 15px lightgrey;
+    -moz-box-shadow: 1px 1px 15px lightgrey;
+    -ms-box-shadow: 1px 1px 15px lightgrey;
+    -o-box-shadow: 1px 1px 15px lightgrey;
+    box-shadow: 1px 1px 15px lightgrey;
+
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.content .userInfo-img .info a:hover {
+
+    -webkit-box-shadow: 1px 1px 25px orange;
+    -moz-box-shadow: 1px 1px 25px orange;
+    -ms-box-shadow: 1px 1px 25px orange;
+    -o-box-shadow: 1px 1px 25px orange;
+    box-shadow: 1px 1px 25px orange;
+}
+
+.content .userInfo-img .info a:after {
+    border: none;
+}
+
+
+.content .userInfo-img .info a img {
+    width: 410px;
+    height: 300px;
+    border-radius: inherit;
 }

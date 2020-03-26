@@ -24,6 +24,22 @@
                             </c:when>
                             <c:when test="${loginedUser.login=='Denchik'}">
                                 <h4>Дэнчик, учи Java! ;)</h4>
+                                <br>
+                                <a href="https://javarush.ru/groups/posts/2502-java-v-oblakakh-kak-oblachnihe-prilozhenija-zavoevihvajut-mir-i-zachem-im-java" target="_blank">
+                                    <img src="static/images/pictures/01.png">
+                                </a>
+                                <a href="https://javarush.ru/groups/posts/2426-java-i-internet-vejshey-kak-statjh-uspeshnihm-iot-developerom" target="_blank">
+                                    <img src="static/images/pictures/02.png">
+                                </a>
+                                <a href="https://javarush.ru/groups/posts/2546-java-i-blokcheyn-naydetsja-li-v-tekhnologii-budujshego-mesto-dlja-java-koda" target="_blank">
+                                    <img src="static/images/pictures/03.png">
+                                </a>
+                                <a href="https://javarush.ru/groups/posts/2445-razmer-imeet-znachenie-gayd-po-java-programmirovaniju-v-big-data" target="_blank">
+                                    <img src="static/images/pictures/04.png">
+                                </a>
+                                <a href="https://javarush.ru/groups/posts/2558-java-i-ai-mozhno-li-napisatjh-iskusstvennihy-intellekt-na-java" target="_blank">
+                                    <img src="static/images/pictures/05.png">
+                                </a>
 
                             </c:when>
                             <c:when test="${loginedUser.login==''}">
