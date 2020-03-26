@@ -8,6 +8,7 @@
 }
 
 .content .accessDenied-img .info {
+    width: 100vh;
     top: 80%;
     left: 0;
     color: #e33030;
