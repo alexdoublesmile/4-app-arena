@@ -17,9 +17,22 @@
                         <h3>Логин - ${loginedUser.login}</h3>
                         <br>
                         <br>
-                        <c:if test="${loginedUser.login=='Richbankir'}">
-                            <h4>Димасик, выдал тебе роль Админа ;)</h4>
-                        </c:if>
+                        <c:choose>
+                            <c:when test="${loginedUser.login=='Richbankir'}">
+                                <h4>Димасик, выдал тебе роль Админа ;)</h4>
+
+                            </c:when>
+                            <c:when test="${loginedUser.login=='Denchik'}">
+                                <h4>Дэнчик, учи Java! ;)</h4>
+
+                            </c:when>
+                            <c:when test="${loginedUser.login==''}">
+
+                            </c:when>
+                            <c:when test="${loginedUser.login==''}">
+
+                            </c:when>
+                        </c:choose>
                     </div>
                 </div>
             </div>
