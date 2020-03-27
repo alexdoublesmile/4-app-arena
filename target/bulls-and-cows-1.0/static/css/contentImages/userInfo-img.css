@@ -79,6 +79,10 @@
     box-shadow: none;
 }
 
+.content .userInfo-img .info .profile-pictures:hover {
+    box-shadow: none;
+}
+
 .content .userInfo-img .info .profile-pictures img {
     margin: 0 calc(50vw - 225px);
     width: 400px;

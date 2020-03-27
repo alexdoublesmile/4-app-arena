@@ -45,8 +45,19 @@
                                 </a>
 
                             </c:when>
-                            <c:when test="${loginedUser.login==''}">
-
+                            <c:when test="${loginedUser.login=='Игорь Талалай'}">
+                                <h4>Игоречек, только для тебя! ;)</h4>
+                                <br>
+                                <a style="
+                                    display: inline-block;
+                                    width: 800px;
+                                    height: 500px;"
+                                   href="http://risovach.ru/upload/2014/07/mem/nelzya-prosto-tak-vzyat-i-boromir-mem_55142036_orig_.jpg" target="_blank">
+                                    <img style="
+                                    width: 800px;
+                                    height: 500px;"
+                                         src="static/images/Igo.jpg">
+                                </a>
                             </c:when>
                             <c:when test="${loginedUser.login==''}">
 
