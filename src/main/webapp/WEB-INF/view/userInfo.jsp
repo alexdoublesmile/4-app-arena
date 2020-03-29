@@ -23,9 +23,9 @@
 
                             </c:when>
                             <c:when test="${loginedUser.login=='Denchik'}">
-                                <h4>Дэнчик, учи Java! ;)</h4>
+                                <h4>Дэнчик, учи Java! ;) если все прочел - нажми на Крестного Отца</h4>
                                 <br>
-                                <a class="profile-pictures" href="#">
+                                <a class="profile-pictures" href="https://javarush.ru/groups/posts/2418-pochemu-stoit-uchitjh-java-v-2020-godu">
                                     <img src="static/images/pictures/06.png">
                                 </a>
                                 <a href="https://javarush.ru/groups/posts/2502-java-v-oblakakh-kak-oblachnihe-prilozhenija-zavoevihvajut-mir-i-zachem-im-java" target="_blank">

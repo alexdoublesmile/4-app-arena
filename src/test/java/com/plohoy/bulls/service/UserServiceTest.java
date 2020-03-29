@@ -2,6 +2,7 @@ package com.plohoy.bulls.service;
 
 import com.plohoy.bulls.domain.User;
 import com.plohoy.bulls.exception.DaoException;
+import javafx.event.Event;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -18,6 +19,7 @@ import org.slf4j.LoggerFactory;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -43,7 +45,7 @@ public class UserServiceTest {
     private static final int USER_TEST_SCORE = 10;
 
 
-    private static final Map<String,String> jdbcUrlSettings = new HashMap<>();
+    private static final Map<String, String> jdbcUrlSettings = new HashMap<>();
 
     static {
         String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
@@ -93,7 +95,7 @@ public class UserServiceTest {
         session = factory.openSession();
         session.getTransaction().begin();
         session.createNamedQuery("SelectAllByLogin")
-                .setParameter("login",USER_TEST_LOGIN + '%')
+                .setParameter("login", USER_TEST_LOGIN + '%')
                 .getResultList()
                 .forEach(p -> {
                     session.remove(p);
@@ -136,11 +138,12 @@ public class UserServiceTest {
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
-            throw new RuntimeException();        }
+            throw new RuntimeException();
+        }
     }
 
     @Test
-    public  void checkFindNullUserService() {
+    public void checkFindNullUserService() {
         UserService service = new UserService();
 
         try {
@@ -150,11 +153,12 @@ public class UserServiceTest {
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
-            throw new RuntimeException();        }
+            throw new RuntimeException();
+        }
     }
 
     @Test
-    public  void checkFindByLoginService() {
+    public void checkFindByLoginService() {
         UserService service = new UserService();
 
         try {
@@ -165,7 +169,8 @@ public class UserServiceTest {
 
         } catch (DaoException e) {
             LOGGER.error(e.getMessage(), e);
-            throw new RuntimeException();        }
+            throw new RuntimeException();
+        }
     }
 
 
@@ -218,9 +223,9 @@ public class UserServiceTest {
 
         Assert.assertTrue(
                 randomFiveUsers.get(0).getScore() > randomFiveUsers.get(1).getScore()
-                && randomFiveUsers.get(1).getScore() > randomFiveUsers.get(2).getScore()
-                && randomFiveUsers.get(2).getScore() > randomFiveUsers.get(3).getScore()
-                && randomFiveUsers.get(3).getScore() > randomFiveUsers.get(4).getScore()
+                        && randomFiveUsers.get(1).getScore() > randomFiveUsers.get(2).getScore()
+                        && randomFiveUsers.get(2).getScore() > randomFiveUsers.get(3).getScore()
+                        && randomFiveUsers.get(3).getScore() > randomFiveUsers.get(4).getScore()
         );
     }
 
@@ -343,34 +348,6 @@ public class UserServiceTest {
     }
 
 
-    class Phone{
-
-        private String name;
-        private int price;
-
-        public Phone(String name, int price){
-            this.name=name;
-            this.price=price;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getPrice() {
-            return price;
-        }
-    }
-
-    @Test
-    public void anyTest() {
-
-            Predicate<String> containsA = t -> t.contains("A");
-            Predicate<String> containsB = t -> t.contains("E");
-            System.out.println(containsA.negate().or(containsB).test("ABCD"));
-
-    }
-
     private static SessionFactory buildSessionFactory() {
         try {
             StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
@@ -386,5 +363,12 @@ public class UserServiceTest {
             System.err.println("Initial SessionFactory creation failed." + ex);
             throw new ExceptionInInitializerError(ex);
         }
+    }
+
+
+    @Test
+    public void anyTest() {
+
+
     }
 }
