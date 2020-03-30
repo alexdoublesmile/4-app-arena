@@ -10,12 +10,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/arena.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/arena.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/WEB-INF/view/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/WEB-INF/view/userInfo.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logfile_test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logfile_test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.plohoy.bulls.service.UserServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.plohoy.bulls.service.UserServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.plohoy.bulls.service.UserServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.plohoy.bulls.service.UserServiceTest.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/plohoy/bulls/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plohoy/bulls/service/UserServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -85,14 +80,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="380" column="31" lean-forward="true" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console_11.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -118,17 +122,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/target/logfile_test.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="90">
-              <caret line="53" column="77" lean-forward="true" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="25" column="103" selection-start-line="25" selection-start-column="103" selection-end-line="25" selection-end-column="103" />
+            <state relative-caret-position="102">
+              <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -162,7 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/admin.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/content-images.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-login.css" />
@@ -210,9 +213,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console_7.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console_9.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console_10.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" />
-        <option value="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/bulls_data.sql" />
+        <option value="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console_11.sql" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" />
       </list>
     </option>
   </component>
@@ -260,8 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="CatdeaLogs" />
       <pane id="ProjectPane">
         <subPane>
@@ -402,16 +404,18 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585492796336" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585584102604" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -456,7 +460,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
+  <component name="RunManager" selected="JUnit.UserServiceTest.anyTest">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bulls-and-cows" />
       <extension name="coverage">
@@ -612,14 +616,14 @@
       <item itemvalue="JUnit.UserServiceTest.getRandomInt" />
       <item itemvalue="JUnit.UserServiceTest.anyTest" />
       <item itemvalue="JUnit.UserServiceTest.getRandomDictum" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
       <item itemvalue="JUnit.UserServiceTest.checkFindByIdService" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.29" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.anyTest" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserServiceTest.checkFindByIdService" />
-        <item itemvalue="JUnit.UserServiceTest.anyTest" />
         <item itemvalue="JUnit.UserServiceTest.getRandomDictum" />
         <item itemvalue="JUnit.UserServiceTest.getRandomInt" />
       </list>
@@ -671,50 +675,51 @@
       <workItem from="1585132127738" duration="3431000" />
       <workItem from="1585197633618" duration="33248000" />
       <workItem from="1585309675896" duration="10323000" />
-      <workItem from="1585490168103" duration="1326000" />
+      <workItem from="1585490168103" duration="5814000" />
+      <workItem from="1585553453975" duration="8105000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 58m 37s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.29 at 20h 29m 49s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 58m 45s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.29 at 20h 31m 38s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 59m 24s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 11h 39m 21s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 16h 59m 48s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 11h 39m 34s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.25 at 17h 00m 04s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 13h 26m 59s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.28 at 12h 38m 51s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 13h 47m 47s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.28 at 12h 40m 55s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 16h 42m 02s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.28 at 12h 41m 47s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 16h 50m 39s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.28 at 13h 10m 07s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 17h 24m 34s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_anyTest - 2020.03.28 at 13h 11m 47s.xml">
+    <history-entry file="UserServiceTest_anyTest - 2020.03.30 at 17h 32m 38s.xml">
       <configuration name="UserServiceTest.anyTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="559587000" />
+    <option name="totallyTimeSpent" value="572180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15138593" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -724,7 +729,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42471445" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42471445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -737,16 +742,16 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32917964" />
       <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32917964" />
-      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.49946696" weight="0.32917964" />
+      <window_info anchor="bottom" id="Database Console" order="15" sideWeight="0.49946696" visible="true" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.12153518" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.12153518" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.14658849" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.14658849" />
       <window_info anchor="right" id="JSF" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" id="Bean Validation" order="11" />
@@ -762,13 +767,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/admin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/plohoy/bulls/servlet/AdminServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1068,20 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="25" column="103" selection-start-line="25" selection-start-column="103" selection-end-line="25" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/logfile_test.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="90">
-          <caret line="53" column="77" lean-forward="true" selection-start-line="53" selection-start-column="77" selection-end-line="53" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/bulls_project.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1096,13 +1080,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/target/logfile_test.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d9bb1e0c-72a7-4673-9ae7-edb97898d235/console_11.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        <state relative-caret-position="255">
+          <caret line="380" column="31" lean-forward="true" selection-start-line="380" selection-start-column="31" selection-end-line="380" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
         </state>
       </provider>
     </entry>

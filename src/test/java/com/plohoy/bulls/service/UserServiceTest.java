@@ -2,6 +2,8 @@ package com.plohoy.bulls.service;
 
 import com.plohoy.bulls.domain.User;
 import com.plohoy.bulls.exception.DaoException;
+import com.sun.javafx.UnmodifiableArrayList;
+import com.sun.javafx.collections.UnmodifiableListSet;
 import javafx.event.Event;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -23,8 +25,11 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static java.util.stream.Collectors.toList;
 
 public class UserServiceTest {
 
@@ -369,6 +374,27 @@ public class UserServiceTest {
     @Test
     public void anyTest() {
 
+        String s3 = Stream.of(1, 2, 3, 4, 5, 6)
+                .collect(Collectors.reducing(
+                        "", x -> Integer.toString(x), (a, b) -> a + b
+                ));
+        System.out.println(s3);
+    }
 
+    class Phone{
+
+        private String name;
+        private String company;
+        private int price;
+
+        public Phone(String name, String comp, int price){
+            this.name=name;
+            this.company=comp;
+            this.price = price;
+        }
+
+        public String getName() { return name; }
+        public int getPrice() { return price; }
+        public String getCompany() { return company; }
     }
 }

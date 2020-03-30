@@ -19,30 +19,30 @@
                         <br>
                         <c:choose>
                             <c:when test="${loginedUser.login=='Richbankir'}">
-                                <h4>Димасик, выдал тебе роль Админа ;)</h4>
+                                <h4>Че там? как дела? ;)</h4>
 
                             </c:when>
                             <c:when test="${loginedUser.login=='Denchik'}">
-                                <h4>Дэнчик, учи Java! ;) если все прочел - нажми на Крестного Отца</h4>
+                                <h4>режим обучения пока что очень печальный) даже первое задание оказалось не по силам?)</h4>
                                 <br>
-                                <a class="profile-pictures" href="https://javarush.ru/groups/posts/2418-pochemu-stoit-uchitjh-java-v-2020-godu">
-                                    <img src="static/images/pictures/06.png">
-                                </a>
-                                <a href="https://javarush.ru/groups/posts/2502-java-v-oblakakh-kak-oblachnihe-prilozhenija-zavoevihvajut-mir-i-zachem-im-java" target="_blank">
-                                    <img src="static/images/pictures/01.png">
-                                </a>
-                                <a href="https://javarush.ru/groups/posts/2426-java-i-internet-vejshey-kak-statjh-uspeshnihm-iot-developerom" target="_blank">
-                                    <img src="static/images/pictures/02.png">
-                                </a>
-                                <a href="https://javarush.ru/groups/posts/2546-java-i-blokcheyn-naydetsja-li-v-tekhnologii-budujshego-mesto-dlja-java-koda" target="_blank">
-                                    <img src="static/images/pictures/03.png">
-                                </a>
-                                <a href="https://javarush.ru/groups/posts/2445-razmer-imeet-znachenie-gayd-po-java-programmirovaniju-v-big-data" target="_blank">
-                                    <img src="static/images/pictures/04.png">
-                                </a>
-                                <a href="https://javarush.ru/groups/posts/2558-java-i-ai-mozhno-li-napisatjh-iskusstvennihy-intellekt-na-java" target="_blank">
-                                    <img src="static/images/pictures/05.png">
-                                </a>
+                                <%--<a class="profile-pictures" href="https://javarush.ru/groups/posts/2418-pochemu-stoit-uchitjh-java-v-2020-godu">--%>
+                                    <%--<img src="static/images/pictures/06.png">--%>
+                                <%--</a>--%>
+                                <%--<a href="https://javarush.ru/groups/posts/2502-java-v-oblakakh-kak-oblachnihe-prilozhenija-zavoevihvajut-mir-i-zachem-im-java" target="_blank">--%>
+                                    <%--<img src="static/images/pictures/01.png">--%>
+                                <%--</a>--%>
+                                <%--<a href="https://javarush.ru/groups/posts/2426-java-i-internet-vejshey-kak-statjh-uspeshnihm-iot-developerom" target="_blank">--%>
+                                    <%--<img src="static/images/pictures/02.png">--%>
+                                <%--</a>--%>
+                                <%--<a href="https://javarush.ru/groups/posts/2546-java-i-blokcheyn-naydetsja-li-v-tekhnologii-budujshego-mesto-dlja-java-koda" target="_blank">--%>
+                                    <%--<img src="static/images/pictures/03.png">--%>
+                                <%--</a>--%>
+                                <%--<a href="https://javarush.ru/groups/posts/2445-razmer-imeet-znachenie-gayd-po-java-programmirovaniju-v-big-data" target="_blank">--%>
+                                    <%--<img src="static/images/pictures/04.png">--%>
+                                <%--</a>--%>
+                                <%--<a href="https://javarush.ru/groups/posts/2558-java-i-ai-mozhno-li-napisatjh-iskusstvennihy-intellekt-na-java" target="_blank">--%>
+                                    <%--<img src="static/images/pictures/05.png">--%>
+                                <%--</a>--%>
 
                             </c:when>
                             <c:when test="${loginedUser.login=='Игорь Талалай'}">
@@ -52,7 +52,7 @@
                                     display: inline-block;
                                     width: 800px;
                                     height: 500px;"
-                                   href="http://risovach.ru/upload/2014/07/mem/nelzya-prosto-tak-vzyat-i-boromir-mem_55142036_orig_.jpg" target="_blank">
+                                   href="https://cdn.pixabay.com/photo/2014/04/02/16/26/sword-307282_1280.png" target="_blank">
                                     <img style="
                                     width: 800px;
                                     height: 500px;"
