@@ -1,24 +1,24 @@
-2020-04-02 23:54:19 INFO  UserServiceTest - --------------------------------
-2020-04-02 23:54:20 INFO  UserServiceTest - Five Users were created with random score: 103, 853, 383, 178, 58
-2020-04-02 23:54:20 INFO  UserServiceTest - Five Users were sorted by Service: 853, 383, 178, 103, 58
-2020-04-02 23:54:20 INFO  UserServiceTest - ---->>> Now Last in DB is this User:{id=41, firstName='wer', lastName='werwe', login='ale', password='12', score=0}
-2020-04-02 23:54:20 INFO  UserServiceTest - User 42 is added to DB...
-2020-04-02 23:54:20 INFO  UserServiceTest - now Last in DB is this User:{id=42, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest1', password='test', score=10}
-2020-04-02 23:54:20 INFO  UserServiceTest - User 42 is removed from DB...
-2020-04-02 23:54:20 INFO  UserServiceTest - And now again Last in DB is this User:{id=41, firstName='wer', lastName='werwe', login='ale', password='12', score=0}
-2020-04-02 23:54:20 INFO  UserServiceTest - 1 - Плохой Александр(login: admin, password: test)
-2020-04-02 23:54:20 INFO  UserServiceTest - 2 - Тестовый Иван(login: moder, password: test)
-2020-04-02 23:54:20 INFO  UserServiceTest - 18 - Гапеев Денис(login: alex, password: test)
-2020-04-02 23:54:20 INFO  UserServiceTest - 19 - qwe qwe(login: qwe, password: test)
-2020-04-02 23:54:20 INFO  UserServiceTest - 20 - qwe qwe(login: alexdoublesmile, password: test)
-2020-04-02 23:54:20 INFO  UserServiceTest - 21 - 123 123(login: alexandr, password: 12)
-2020-04-02 23:54:20 INFO  UserServiceTest - 22 - qwe qweQWE(login: QWE, password: 12)
-2020-04-02 23:54:20 INFO  UserServiceTest - 23 - 23 23(login: 123, password: 12)
-2020-04-02 23:54:20 INFO  UserServiceTest - 24 - qwe qwe(login: qweqweqwe, password: qw)
-2020-04-02 23:54:20 INFO  UserServiceTest - 40 - qw qw(login: Игорь Талалай, password: test)
-2020-04-02 23:54:20 INFO  UserServiceTest - 41 - werwe wer(login: ale, password: 12)
-2020-04-02 23:54:20 INFO  UserServiceTest - ---> New testUser 44 was added to DB by UserService(he'll be removed at the end of Test) - this User:{id=44, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest2', password='test', score=10}
-2020-04-02 23:54:20 INFO  UserServiceTest - 1st random Dictum is: Недолжно умирать с необнаженным оружием
-2020-04-02 23:54:20 INFO  UserServiceTest - 2nd random Dictum is: Опасна фиксация в мече, в кисти, во взгляде. Фиксация означает мертвую руку. Подвижность – это жизнь. Держи это в уме
-2020-04-02 23:54:21 INFO  UserServiceTest - User 46 was found by ID from DB - this User:{id=46, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest4', password='test', score=10}
-2020-04-02 23:54:21 INFO  UserServiceTest - All testData is removed from DB..
+2020-04-03 00:19:40 INFO  UserServiceTest - --------------------------------
+2020-04-03 00:19:40 INFO  UserServiceTest - Five Users were created with random score: 417, 306, 916, 122, 244
+2020-04-03 00:19:40 INFO  UserServiceTest - Five Users were sorted by Service: 916, 417, 306, 244, 122
+2020-04-03 00:19:40 INFO  UserServiceTest - ---->>> Now Last in DB is this User:{id=41, firstName='wer', lastName='werwe', login='ale', password='12', score=0}
+2020-04-03 00:19:40 INFO  UserServiceTest - User 47 is added to DB...
+2020-04-03 00:19:40 INFO  UserServiceTest - now Last in DB is this User:{id=47, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest1', password='test', score=10}
+2020-04-03 00:19:40 INFO  UserServiceTest - User 47 is removed from DB...
+2020-04-03 00:19:40 INFO  UserServiceTest - And now again Last in DB is this User:{id=41, firstName='wer', lastName='werwe', login='ale', password='12', score=0}
+2020-04-03 00:19:40 INFO  UserServiceTest - 1 - Плохой Александр(login: admin, password: test)
+2020-04-03 00:19:40 INFO  UserServiceTest - 2 - Тестовый Иван(login: moder, password: test)
+2020-04-03 00:19:40 INFO  UserServiceTest - 18 - Гапеев Денис(login: alex, password: test)
+2020-04-03 00:19:40 INFO  UserServiceTest - 19 - qwe qwe(login: qwe, password: test)
+2020-04-03 00:19:40 INFO  UserServiceTest - 20 - qwe qwe(login: alexdoublesmile, password: test)
+2020-04-03 00:19:40 INFO  UserServiceTest - 21 - 123 123(login: alexandr, password: 12)
+2020-04-03 00:19:40 INFO  UserServiceTest - 22 - qwe qweQWE(login: QWE, password: 12)
+2020-04-03 00:19:40 INFO  UserServiceTest - 23 - 23 23(login: 123, password: 12)
+2020-04-03 00:19:40 INFO  UserServiceTest - 24 - qwe qwe(login: qweqweqwe, password: qw)
+2020-04-03 00:19:40 INFO  UserServiceTest - 40 - qw qw(login: Игорь Талалай, password: test)
+2020-04-03 00:19:40 INFO  UserServiceTest - 41 - werwe wer(login: ale, password: 12)
+2020-04-03 00:19:41 INFO  UserServiceTest - ---> New testUser 49 was added to DB by UserService(he'll be removed at the end of Test) - this User:{id=49, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest2', password='test', score=10}
+2020-04-03 00:19:41 INFO  UserServiceTest - 1st random Dictum is: Жизнь - словно листок, падающий с дерева
+2020-04-03 00:19:41 INFO  UserServiceTest - 2nd random Dictum is: Перемены, наступающие с ходом времени, - лишь смена угла зрения на вещи
+2020-04-03 00:19:41 INFO  UserServiceTest - User 51 was found by ID from DB - this User:{id=51, firstName='Дениска', lastName='Тестовый', login='createdByIdeaTest4', password='test', score=10}
+2020-04-03 00:19:41 INFO  UserServiceTest - All testData is removed from DB..

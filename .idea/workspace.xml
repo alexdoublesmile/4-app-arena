@@ -7,64 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65d8e6da-eaac-4bca-adda-b7f131861fb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/champions-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/champions-img.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/register-img.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/userInfo-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/userInfo-img.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-register.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-register.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-statistic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-statistic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/games.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/mainStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/Igo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/accessDenied.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/accessDenied.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/admin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/admin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/article1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/article1.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/article2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/article2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/article3.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/article4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/article4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/champions1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/champions1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/champions2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/champions2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/games1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/games1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/games2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/games2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/main1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/main1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/main2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/main2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/pictures/01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/pictures/02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/pictures/03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/pictures/04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/pictures/05.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/pictures/06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/registrationSuccess.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/registrationSuccess.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/statictic2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/statistic.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/statistic.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/userInfo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/userInfo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/arena.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/arena.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/WEB-INF/view/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/WEB-INF/view/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/WEB-INF/view/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/WEB-INF/view/userInfo.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/css/contentImages/login-img.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/css/contentImages/login-img.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/css/games.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/css/games.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/css/header-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/css/header-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/accessDenied.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/accessDenied.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/admin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/admin.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/article2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/article2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/article4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/article4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/champions2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/champions2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/games1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/games1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/games2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/games2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/main1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/main1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/main2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/main2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/registrationSuccess.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/registrationSuccess.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/userInfo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/target/bulls-and-cows-1.0/static/images/userInfo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/logfile_test.log" beforeDir="false" afterPath="$PROJECT_DIR$/target/logfile_test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.plohoy.bulls.service.UserServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.plohoy.bulls.service.UserServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.plohoy.bulls.service.UserServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.plohoy.bulls.service.UserServiceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/plohoy/bulls/service/UserServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/plohoy/bulls/service/UserServiceTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,13 +78,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/games.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-582" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -174,11 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/usersList.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="421">
               <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="173" column="26" lean-forward="true" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -279,7 +225,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/games.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/mainStyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/champions-img.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/login-img.css" />
@@ -287,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/userInfo-img.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-statistic.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-register.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" />
       </list>
     </option>
   </component>
@@ -546,7 +492,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585860272484" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585862371975" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -812,7 +758,7 @@
       <workItem from="1585490168103" duration="5814000" />
       <workItem from="1585553453975" duration="13564000" />
       <workItem from="1585769177554" duration="32000" />
-      <workItem from="1585812667175" duration="13832000" />
+      <workItem from="1585812667175" duration="15212000" />
     </task>
     <servers />
   </component>
@@ -849,7 +795,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591503000" />
+    <option name="totallyTimeSpent" value="592883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1043,13 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" column="23" selection-start-line="99" selection-start-column="23" selection-end-line="99" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/games.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -1232,6 +1171,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="173" column="26" lean-forward="true" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
         </state>
       </provider>
     </entry>

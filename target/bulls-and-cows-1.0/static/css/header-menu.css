@@ -169,4 +169,9 @@ nav .sub-menu li a {
     -ms-transition: none;
     -o-transition: none;
     transition: none;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    -ms-text-shadow: none;
+    -o-text-shadow: none;
+    text-shadow: none;
 }
