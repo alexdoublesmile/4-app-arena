@@ -98,8 +98,6 @@ nav>ul .sub-li:hover .sub-menu {
     border: 1px solid limegreen;
     border-top: none;
     border-right: none;
-    /*opacity: 0;*/
-    /*visibility: hidden;*/
     -webkit-transform: rotate(-855deg);
     -moz-transform: rotate(-855deg);
     -ms-transform: rotate(-855deg);
@@ -118,8 +116,6 @@ nav>ul .sub-li:hover .sub-menu {
     -ms-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    /*opacity: 1;*/
-    /*visibility: visible;*/
 }
 
 .sub-menu {
@@ -133,8 +129,7 @@ nav>ul .sub-li:hover .sub-menu {
     padding: 10px 15px;
     text-transform: none;
     font-size: 22px;
-    line-height: 1.5em;
-    /*background-color: rgba(41, 49, 54, .4);*/
+    line-height: 45px;
     background-color: #99143a;
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 5px #21222B;
@@ -160,10 +155,18 @@ nav>ul .sub-li:hover .sub-menu {
     border-right-color: transparent;
 }
 
+nav .sub-menu li {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
 nav .sub-menu li a {
-    -webkit-text-shadow: 0px 1px 0px #232A6C;
-    -moz-text-shadow: 0px 1px 0px #232A6C;
-    -ms-text-shadow: 0px 1px 0px #232A6C;
-    -o-text-shadow: 0px 1px 0px #232A6C;
-    text-shadow: 0px 1px 0px #232A6C;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
 }

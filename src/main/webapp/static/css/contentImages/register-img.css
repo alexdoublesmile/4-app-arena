@@ -72,7 +72,6 @@
     text-align: right;
     line-height: 25px;
     text-transform: none;
-    /*opacity: 0;*/
 
     -webkit-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
@@ -80,27 +79,6 @@
     -o-transition: all .8s ease-in-out;
     transition: all .8s ease-in-out;
 }
-
-/*.content .register-img:hover h4 {*/
-    /*color: #dbe291;*/
-    /*font-size: 36px;*/
-
-    /*-webkit-transition: all .8s ease-in-out;*/
-    /*-moz-transition: all .8s ease-in-out;*/
-    /*-ms-transition: all .8s ease-in-out;*/
-    /*-o-transition: all .8s ease-in-out;*/
-    /*transition: all .8s ease-in-out;*/
-/*}*/
-
-/*.content .register-img:hover form {*/
-    /*opacity: 1;*/
-
-    /*-webkit-transition: all .8s ease-in-out;*/
-    /*-moz-transition: all .8s ease-in-out;*/
-    /*-ms-transition: all .8s ease-in-out;*/
-    /*-o-transition: all .8s ease-in-out;*/
-    /*transition: all .8s ease-in-out;*/
-/*}*/
 
 .content .register-img .info form>div:not(:last-child) {
     flex: 1 0 auto;
@@ -119,7 +97,6 @@
     line-height: 30px;
     text-align: center;
     border: none;
-    /*border-bottom: 1px solid #d2d2d2;*/
     outline: none;
 }
 

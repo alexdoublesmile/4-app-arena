@@ -2,25 +2,25 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <header class="clearfix">
-    <script>
-        function checkTheme() {
-            var themeButton = document.getElementsByName('satisfaction'),
-                newLink = document.createElement('link'),
-                head = document.getElementById('head');
-            for (var i = 0; i < themeButton.length; i++) {
-                if (themeButton[1].checked) {
-                    newLink.href = "${pageContext.request.contextPath}/static/css/funTheme/fun.css";
-                    newLink.rel = "stylesheet";
-                    newLink.id = "link";
-                    head.insertBefore(newLink, null);
+    <%--<script>--%>
+        <%--function checkTheme() {--%>
+            <%--var themeButton = document.getElementsByName('satisfaction'),--%>
+                <%--newLink = document.createElement('link'),--%>
+                <%--head = document.getElementById('head');--%>
+            <%--for (var i = 0; i < themeButton.length; i++) {--%>
+                <%--if (themeButton[1].checked) {--%>
+                    <%--newLink.href = "${pageContext.request.contextPath}/static/css/funTheme/fun.css";--%>
+                    <%--newLink.rel = "stylesheet";--%>
+                    <%--newLink.id = "link";--%>
+                    <%--head.insertBefore(newLink, null);--%>
 
-                } else {
-                    link.remove(newLink);
+                <%--} else {--%>
+                    <%--link.remove(newLink);--%>
 
-                }
-            }
-        }
-    </script>
+                <%--}--%>
+            <%--}--%>
+        <%--}--%>
+    <%--</script>--%>
     <nav class="main-nav">
         <ul>
             <li><a href="${pageContext.request.contextPath}/home">Главная</a></li>

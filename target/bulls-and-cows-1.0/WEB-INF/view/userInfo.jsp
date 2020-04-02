@@ -23,7 +23,7 @@
 
                             </c:when>
                             <c:when test="${loginedUser.login=='Denchik'}">
-                                <h4>Ты просто самый усердный ученик на планете - даже первое задание оказалось не по силам?)</h4>
+                                <h4>Дэнчик, ты как всегда самый усердный ученик на планете - даже первое задание оказалось не по силам?)</h4>
                                 <br>
                                 <%--<a class="profile-pictures" href="https://javarush.ru/groups/posts/2418-pochemu-stoit-uchitjh-java-v-2020-godu">--%>
                                     <%--<img src="static/images/pictures/06.png">--%>
@@ -50,13 +50,13 @@
                                 <br>
                                 <a style="
                                     display: inline-block;
-                                    width: 800px;
-                                    height: 500px;"
+                                    width: 400px;
+                                    height: 400px;"
                                    href="https://cdn.pixabay.com/photo/2014/04/02/16/26/sword-307282_1280.png" target="_blank">
                                     <img style="
                                     width: 800px;
                                     height: 500px;"
-                                         src="static/images/Igo.jpg">
+                                         src="https://forum.sources.ru/uploads/photo-11789.jpg">
                                 </a>
                             </c:when>
                             <c:when test="${loginedUser.login==''}">
