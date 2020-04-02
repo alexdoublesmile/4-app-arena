@@ -82,7 +82,6 @@ header {
 nav>ul .sub-li:hover .sub-menu {
     opacity: 1;
     visibility: visible;
-    background-color: #99143a;
     -webkit-transition: all .4s .5s ease-in-out;
     -moz-transition: all .4s .5s ease-in-out;
     -o-transition: all .4s .5s ease-in-out;
@@ -135,7 +134,8 @@ nav>ul .sub-li:hover .sub-menu {
     text-transform: none;
     font-size: 22px;
     line-height: 1.5em;
-    background-color: rgba(41, 49, 54, .4);
+    /*background-color: rgba(41, 49, 54, .4);*/
+    background-color: #99143a;
     border-radius: 5px;
     -webkit-box-shadow: 5px 5px 5px #21222B;
     -moz-box-shadow: 5px 5px 5px #21222B;

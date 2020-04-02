@@ -19,11 +19,11 @@
                         <br>
                         <c:choose>
                             <c:when test="${loginedUser.login=='Richbankir'}">
-                                <h4>Че там? как дела? ;)</h4>
+                                <h4>Че там? как дела, Димасик? ;)</h4>
 
                             </c:when>
                             <c:when test="${loginedUser.login=='Denchik'}">
-                                <h4>режим обучения пока что очень печальный) даже первое задание оказалось не по силам?)</h4>
+                                <h4>Ты просто самый усердный ученик на планете - даже первое задание оказалось не по силам?)</h4>
                                 <br>
                                 <%--<a class="profile-pictures" href="https://javarush.ru/groups/posts/2418-pochemu-stoit-uchitjh-java-v-2020-godu">--%>
                                     <%--<img src="static/images/pictures/06.png">--%>

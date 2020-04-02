@@ -28,6 +28,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 import static java.util.stream.Collectors.toList;
 
@@ -374,27 +375,5 @@ public class UserServiceTest {
     @Test
     public void anyTest() {
 
-        String s3 = Stream.of(1, 2, 3, 4, 5, 6)
-                .collect(Collectors.reducing(
-                        "", x -> Integer.toString(x), (a, b) -> a + b
-                ));
-        System.out.println(s3);
-    }
-
-    class Phone{
-
-        private String name;
-        private String company;
-        private int price;
-
-        public Phone(String name, String comp, int price){
-            this.name=name;
-            this.company=comp;
-            this.price = price;
-        }
-
-        public String getName() { return name; }
-        public int getPrice() { return price; }
-        public String getCompany() { return company; }
     }
 }

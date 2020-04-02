@@ -36,6 +36,10 @@
     font-size: 42px;
 }
 
+.content .main-img-2 .info a:after {
+    border: none;
+}
+
 .content .main-img-1 .info h2 {
     font-size: 54px;
     opacity: 1;

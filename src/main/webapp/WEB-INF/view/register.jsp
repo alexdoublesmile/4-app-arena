@@ -25,11 +25,11 @@
                             <div class="form-group">
                                 <label for="firstName">Имя</label>
                                 <input type="text" name="firstName" id="firstName" placeholder="Введите имя.." required
-                                       onkeyup="
-                                            var pattern=/['а-яА-ЯёЁa-zA-Z']/;
-                                            if(!pattern.test(this.value)) {
-                                                this.value=''
-                                            }"
+                                       <%--onkeyup="--%>
+                                            <%--var pattern=/['а-яА-ЯёЁa-zA-Z']/;--%>
+                                            <%--if(!pattern.test(this.value)) {--%>
+                                                <%--this.value=''--%>
+                                            <%--}"--%>
                                        title="Имя не должно содержать цифр и спецсимволов"
                                 />
                             </div>
@@ -37,11 +37,11 @@
                             <div class="form-group">
                                 <label for="lastName">Фамилия</label>
                                 <input type="text" name="lastName" id="lastName" placeholder="Введите фамилию.." required
-                                       onkeyup="
-                                            var pattern=/['а-яА-ЯёЁa-zA-Z']/;
-                                            if(!pattern.test(this.value)) {
-                                                this.value=''
-                                            }"
+                                       <%--onkeyup="--%>
+                                            <%--var pattern=/['а-яА-ЯёЁa-zA-Z']/;--%>
+                                            <%--if(!pattern.test(this.value)) {--%>
+                                                <%--this.value=''--%>
+                                            <%--}"--%>
                                        title="Фамилия не должна содержать цифр и спецсимволов"
                                 />
                             </div>

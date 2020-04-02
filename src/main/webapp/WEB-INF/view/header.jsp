@@ -28,26 +28,26 @@
                 <li><a href="${pageContext.request.contextPath}/games">Игры</a></li>
                 <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
             </c:if>
-            <c:forEach var="role" items="${loginedUser.roles}">
-                <c:if test="${role.name=='MODER'}">
-                    <li>
-                        <form class="theme-form">
-                            <input id="bad" name="satisfaction" type="radio" value="bad" onclick="checkTheme()" checked/>
-                            <input id="fun" name="satisfaction" type="radio" value="fun" onclick="checkTheme()"/>
+            <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
+                <%--<c:if test="${role.name=='MODER'}">--%>
+                    <%--<li>--%>
+                        <%--<form class="theme-form">--%>
+                            <%--<input id="bad" name="satisfaction" type="radio" value="bad" onclick="checkTheme()" checked/>--%>
+                            <%--<input id="fun" name="satisfaction" type="radio" value="fun" onclick="checkTheme()"/>--%>
 
-                            <label for="bad" class="theme-label bad-theme-label">Bad</label>
+                            <%--<label for="bad" class="theme-label bad-theme-label">Bad</label>--%>
 
-                            <div class="theme-head"></div>
-                            <div class="theme-eye theme-left-eye"></div>
-                            <div class="theme-eye theme-right-eye"></div>
-                            <div class="theme-mouth"></div>
+                            <%--<div class="theme-head"></div>--%>
+                            <%--<div class="theme-eye theme-left-eye"></div>--%>
+                            <%--<div class="theme-eye theme-right-eye"></div>--%>
+                            <%--<div class="theme-mouth"></div>--%>
 
-                            <div class="theme-pill"></div>
-                            <label for="fun" class="theme-label fun-theme-label">Fun</label>
-                        </form>
-                    </li>
-                </c:if>
-            </c:forEach>
+                            <%--<div class="theme-pill"></div>--%>
+                            <%--<label for="fun" class="theme-label fun-theme-label">Fun</label>--%>
+                        <%--</form>--%>
+                    <%--</li>--%>
+                <%--</c:if>--%>
+            <%--</c:forEach>--%>
 
             <c:choose>
                 <c:when test="${not empty loginedUser.login}">
@@ -63,11 +63,11 @@
                     <li><a style="color: navajowhite" href="${pageContext.request.contextPath}/login">Войти</a></li>
                 </c:otherwise>
             </c:choose>
-            <c:forEach var="role" items="${loginedUser.roles}">
-                <c:if test="${role.name=='ADMIN'}">
-                    <li><a style="color: navajowhite" href="${pageContext.request.contextPath}/admin">Admin Panel</a>
-                </c:if>
-            </c:forEach>
+            <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
+                <%--<c:if test="${role.name=='ADMIN'}">--%>
+                    <%--<li><a style="color: navajowhite" href="${pageContext.request.contextPath}/admin">Admin Panel</a>--%>
+                <%--</c:if>--%>
+            <%--</c:forEach>--%>
 
         </ul>
     </nav>
@@ -81,11 +81,11 @@
         </form>
     </div>
 
-    <script>
-        <c:forEach var="role" items="${loginedUser.roles}">
-            <c:if test="${role.name!='USER'}">
-                document.getElementById('sub-li').style.marginLeft = 0;
-            </c:if>
-        </c:forEach>
-    </script>
+    <%--<script>--%>
+        <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
+            <%--<c:if test="${role.name!='USER'}">--%>
+                <%--document.getElementById('sub-li').style.marginLeft = 0;--%>
+            <%--</c:if>--%>
+        <%--</c:forEach>--%>
+    <%--</script>--%>
 </header>

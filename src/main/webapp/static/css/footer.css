@@ -3,7 +3,7 @@ footer {
     width: 100%;
     min-height: 100px;
     padding-top: 15px;
-    background: linear-gradient(#6f6f6f, #ddb358, #252525);
+    background: linear-gradient(#6f6f6f, darkgrey, #252525);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow:
