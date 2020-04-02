@@ -7,8 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65d8e6da-eaac-4bca-adda-b7f131861fb4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/images/article4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/images/article4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -102,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="58" column="96" lean-forward="true" selection-start-line="58" selection-start-column="96" selection-end-line="58" selection-end-column="96" />
+            <state relative-caret-position="251">
+              <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -120,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
@@ -223,7 +223,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/content.css" />
         <option value="$PROJECT_DIR$/src/test/java/com/plohoy/bulls/service/UserServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/header.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/games.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/mainStyle.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/contentImages/champions-img.css" />
@@ -233,6 +232,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-statistic.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/funTheme/fun-register.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp" />
       </list>
     </option>
   </component>
@@ -492,7 +492,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585862371975" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585862459518" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -758,7 +758,7 @@
       <workItem from="1585490168103" duration="5814000" />
       <workItem from="1585553453975" duration="13564000" />
       <workItem from="1585769177554" duration="32000" />
-      <workItem from="1585812667175" duration="15212000" />
+      <workItem from="1585812667175" duration="15891000" />
     </task>
     <servers />
   </component>
@@ -795,7 +795,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="592883000" />
+    <option name="totallyTimeSpent" value="593562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
@@ -811,7 +811,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42471445" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42471445" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997923" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -830,7 +830,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" sideWeight="0.49819493" visible="true" weight="0.12153518" />
+      <window_info active="true" anchor="right" id="Maven" order="5" sideWeight="0.49819493" visible="true" weight="0.12153518" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.14658849" />
@@ -1137,13 +1137,6 @@
         <state relative-caret-position="-123" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/meta.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1160,10 +1153,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/statistic.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="58" column="96" lean-forward="true" selection-start-line="58" selection-start-column="96" selection-end-line="58" selection-end-column="96" />
+        <state relative-caret-position="336">
+          <caret line="173" column="26" lean-forward="true" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -1174,10 +1167,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/header-menu.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="173" column="26" lean-forward="true" selection-start-line="173" selection-start-column="26" selection-end-line="173" selection-end-column="26" />
+        <state relative-caret-position="833">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/userInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
         </state>
       </provider>
     </entry>
