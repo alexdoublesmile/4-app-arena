@@ -20,7 +20,7 @@ CREATE TABLE web_role (
 CREATE TABLE user_role (
   user_id int not null,
   role_id int not null,
-  FOREIGN KEY (user_id) REFERENCES web_user(user_id),
+  FOREIGN KEY (user_id) REFERENCES web_user(user_id) ON DELETE CASCADE,
   FOREIGN KEY (role_id) REFERENCES web_role(role_id)
 );
 

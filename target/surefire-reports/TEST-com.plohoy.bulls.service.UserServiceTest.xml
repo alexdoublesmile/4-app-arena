@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="com.plohoy.bulls.service.UserServiceTest" time="1.543" errors="0" skipped="0">
+<testsuite tests="9" failures="0" name="com.plohoy.bulls.service.UserServiceTest" time="1.304" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.3.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,13 +62,13 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkSortByScoreService" time="0.379"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkSortByScoreService" time="0.294"/>
   <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="anyTest" time="0"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkDBConnection" time="0.144"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindAllUsersService" time="0.166"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindByLoginService" time="0.214"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkCreateService" time="0.172"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="getRandomDictum" time="0.147"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindNullUserService" time="0.157"/>
-  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindByIdService" time="0.164"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkDBConnection" time="0.043"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindAllUsersService" time="0.154"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindByLoginService" time="0.19"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkCreateService" time="0.186"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="getRandomDictum" time="0.146"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindNullUserService" time="0.144"/>
+  <testcase classname="com.plohoy.bulls.service.UserServiceTest" name="checkFindByIdService" time="0.147"/>
 </testsuite>
