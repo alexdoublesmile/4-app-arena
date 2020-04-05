@@ -10,5 +10,14 @@
       <user-name>cmlpxuvcfxhipe</user-name>
       <introspection-schemas>@:@</introspection-schemas>
     </data-source>
+    <data-source name="arena@localhost" uuid="cc15f244-47c0-4dc7-a7a9-b3a6e58668d5">
+      <database-info product="PostgreSQL" version="12.0" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="12.0" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <introspection-schemas>@:@</introspection-schemas>
+    </data-source>
   </component>
 </project>

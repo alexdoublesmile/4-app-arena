@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-54-75-246-118.eu-west-1.compute.amazonaws.com:5432/d481n6kojosd1a</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="arena@localhost" uuid="cc15f244-47c0-4dc7-a7a9-b3a6e58668d5">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/arena</jdbc-url>
+    </data-source>
   </component>
 </project>
