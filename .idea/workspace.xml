@@ -19,6 +19,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Work/java/projects/bulls-and-cows" />
   </component>
@@ -38,7 +39,7 @@
       <workItem from="1619762525104" duration="1312000" />
       <workItem from="1619795105924" duration="601000" />
       <workItem from="1619844724836" duration="13000" />
-      <workItem from="1635927398002" duration="1232000" />
+      <workItem from="1635927398002" duration="1636000" />
     </task>
     <servers />
   </component>
