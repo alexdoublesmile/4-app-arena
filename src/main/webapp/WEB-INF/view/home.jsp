@@ -18,7 +18,7 @@
                 </div>
                 <div class="main-img-2">
                     <div class="info">
-                        <h2>Не суетись</h2>
+                        <h2>Не надо</h2>
                         <h3>Добро пожаловать на Арену</h3>
                         <a href="${pageContext.request.contextPath}/games">Хочу сыграть</a>
                     </div>

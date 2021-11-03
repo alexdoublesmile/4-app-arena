@@ -1,7 +1,6 @@
 package com.plohoy.bulls.util;
 
 import com.plohoy.bulls.domain.User;
-import org.omg.CORBA.PUBLIC_MEMBER;
 
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;

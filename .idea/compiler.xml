@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bulls-and-cows" />
-        <module name="bullsandcows" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bulls-and-cows" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
