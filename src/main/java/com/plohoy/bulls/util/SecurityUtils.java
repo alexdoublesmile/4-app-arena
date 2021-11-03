@@ -13,7 +13,7 @@ public class SecurityUtils {
 
         Set<String> roles = SecurityConfig.getAllAppRoles();
 
-        for(String role : roles) {
+        for (String role : roles) {
             List<String> urlPatterns = SecurityConfig.getUrlPatternsForRole(role);
             if (urlPatterns != null
                     && urlPatterns.contains(urlPattern)) {

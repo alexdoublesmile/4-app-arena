@@ -5,13 +5,13 @@ import java.util.Collection;
 import java.util.Objects;
 
 @Entity
-@Table(name="web_user")
+@Table(name = "web_user")
 @NamedQueries({
         @NamedQuery(
                 name = "SelectAllByLogin",
                 query = "select p from User p " +
                         "where p.login like :login"
-)
+        )
 })
 public class User {
     @Id
@@ -30,8 +30,8 @@ public class User {
     private int score;
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
     @JoinTable(name = "user_role",
-        joinColumns = @JoinColumn(name = "user_id"),
-        inverseJoinColumns = @JoinColumn(name = "role_id"))
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Collection<Role> roles;
 
     public Long getId() {

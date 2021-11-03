@@ -3,23 +3,23 @@
 
 <header class="clearfix">
     <%--<script>--%>
-        <%--function checkTheme() {--%>
-            <%--var themeButton = document.getElementsByName('satisfaction'),--%>
-                <%--newLink = document.createElement('link'),--%>
-                <%--head = document.getElementById('head');--%>
-            <%--for (var i = 0; i < themeButton.length; i++) {--%>
-                <%--if (themeButton[1].checked) {--%>
-                    <%--newLink.href = "${pageContext.request.contextPath}/static/css/funTheme/fun.css";--%>
-                    <%--newLink.rel = "stylesheet";--%>
-                    <%--newLink.id = "link";--%>
-                    <%--head.insertBefore(newLink, null);--%>
+    <%--function checkTheme() {--%>
+    <%--var themeButton = document.getElementsByName('satisfaction'),--%>
+    <%--newLink = document.createElement('link'),--%>
+    <%--head = document.getElementById('head');--%>
+    <%--for (var i = 0; i < themeButton.length; i++) {--%>
+    <%--if (themeButton[1].checked) {--%>
+    <%--newLink.href = "${pageContext.request.contextPath}/static/css/funTheme/fun.css";--%>
+    <%--newLink.rel = "stylesheet";--%>
+    <%--newLink.id = "link";--%>
+    <%--head.insertBefore(newLink, null);--%>
 
-                <%--} else {--%>
-                    <%--link.remove(newLink);--%>
+    <%--} else {--%>
+    <%--link.remove(newLink);--%>
 
-                <%--}--%>
-            <%--}--%>
-        <%--}--%>
+    <%--}--%>
+    <%--}--%>
+    <%--}--%>
     <%--</script>--%>
     <nav class="main-nav">
         <ul>
@@ -29,29 +29,30 @@
                 <li><a href="${pageContext.request.contextPath}/usersList">Рекорды</a></li>
             </c:if>
             <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
-                <%--<c:if test="${role.name=='MODER'}">--%>
-                    <%--<li>--%>
-                        <%--<form class="theme-form">--%>
-                            <%--<input id="bad" name="satisfaction" type="radio" value="bad" onclick="checkTheme()" checked/>--%>
-                            <%--<input id="fun" name="satisfaction" type="radio" value="fun" onclick="checkTheme()"/>--%>
+            <%--<c:if test="${role.name=='MODER'}">--%>
+            <%--<li>--%>
+            <%--<form class="theme-form">--%>
+            <%--<input id="bad" name="satisfaction" type="radio" value="bad" onclick="checkTheme()" checked/>--%>
+            <%--<input id="fun" name="satisfaction" type="radio" value="fun" onclick="checkTheme()"/>--%>
 
-                            <%--<label for="bad" class="theme-label bad-theme-label">Bad</label>--%>
+            <%--<label for="bad" class="theme-label bad-theme-label">Bad</label>--%>
 
-                            <%--<div class="theme-head"></div>--%>
-                            <%--<div class="theme-eye theme-left-eye"></div>--%>
-                            <%--<div class="theme-eye theme-right-eye"></div>--%>
-                            <%--<div class="theme-mouth"></div>--%>
+            <%--<div class="theme-head"></div>--%>
+            <%--<div class="theme-eye theme-left-eye"></div>--%>
+            <%--<div class="theme-eye theme-right-eye"></div>--%>
+            <%--<div class="theme-mouth"></div>--%>
 
-                            <%--<div class="theme-pill"></div>--%>
-                            <%--<label for="fun" class="theme-label fun-theme-label">Fun</label>--%>
-                        <%--</form>--%>
-                    <%--</li>--%>
-                <%--</c:if>--%>
+            <%--<div class="theme-pill"></div>--%>
+            <%--<label for="fun" class="theme-label fun-theme-label">Fun</label>--%>
+            <%--</form>--%>
+            <%--</li>--%>
+            <%--</c:if>--%>
             <%--</c:forEach>--%>
 
             <c:choose>
                 <c:when test="${not empty loginedUser.login}">
-                    <li class="sub-li" id="sub-li"><a style="color: limegreen" href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a>
+                    <li class="sub-li" id="sub-li"><a style="color: limegreen"
+                                                      href="${pageContext.request.contextPath}/userInfo">${loginedUser.login}</a>
                         <ul class="sub-menu">
                             <li><a href="${pageContext.request.contextPath}/userInfo">Профиль</a></li>
                             <li><a href="${pageContext.request.contextPath}/statistic">Статистика</a></li>
@@ -64,9 +65,9 @@
                 </c:otherwise>
             </c:choose>
             <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
-                <%--<c:if test="${role.name=='ADMIN'}">--%>
-                    <%--<li><a style="color: navajowhite" href="${pageContext.request.contextPath}/admin">Admin Panel</a>--%>
-                <%--</c:if>--%>
+            <%--<c:if test="${role.name=='ADMIN'}">--%>
+            <%--<li><a style="color: navajowhite" href="${pageContext.request.contextPath}/admin">Admin Panel</a>--%>
+            <%--</c:if>--%>
             <%--</c:forEach>--%>
 
         </ul>
@@ -82,10 +83,10 @@
     </div>
 
     <%--<script>--%>
-        <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
-            <%--<c:if test="${role.name!='USER'}">--%>
-                <%--document.getElementById('sub-li').style.marginLeft = 0;--%>
-            <%--</c:if>--%>
-        <%--</c:forEach>--%>
+    <%--<c:forEach var="role" items="${loginedUser.roles}">--%>
+    <%--<c:if test="${role.name!='USER'}">--%>
+    <%--document.getElementById('sub-li').style.marginLeft = 0;--%>
+    <%--</c:if>--%>
+    <%--</c:forEach>--%>
     <%--</script>--%>
 </header>

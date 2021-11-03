@@ -5,21 +5,21 @@
 <html>
 <c:set var="title" value="Statistic" scope="request"/>
 <jsp:include page="meta.jsp"></jsp:include>
-    <body>
-        <div class="wrapper">
-            <jsp:include page="header.jsp"></jsp:include>
+<body>
+<div class="wrapper">
+    <jsp:include page="header.jsp"></jsp:include>
 
-            <div class="content">
-                <div class="statistic-img">
-                    <div class="info">
-                        <h2>All statistic will shown here</h2>
-                        <h3></h3>
-                        <a></a>
-                    </div>
-                </div>
+    <div class="content">
+        <div class="statistic-img">
+            <div class="info">
+                <h2>All statistic will shown here</h2>
+                <h3></h3>
+                <a></a>
             </div>
-
-            <jsp:include page="footer.jsp"></jsp:include>
         </div>
-    </body>
+    </div>
+
+    <jsp:include page="footer.jsp"></jsp:include>
+</div>
+</body>
 </html>

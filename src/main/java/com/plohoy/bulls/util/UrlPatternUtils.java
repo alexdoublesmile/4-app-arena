@@ -36,17 +36,17 @@ public class UrlPatternUtils {
 
         boolean hasUrlMapping = hasUrlPatternInContext(servletContext, urlPattern);
 
-        if(hasUrlMapping) {
+        if (hasUrlMapping) {
             return urlPattern;
         }
 
         int extensionIndex = servletPath.lastIndexOf('.');
-        if(extensionIndex != -1) {
+        if (extensionIndex != -1) {
             String extension = servletPath.substring(extensionIndex + 1);
             urlPattern = "*." + extension;
             hasUrlMapping = hasUrlPatternInContext(servletContext, urlPattern);
 
-            if(hasUrlMapping) {
+            if (hasUrlMapping) {
                 return urlPattern;
             }
         }

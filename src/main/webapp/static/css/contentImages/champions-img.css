@@ -41,21 +41,16 @@
     text-align: right;
     background: transparent;
 
-    -webkit-text-shadow:
-            0px 0px 3px #21222B,
-            1px 2px 5px #C6C5C5;
-    -moz-text-shadow:
-            0px 0px 3px #21222B,
-            1px 2px 5px #C6C5C5;
-    -ms-text-shadow:
-            0px 0px 3px #21222B,
-            1px 2px 5px #C6C5C5;
-    -o-text-shadow:
-            0px 0px 3px #21222B,
-            1px 2px 5px #C6C5C5;
-    text-shadow:
-            0px 0px 3px #21222B,
-            1px 2px 5px #C6C5C5;
+    -webkit-text-shadow: 0px 0px 3px #21222B,
+    1px 2px 5px #C6C5C5;
+    -moz-text-shadow: 0px 0px 3px #21222B,
+    1px 2px 5px #C6C5C5;
+    -ms-text-shadow: 0px 0px 3px #21222B,
+    1px 2px 5px #C6C5C5;
+    -o-text-shadow: 0px 0px 3px #21222B,
+    1px 2px 5px #C6C5C5;
+    text-shadow: 0px 0px 3px #21222B,
+    1px 2px 5px #C6C5C5;
 }
 
 .champions-img-2 .dictum h3 {

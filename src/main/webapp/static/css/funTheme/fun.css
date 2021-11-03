@@ -16,20 +16,15 @@
     color: #ede8e8;
     background: transparent;
     border: 1px solid #fff;
-    -webkit-box-shadow:
-            5px 5px 5px #21222B;
-    -moz-box-shadow:
-            5px 5px 5px #21222B,
-            inset -2px -2px 5px #21222B;
-    -ms-box-shadow:
-            5px 5px 5px #21222B,
-            inset -2px -2px 5px #21222B;
-    -o-box-shadow:
-            5px 5px 5px #21222B,
-            inset -2px -2px 5px #21222B;
-    box-shadow:
-            5px 5px 5px #21222B,
-            inset -2px -2px 5px #21222B;
+    -webkit-box-shadow: 5px 5px 5px #21222B;
+    -moz-box-shadow: 5px 5px 5px #21222B,
+    inset -2px -2px 5px #21222B;
+    -ms-box-shadow: 5px 5px 5px #21222B,
+    inset -2px -2px 5px #21222B;
+    -o-box-shadow: 5px 5px 5px #21222B,
+    inset -2px -2px 5px #21222B;
+    box-shadow: 5px 5px 5px #21222B,
+    inset -2px -2px 5px #21222B;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;

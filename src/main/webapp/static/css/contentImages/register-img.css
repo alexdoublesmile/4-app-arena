@@ -12,21 +12,16 @@
     padding: 15px 32px;
     border-radius: 35px;
     background-color: #1a1e20;
-    -webkit-box-shadow:
-            10px 10px 15px #302C2C,
-            inset -2px -2px 10px #21222B;
-    -moz-box-shadow:
-            10px 10px 15px #302C2C,
-            inset -2px -2px 10px #21222B;
-    -ms-box-shadow:
-            10px 10px 15px #302C2C,
-            inset -2px -2px 10px #21222B;
-    -o-box-shadow:
-            10px 10px 15px #302C2C,
-            inset -2px -2px 10px #21222B;
-    box-shadow:
-            10px 10px 15px #302C2C,
-            inset -2px -2px 10px #21222B;
+    -webkit-box-shadow: 10px 10px 15px #302C2C,
+    inset -2px -2px 10px #21222B;
+    -moz-box-shadow: 10px 10px 15px #302C2C,
+    inset -2px -2px 10px #21222B;
+    -ms-box-shadow: 10px 10px 15px #302C2C,
+    inset -2px -2px 10px #21222B;
+    -o-box-shadow: 10px 10px 15px #302C2C,
+    inset -2px -2px 10px #21222B;
+    box-shadow: 10px 10px 15px #302C2C,
+    inset -2px -2px 10px #21222B;
 }
 
 .content .register-img .info h4 {
@@ -37,21 +32,16 @@
     font-size: 36px;
     font-family: monospace;
     margin-bottom: 45px;
-    -webkit-text-shadow:
-            0px 0px 4px #ecedb3,
-            6px 6px 7px #212121;
-    -moz-text-shadow:
-            0px 0px 4px #ecedb3,
-            6px 6px 7px #212121;
-    -ms-text-shadow:
-            0px 0px 4px #ecedb3,
-            6px 6px 7px #212121;
-    -o-text-shadow:
-            0px 0px 4px #ecedb3,
-            6px 6px 7px #212121;
-    text-shadow:
-            0px 0px 4px #ecedb3,
-            6px 6px 7px #212121;
+    -webkit-text-shadow: 0px 0px 4px #ecedb3,
+    6px 6px 7px #212121;
+    -moz-text-shadow: 0px 0px 4px #ecedb3,
+    6px 6px 7px #212121;
+    -ms-text-shadow: 0px 0px 4px #ecedb3,
+    6px 6px 7px #212121;
+    -o-text-shadow: 0px 0px 4px #ecedb3,
+    6px 6px 7px #212121;
+    text-shadow: 0px 0px 4px #ecedb3,
+    6px 6px 7px #212121;
 
     -webkit-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
@@ -80,7 +70,7 @@
     transition: all .8s ease-in-out;
 }
 
-.content .register-img .info form>div:not(:last-child) {
+.content .register-img .info form > div:not(:last-child) {
     flex: 1 0 auto;
 }
 
@@ -162,26 +152,21 @@
     transition: all .2s ease-in-out;
 }
 
-.content  .register-img .info a {
+.content .register-img .info a {
     display: block;
     text-align: end;
     color: #7e7e7e;
     font-size: 16px;
-    -webkit-text-shadow:
-            3px 3px 5px #21222B,
-            0px 1px 5px #C6C5C5;
-    -moz-text-shadow:
-            3px 3px 5px #21222B,
-            0px 1px 5px #C6C5C5;
-    -ms-text-shadow:
-            3px 3px 5px #21222B,
-            0px 1px 5px #C6C5C5;
-    -o-text-shadow:
-            3px 3px 5px #21222B,
-            0px 1px 5px #C6C5C5;
-    text-shadow:
-            3px 3px 5px #21222B,
-            0px 1px 5px #C6C5C5;
+    -webkit-text-shadow: 3px 3px 5px #21222B,
+    0px 1px 5px #C6C5C5;
+    -moz-text-shadow: 3px 3px 5px #21222B,
+    0px 1px 5px #C6C5C5;
+    -ms-text-shadow: 3px 3px 5px #21222B,
+    0px 1px 5px #C6C5C5;
+    -o-text-shadow: 3px 3px 5px #21222B,
+    0px 1px 5px #C6C5C5;
+    text-shadow: 3px 3px 5px #21222B,
+    0px 1px 5px #C6C5C5;
     -webkit-transition: all .9s;
     -moz-transition: all .9s;
     -ms-transition: all .9s;
@@ -207,16 +192,11 @@
     text-transform: none;
     font-size: 36px;
 
-    -webkit-text-shadow:
-            1px 1px 11px red;
-    -moz-text-shadow:
-            1px 1px 11px red;
-    -ms-text-shadow:
-            1px 1px 11px red;
-    -o-text-shadow:
-            1px 1px 11px red;
-    text-shadow:
-            1px 1px 11px red;
+    -webkit-text-shadow: 1px 1px 11px red;
+    -moz-text-shadow: 1px 1px 11px red;
+    -ms-text-shadow: 1px 1px 11px red;
+    -o-text-shadow: 1px 1px 11px red;
+    text-shadow: 1px 1px 11px red;
 }
 
 

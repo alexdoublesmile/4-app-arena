@@ -3,24 +3,24 @@
 
 <!DOCTYPE html>
 <html>
-    <c:set var="title" value="Profile" scope="request"/>
-    <jsp:include page="meta.jsp"></jsp:include>
-    <body>
-        <div class="wrapper">
-            <jsp:include page="header.jsp"></jsp:include>
+<c:set var="title" value="Profile" scope="request"/>
+<jsp:include page="meta.jsp"></jsp:include>
+<body>
+<div class="wrapper">
+    <jsp:include page="header.jsp"></jsp:include>
 
-            <div class="content">
-                <div class="userInfo-img">
-                    <div class="info">
-                        <h3>Пользователь - ${loginedUser.lastName} ${loginedUser.firstName}</h3>
-                        <br>
-                        <h3>Логин - ${loginedUser.login}</h3>
-                        <br>
-                    </div>
-                </div>
+    <div class="content">
+        <div class="userInfo-img">
+            <div class="info">
+                <h3>Пользователь - ${loginedUser.lastName} ${loginedUser.firstName}</h3>
+                <br>
+                <h3>Логин - ${loginedUser.login}</h3>
+                <br>
             </div>
-
-            <jsp:include page="footer.jsp"></jsp:include>
         </div>
-    </body>
+    </div>
+
+    <jsp:include page="footer.jsp"></jsp:include>
+</div>
+</body>
 </html>

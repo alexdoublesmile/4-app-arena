@@ -1,47 +1,56 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 table {
-  border-collapse: collapse;
+    border-collapse: collapse;
 }
-.header,.foot,.main {
-	margin: 0 auto;
+
+.header, .foot, .main {
+    margin: 0 auto;
 }
 
 .layout-positioner {
-  margin: 0 auto;
+    margin: 0 auto;
 }
 
 .layout-positioner:after {
-  display: table;
-  content: "";
-  clear: both;
+    display: table;
+    content: "";
+    clear: both;
 }
+
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
+
 a:hover {
-	color: #000;
+    color: #000;
 }
+
 ul {
-	list-style-type: none;
+    list-style-type: none;
 }
+
 .last {
-	clear: both;
+    clear: both;
 }
+
 .f {
-	float: left;
+    float: left;
 }
+
 .fr {
-	float: right;
+    float: right;
 }
+
 .clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0;
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
 }

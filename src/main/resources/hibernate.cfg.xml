@@ -12,8 +12,8 @@
         <property name="hibernate.connection.password">44881212</property>
         <property name="hibernate.show_sql">false</property>
 
-        <mapping class="com.plohoy.bulls.domain.User" />
-        <mapping class="com.plohoy.bulls.domain.Role" />
+        <mapping class="com.plohoy.bulls.domain.User"/>
+        <mapping class="com.plohoy.bulls.domain.Role"/>
 
     </session-factory>
 

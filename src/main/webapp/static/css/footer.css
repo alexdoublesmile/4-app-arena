@@ -6,9 +6,8 @@ footer {
     background: linear-gradient(#6f6f6f, darkgrey, #252525);
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow:
-            -10px -20px 30px white,
-            inset 0px 10px 20px white;
+    box-shadow: -10px -20px 30px white,
+    inset 0px 10px 20px white;
 }
 
 footer div {
@@ -32,25 +31,20 @@ footer div {
 .foot-menu li a:hover, .foot-services li a:hover {
     color: #eef0f1;
     opacity: 1;
-    -webkit-text-shadow:
-            1px 2px 8px #21222B,
-            0px 1px 1px #C6C5C5;
-    -moz-text-shadow:
-            1px 2px 8px #21222B,
-            0px 1px 1px #C6C5C5;
-    -ms-text-shadow:
-            1px 2px 8px #21222B,
-            0px 1px 1px #C6C5C5;
-    -o-text-shadow:
-            1px 2px 8px #21222B,
-            0px 1px 1px #C6C5C5;
-    text-shadow:
-            1px 2px 8px #21222B,
-            0px 1px 1px #C6C5C5;
+    -webkit-text-shadow: 1px 2px 8px #21222B,
+    0px 1px 1px #C6C5C5;
+    -moz-text-shadow: 1px 2px 8px #21222B,
+    0px 1px 1px #C6C5C5;
+    -ms-text-shadow: 1px 2px 8px #21222B,
+    0px 1px 1px #C6C5C5;
+    -o-text-shadow: 1px 2px 8px #21222B,
+    0px 1px 1px #C6C5C5;
+    text-shadow: 1px 2px 8px #21222B,
+    0px 1px 1px #C6C5C5;
 }
 
 .foot-blog {
-    float:right;
+    float: right;
     margin-right: 0px;
 }
 

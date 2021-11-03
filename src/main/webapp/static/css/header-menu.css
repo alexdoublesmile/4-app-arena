@@ -14,30 +14,25 @@ header {
     position: relative;
 }
 
-.main-nav>ul>li{
+.main-nav > ul > li {
     display: inline-block;
     margin-right: 20px;
     text-transform: uppercase;
     font-size: 24px;
 }
 
-.main-nav ul li a{
+.main-nav ul li a {
     color: #eef0f1;
-    -webkit-text-shadow:
-            6px 4px 8px #21222B,
-            0px 1px 0px #232A6C;
-    -moz-text-shadow:
-            6px 4px 8px #21222B,
-            0px 1px 0px #232A6C;
-    -ms-text-shadow:
-            6px 4px 8px #21222B,
-            0px 1px 0px #232A6C;
-    -o-text-shadow:
-            6px 4px 8px #21222B,
-            0px 1px 0px #232A6C;
-    text-shadow:
-            6px 4px 8px #21222B,
-            0px 1px 0px #232A6C;
+    -webkit-text-shadow: 6px 4px 8px #21222B,
+    0px 1px 0px #232A6C;
+    -moz-text-shadow: 6px 4px 8px #21222B,
+    0px 1px 0px #232A6C;
+    -ms-text-shadow: 6px 4px 8px #21222B,
+    0px 1px 0px #232A6C;
+    -o-text-shadow: 6px 4px 8px #21222B,
+    0px 1px 0px #232A6C;
+    text-shadow: 6px 4px 8px #21222B,
+    0px 1px 0px #232A6C;
     -webkit-transition: color .4s;
     -moz-transition: color .4s;
     -ms-transition: color .4s;
@@ -52,21 +47,16 @@ header {
 
 .main-nav ul li a:hover {
     color: goldenrod;
-    -webkit-text-shadow:
-            1px 1px 0px #21222B,
-            0px 1px 1px #C6C5C5;
-    -moz-text-shadow:
-            1px 1px 0px #21222B,
-            0px 1px 1px #C6C5C5;
-    -ms-text-shadow:
-            1px 1px 0px #21222B,
-            0px 1px 1px #C6C5C5;
-    -o-text-shadow:
-            1px 1px 0px #21222B,
-            0px 1px 1px #C6C5C5;
-    text-shadow:
-            1px 1px 0px #21222B,
-            0px 1px 1px #C6C5C5;
+    -webkit-text-shadow: 1px 1px 0px #21222B,
+    0px 1px 1px #C6C5C5;
+    -moz-text-shadow: 1px 1px 0px #21222B,
+    0px 1px 1px #C6C5C5;
+    -ms-text-shadow: 1px 1px 0px #21222B,
+    0px 1px 1px #C6C5C5;
+    -o-text-shadow: 1px 1px 0px #21222B,
+    0px 1px 1px #C6C5C5;
+    text-shadow: 1px 1px 0px #21222B,
+    0px 1px 1px #C6C5C5;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     -ms-transition: all .2s;
@@ -79,7 +69,7 @@ header {
     margin-right: 5px;
 }
 
-nav>ul .sub-li:hover .sub-menu {
+nav > ul .sub-li:hover .sub-menu {
     opacity: 1;
     visibility: visible;
     -webkit-transition: all .4s .5s ease-in-out;
@@ -146,7 +136,7 @@ nav>ul .sub-li:hover .sub-menu {
 .sub-menu::after {
     content: "";
     display: block;
-    position:absolute;
+    position: absolute;
     top: -10px;
     left: 45%;
     border: 10px solid #99143a;

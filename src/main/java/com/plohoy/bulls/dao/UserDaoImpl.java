@@ -32,7 +32,7 @@ public class UserDaoImpl implements UserDao {
     private static final String ADD_USER_ROLE = "INSERT INTO user_role(user_id, role_id)" +
             "VALUES (? , '3')";
 
-    private static final Map<String,String> jdbcUrlSettings = new HashMap<>();
+    private static final Map<String, String> jdbcUrlSettings = new HashMap<>();
 
     static {
         String jdbcDbUrl = System.getenv("JDBC_DATABASE_URL");
